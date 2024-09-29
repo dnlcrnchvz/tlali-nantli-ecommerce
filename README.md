@@ -10,7 +10,7 @@
  ## 🔗 How to clone
  ## 💻 Demo
  ## 👩🏽‍💻 Autoras
- 1. Daniela Cerón Chávez 🧜🏽‍♀️
+ 1. Daniela Cerón Chávez 🧜🏽‍♀️ | LinkedIn: https://www.linkedin.com/in/dnlcrnchvz/
  2. Estefany Contreras Sánchez
  3. Circe Delgadillo López
  4. Lizbeth Díaz Feria
