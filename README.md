@@ -9,7 +9,7 @@
  ## How to clone
  ## Demo
  ## Autoras
- * Daniela Cerón Chávez 👩‍💻🐱‍🏍
+ * Daniela Cerón Chávez 👩‍💻⛺
  * Estefany Contreras Sánchez
  * Circe Delgadillo López
  * Sara Abigail Martínez Reyes
