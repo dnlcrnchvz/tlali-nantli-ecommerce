@@ -9,23 +9,23 @@
  ## 🔗 How to clone
  ## 💻 Demo
  ## 👩🏽‍💻 Autoras
- - Daniela Cerón Chávez 🧜🏽‍♀️
- - Estefany Contreras Sánchez
- - Circe Delgadillo López
- - Lizbeth Díaz Feria
- - Sara Abigail Martínez Reyes
- - Alma Valeria Martínez Tamariz
- - Ranfi Leyva Pérez
- - Lorena Maria Raygoza Ibarra
+ 1. Daniela Cerón Chávez 🧜🏽‍♀️
+ 2. Estefany Contreras Sánchez
+ 3. Circe Delgadillo López
+ 4. Lizbeth Díaz Feria
+ 5. Sara Abigail Martínez Reyes
+ 6. Alma Valeria Martínez Tamariz
+ 7. Ranfi Leyva Pérez
+ 8. Lorena Maria Raygoza Ibarra
  ## 🧾 Licencia
  ## 🤝 Contribuciones
  ## ✅ Pruebas
  ## 👀 Preview
- - Página principal 🏠
- - Lista de productos 📦
- - Contacto 🌐
- - Acerca de nosotros 🌿
- - Inicio de sesión 🔑
- - Registro de usuario 📝
- - Página de formulario (CRUD: Ver, crear, actualizar, eliminar) 🔝
+ 1. Página principal 🏠
+ 2. Lista de productos 📦
+ 3. Contacto 🌐
+ 4. Acerca de nosotros 🌿
+ 5. Inicio de sesión 🔑
+ 6. Registro de usuario 📝
+ 7. Gestión de Productos (CRUD) 🔝
  ## ✨ Agradecimientos
