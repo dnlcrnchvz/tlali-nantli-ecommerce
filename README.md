@@ -9,6 +9,14 @@
  ## How to clone
  ## Demo
  ## Autoras
+ * Daniela Cerón Chávez 👩‍💻💙
+ * Estefany Contreras Sánchez
+ * Circe Delgadillo López
+ * Sara Abigail Martínez Reyes
+ * Lizbeth Díaz Feria
+ * Ranfi Leyva Pérez
+ * Alma Valeria Martínez Tamariz
+ * Lorena Maria Raygoza Ibarra
  ## Licencia
  ## Contribuciones
  ## Pruebas
