@@ -4,6 +4,7 @@
 * **Front-end:** 🏗️HTML, 🎨CSS, 🚀Bootstrap y ⚙️JavaScript 
 * **Back-end:** 🌱Spring boot y ☕Java
 * **Base de Datos:** 🐬MySQL
+* **Marco de trabajo:** 📅SCRUM
  ## 🔧 Instalación
  ## 🛠 Despliegue
  ## 🔗 How to clone
