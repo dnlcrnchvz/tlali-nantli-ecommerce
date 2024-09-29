@@ -4,11 +4,11 @@
 * Front-end: 🏗️HTML, 🎨CSS, 🚀Bootstrap y ⚙️JavaScript 
 * Back-end: 🌱Spring boot y ☕Java
 * Base de Datos: 🐬MySQL
- ## 🚀 Instalación-
- ## 🛠 Despliegue-
+ ## 🚀 Instalación
+ ## 🛠 Despliegue
  ## 🔗 How to clone
  ## 💻 Demo
- ## 👩‍💻 Autoras
+ ## 👩🏽‍💻 Autoras
  * Daniela Cerón Chávez 🧜🏽‍♀️
  * Estefany Contreras Sánchez
  * Circe Delgadillo López
@@ -19,6 +19,6 @@
  * Lorena Maria Raygoza Ibarra
  ## 🧾 Licencia
  ## 🤝 Contribuciones
- ## ✅ Pruebas-
+ ## ✅ Pruebas
  ## 👀 Preview
  ## ✨ Agradecimientos
