@@ -15,7 +15,7 @@
  3. Circe Delgadillo López
  4. Lizbeth Díaz Feria
  5. Ranfi Leyva Pérez
- 6. Sara Abigail Martínez Reyes
+ 6. Sara Abigail Martínez Reyes 🌎| Linkedin: www.linkedin.com/in/sara-mtz-reyes
  7. Alma Valeria Martínez Tamariz | LinkedIn: https://www.linkedin.com/in/almatamariz
  8. Lorena Maria Raygoza Ibarra
  ## 🧾 Licencia
