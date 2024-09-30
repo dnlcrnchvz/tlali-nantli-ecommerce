@@ -11,7 +11,7 @@
  ## 💻 Demo
  ## 👩🏽‍💻 Autoras
  1. Daniela Cerón Chávez 🧜🏽‍♀️ | LinkedIn: https://www.linkedin.com/in/dnlcrnchvz/
- 2. Estefany Contreras Sánchez
+ 2. Estefany Contreras Sánchez 👩‍💻| LinkedIn: https://www.linkedin.com/in/estefany-contreras-s%C3%A1nchez-/
  3. Circe Delgadillo López
  4. Lizbeth Díaz Feria
  5. Ranfi Leyva Pérez
