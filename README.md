@@ -16,7 +16,7 @@
  4. Lizbeth Díaz Feria
  5. Ranfi Leyva Pérez
  6. Sara Abigail Martínez Reyes
- 7. Alma Valeria Martínez Tamariz
+ 7. Alma Valeria Martínez Tamariz | LinkedIn: https://www.linkedin.com/in/almatamariz
  8. Lorena Maria Raygoza Ibarra
  ## 🧾 Licencia
  ## 🤝 Contribuciones
