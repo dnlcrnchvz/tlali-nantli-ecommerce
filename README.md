@@ -14,9 +14,9 @@
  2. Estefany Contreras Sánchez
  3. Circe Delgadillo López
  4. Lizbeth Díaz Feria
- 5. Sara Abigail Martínez Reyes
- 6. Alma Valeria Martínez Tamariz
- 7. Ranfi Leyva Pérez
+ 5. Ranfi Leyva Pérez
+ 6. Sara Abigail Martínez Reyes
+ 7. Alma Valeria Martínez Tamariz
  8. Lorena Maria Raygoza Ibarra
  ## 🧾 Licencia
  ## 🤝 Contribuciones
