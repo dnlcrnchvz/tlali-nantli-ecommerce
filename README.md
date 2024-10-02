@@ -12,7 +12,7 @@
  ## 👩🏽‍💻 Autoras
  1. Daniela Cerón Chávez 🧜🏽‍♀️ | LinkedIn: https://www.linkedin.com/in/dnlcrnchvz/
  2. Estefany Contreras Sánchez 👩‍💻 | LinkedIn: https://www.linkedin.com/in/estefany-contreras-s%C3%A1nchez-/
- 3. Circe Delgadillo López
+ 3. Circe Delgadillo López | https://www.linkedin.com/in/circe-delgadillo/ 
  4. Lizbeth Díaz Feria 🐥 | LinkedIn: https://www.linkedin.com/in/lizbethdiazf/
  5. Ranfi Leyva Pérez
  6. Sara Abigail Martínez Reyes 🌎 | Linkedin: www.linkedin.com/in/sara-mtz-reyes
