@@ -14,7 +14,7 @@
  2. Estefany Contreras Sánchez 👩‍💻 | LinkedIn: https://www.linkedin.com/in/estefany-contreras-s%C3%A1nchez-/
  3. Circe Delgadillo López | https://www.linkedin.com/in/circe-delgadillo/ 
  4. Lizbeth Díaz Feria 🐥 | LinkedIn: https://www.linkedin.com/in/lizbethdiazf/
- 5. Ranfi Leyva Pérez
+ 5. Ranfi Leyva Pérez 🛫 | LinkedIn: www.linkedin.com/in/ranfileyva
  6. Sara Abigail Martínez Reyes 🌎 | Linkedin: www.linkedin.com/in/sara-mtz-reyes
  7. Alma Valeria Martínez Tamariz | LinkedIn: https://www.linkedin.com/in/almatamariz
  8. Lorena Maria Raygoza Ibarra | linkedIn: www.linkedin.com/in/lorena-raygoza09
