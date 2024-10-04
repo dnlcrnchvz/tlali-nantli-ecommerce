@@ -1,9 +1,26 @@
-.madre_tierra {
-    width: 10px;
-    height: 10px;
+#nosotros{
+    padding: 100px;
+    display: flex;
 }
-
-.mainSection {
-    background-image: url("imagenes/fondo2.jpg");
-    background-color: white;
+#nosotros img{
+    width: 10em;
+    height: 10em;
+}
+#quienes-somos{
+    padding: 5em 5em ;
+    background-color: #A8CA7E;
+    border-radius: 10px;
+}
+#title-quienes-somos{
+    padding: 0em 0em 1em 0em;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+#paragraph-quienes-somos{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
