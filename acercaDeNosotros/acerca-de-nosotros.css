@@ -68,9 +68,7 @@
     padding: 100px;
     display: flex;
 }
-#idMision{
-    
-}
+
 #titleMision{
     padding: 0em 0em 0em 0em;
     font-family: "Playfair Display", serif;
@@ -86,8 +84,9 @@
     font-weight: weight;
     font-style: normal;
     background-color: white;
-    padding: 5em 5em;
+    padding: 1em;
     border-radius: 10px;
+    text-align: justify;
 
 
    
