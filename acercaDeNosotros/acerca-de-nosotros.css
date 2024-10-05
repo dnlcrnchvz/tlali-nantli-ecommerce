@@ -62,3 +62,32 @@
     color: #000000; /* Color del texto */
 }
 
+
+
+#mision{
+    padding: 100px;
+    display: flex;
+}
+
+#titleMision{
+    padding: 0em 0em 0em 0em;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    background-color: #A8CA7E;
+    border-radius: 10px;
+}
+#paragraphMision{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    background-color: white;
+    padding: 1em;
+    border-radius: 10px;
+    text-align: justify;
+
+
+   
+}
