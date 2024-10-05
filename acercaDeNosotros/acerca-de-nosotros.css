@@ -24,3 +24,32 @@
     font-weight: weight;
     font-style: normal;
 }
+
+#mision{
+    padding: 100px;
+    display: flex;
+}
+#idMision{
+    
+}
+#titleMision{
+    padding: 0em 0em 0em 0em;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    background-color: #A8CA7E;
+    border-radius: 10px;
+}
+#paragraphMision{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    background-color: white;
+    padding: 5em 5em;
+    border-radius: 10px;
+
+
+   
+}
