@@ -1,3 +1,18 @@
+/* Estilos para el contenedor de fondo */
+.background {
+    position: fixed; /* Fijo para que cubra toda la pantalla */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('imagenes/fondo1.jpg'); /* Cambia esto a la ruta de tu imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen */
+    background-position: center; /* Centra la imagen */
+    filter: blur(8px); /* Aplica el desenfoque */
+    z-index: -1; /* Coloca el fondo detrás del contenido */
+}
+
+
 #nosotros{
     padding: 100px;
     display: flex;
@@ -44,6 +59,7 @@
     width: 140px; /* Reduce el ancho de cada contenedor */
     height: auto; /* Ajustable según el contenido */
     text-align: center;
+    background-color: #CBDDB5;
 }
 
 /* Estilos para las imágenes */
@@ -62,32 +78,10 @@
     color: #000000; /* Color del texto */
 }
 
-
-
-#mision{
-    padding: 100px;
-    display: flex;
-}
-
-#titleMision{
-    padding: 0em 0em 0em 0em;
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    background-color: #A8CA7E;
-    border-radius: 10px;
-}
-#paragraphMision{
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    background-color: white;
-    padding: 1em;
-    border-radius: 10px;
-    text-align: justify;
-
-
-   
+#contenedor {
+    display: flex; /* Usa flexbox para alinear las secciones */
+    justify-content: space-between; /* Espacio entre las secciones */
+    align-items: flex-start; /* Alinea en la parte superior */
+    max-width: 1200px; /* Ancho máximo */
+    margin: 0 auto; /* Centra el contenedor */
 }
