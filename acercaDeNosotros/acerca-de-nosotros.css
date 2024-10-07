@@ -22,7 +22,7 @@
     height: 10em;
 }
 #quienes-somos{
-    padding: 5em 5em ;
+    padding: 1em; 
     background-color: #A8CA7E;
     border-radius: 10px;
 }
@@ -38,6 +38,7 @@
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
+    text-align: justify;
 }
 
 /*seccion de equipo*/
@@ -77,8 +78,20 @@
     color: #000000; /* Color del texto */
 }
 
-
-
+.parent {
+    padding-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 8px;
+}
+    
+.equipoPresentacion{
+    background-color: #A8CA7E;
+    font-family: "Playfair Display", serif;
+    padding: 2px;
+    text-align: center;
+}
 #titleMision{
     padding: 0em 0em 0em 0em;
     font-family: "Playfair Display", serif;
