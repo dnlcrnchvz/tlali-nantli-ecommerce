@@ -23,10 +23,10 @@ document.addEventListener("DOMContentLoaded", function() {
                         <a class="nav-link" href="#">Catálogo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Acerca de nosotros</a>
+                        <a class="nav-link" href="../acercaDeNosotros/acerca-de-nosotros.html">Acerca de nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="../contacto/contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" aria-disabled="true" href="#">Inicio de sesión</a>
