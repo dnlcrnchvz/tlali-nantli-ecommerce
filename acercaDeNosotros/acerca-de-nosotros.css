@@ -98,6 +98,25 @@
     border-radius: 10px;
     text-align: justify; 
 }
+#titleVision{
+    padding: 0em 0em 0em 0em;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    background-color: #A8CA7E;
+    border-radius: 10px;
+}
+#paragraphVision{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    background-color: white;
+    padding: 1em;
+    border-radius: 10px;
+    text-align: justify; 
+}
 
 
 
