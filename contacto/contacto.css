@@ -12,12 +12,18 @@
     z-index: -1; /*Coloca el fondo detrás del contenido*/    
 }
 
-.formulario
+.formularioD
 {
     background-color: #DECA98;
     filter: opacity(75%);
     align-content: center;
     text-align: left;
+    padding: 3rem;
+}
+
+.formulario
+{
+    align-content: center;
 }
 
 .logoLinkedIn
