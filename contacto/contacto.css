@@ -1,0 +1,37 @@
+.background
+{
+    position: fixed; /* Fijo para que cubra toda la pantalla */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('imagenes/fondo2.jpg');/*Imagen de fondo*/
+    background-size: cover; /*Ajusta el tamaño de la imagen*/
+    background-position: center; /*Centra la imagen*/
+    filter: opacity(10%); /*Desenfoca la imagen*/
+    z-index: -1; /*Coloca el fondo detrás del contenido*/    
+}
+
+.formularioD
+{
+    background-color: #DECA98;
+    filter: opacity(75%);
+    align-content: center;
+    text-align: left;
+    padding: 3rem;
+}
+
+.formulario
+{
+    align-content: center;
+}
+
+.logoLinkedIn
+{
+    width: auto;
+}
+
+.contactoLinkedIn
+{
+    font-weight: normal;
+}
