@@ -13,84 +13,51 @@
 }
 
 
-#nosotros{
-    padding: 100px;
+/* body{
+    background-image: url("imagenes/fondo2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+/* Sección Nosotras */
+.primary {
     display: flex;
 }
-#nosotros img{
-    width: 10em;
-    height: 10em;
+.logo-container{
+    padding: 100px 50px 0px 30px;
 }
-#quienes-somos{
-    padding: 1em; 
+.logo-container img{
+    width: 20em;
+    height: 20em;
+}
+.nosotras-section{
+    padding: 100px 0px;
+}
+.quienes-somos-container{
+    padding: 0em 3em 3em 3em;
     background-color: #A8CA7E;
     border-radius: 10px;
 }
-#title-quienes-somos{
-    padding: 0em 0em 1em 0em;
+.quienes-somos-title{
+    padding: 1em 0em;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
 }
-#paragraph-quienes-somos{
+.quienes-somos-paragraph{
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    text-align: justify;
 }
 
-/*seccion de equipo*/
-/* Estilos para la cuadrícula */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
-    gap: 10px; /* espacio entre contenedores */
-    padding: 20px;
-    justify-items: center; /* Centrado de divs */
-}
 
-/* Estilos para de contenedor de las imágenes */
-.foto-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto; /* Ajustable según el contenido */
-    text-align: center;
-    background-color:  #CBDDB5;
-}
 
-/* Estilos para las imágenes */
-.foto-container img {
-    width: 140px; /* Reduce el tamaño de la imagen para ajustarse al contenedor */
-    height: 140px;
-    object-fit: cover;
-    border-radius: 50%; /* borde imágenes para hacerlas circulares */
-}
-
-/* Estilos para los párrafos */
-.foto-container p {
-    font-family: "Quicksand", sans-serif; /*teto de parráfos*/
-    margin-top: 8px; /*  margen superior para acercar el texto */
-    font-size: 14px; /*  tamaño del texto según sea necesario */
-    color: #000000; /* Color del texto */
-}
-
-.parent {
-    padding-top: 2em;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    gap: 8px;
-}
-    
-.equipoPresentacion{
-    background-color: #A8CA7E;
-    font-family: "Playfair Display", serif;
-    padding: 2px;
-    text-align: center;
+/* Sección Visión */
+.mision-section{
+    padding: 100px 50px 0px 50px;
 }
 #titleMision{
     padding: 0em 0em 0em 0em;
@@ -110,6 +77,11 @@
     padding: 1em;
     border-radius: 10px;
     text-align: justify; 
+}
+
+/* Sección Visión */
+.vision-section{
+    padding: 100px 50px 0px 0px;
 }
 #titleVision{
     padding: 0em 0em 0em 0em;
@@ -131,8 +103,57 @@
     text-align: justify; 
 }
 
+/*seccion de equipo*/
+/* Estilos para la cuadrícula */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 10px; /* espacio entre contenedores */
+    padding: 20px;
+    justify-items: center; /* Centrado de divs */
+}
+/* Estilos para de contenedor de las imágenes */
+.foto-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Ajustable según el contenido */
+    text-align: center;
+    background-color:  #CBDDB5;
+}
+/* Estilos para las imágenes */
+.foto-container img {
+    width: 140px; /* Reduce el tamaño de la imagen para ajustarse al contenedor */
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%; /* borde imágenes para hacerlas circulares */
+}
+/* Estilos para los párrafos */
+.foto-container p {
+    font-family: "Quicksand", sans-serif; /*teto de parráfos*/
+    margin-top: 8px; /*  margen superior para acercar el texto */
+    font-size: 14px; /*  tamaño del texto según sea necesario */
+    color: #000000; /* Color del texto */
+}
+.parent {
+    padding-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 8px;
+}
+.equipoPresentacion{
+    background-color: #A8CA7E;
+    font-family: "Playfair Display", serif;
+    padding: 2px;
+    text-align: center;
+}
 
 
+
+
+/* Footer */
 footer {
     background-color: #A8CA7E; /* Color de fondo verde */
     font-family: "Quicksand", sans-serif;
@@ -142,22 +163,85 @@ footer {
     display: flex;
     justify-content: space-between;
 }
-
 .footer-container {
     display: flex;
     width: 100%;
 }
-
 .footer-section {
     flex: 1; /* Cada sección ocupará el mismo espacio */
     padding: 10px;
 }
-
 .footer-section h2 {
     margin-bottom: 10px;
 }
-
 .social-icons img {
     width: 27px; /* Tamaño de los íconos */
     margin-right: 10px; /* Espacio entre íconos */
+}
+
+/* Media queries */
+@media (max-width: 600px) {
+    .primary {
+        flex-direction: column;
+    }
+    .logo-container {
+        padding: 50px 20px;
+        text-align: center;
+    }
+    .logo-container img {
+        width: 15em;
+        height: 15em;
+    }
+    .mision-section{
+        padding: 0px 50px;
+    }
+    .vision-section{
+        padding: 50px 50px;
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .foto-container img {
+        width: 100px;
+        height: 100px;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-section {
+        padding: 5px;
+        text-align: center;
+    }
+    .social-icons img {
+        width: 20px;
+    }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+    .primary {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .primary > * {
+        flex: 0 0 48%;
+        margin: 1%;
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en lugar de 4 */
+    }
+    .foto-container img {
+        width: 120px;
+        height: 120px;
+    }
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .footer-section {
+        padding: 15px;
+    }
+    .social-icons img {
+    width: 25px;
+    }
 }
