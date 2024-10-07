@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="/navbar/imagenes/logo-tlali-nantli.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                <img src="../navbar/imagenes/logo-sin-fondo-tlali-nantli.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
                 Tlali Nantli
             </a>
             <!-- Mueve el formulario de búsqueda aquí -->
@@ -23,17 +23,17 @@ document.addEventListener("DOMContentLoaded", function() {
                         <a class="nav-link" href="#">Catálogo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Acerca de nosotros</a>
+                        <a class="nav-link" href="../acercaDeNosotros/acerca-de-nosotros.html">Acerca de nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="../contacto/contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" aria-disabled="true" href="#">Inicio de sesión</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <img src="imagenes/carrito_compras.png" alt="Carrito de compras" width="30" height="30">
+                            <img src="../navbar/imagenes/carrito_compras.png" alt="Carrito de compras" width="30" height="30">
                         </a>
                     </li>
                 </ul>
