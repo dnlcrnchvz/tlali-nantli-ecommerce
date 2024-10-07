@@ -1,3 +1,18 @@
+/* Estilos para el contenedor de fondo */
+.background {
+    position: fixed; /* Fijo para que cubra toda la pantalla */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('imagenes/fondo1.jpg'); /* Cambia esto a la ruta de tu imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen */
+    background-position: center; /* Centra la imagen */
+    filter: blur(8px); /* Aplica el desenfoque */
+    z-index: -1; /* Coloca el fondo detrás del contenido */
+}
+
+
 #nosotros{
     padding: 100px;
     display: flex;
@@ -41,9 +56,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 140px; /* Reduce el ancho de cada contenedor */
     height: auto; /* Ajustable según el contenido */
     text-align: center;
+    background-color:  #CBDDB5;
 }
 
 /* Estilos para las imágenes */
@@ -64,11 +79,6 @@
 
 
 
-#mision{
-    padding: 100px;
-    display: flex;
-}
-
 #titleMision{
     padding: 0em 0em 0em 0em;
     font-family: "Playfair Display", serif;
@@ -86,8 +96,36 @@
     background-color: white;
     padding: 1em;
     border-radius: 10px;
-    text-align: justify;
+    text-align: justify; 
+}
 
 
-   
+
+footer {
+    background-color: #A8CA7E; /* Color de fondo verde */
+    font-family: "Quicksand", sans-serif;
+    font-size:  16px;
+    color: black; /* Color del texto */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container {
+    display: flex;
+    width: 100%;
+}
+
+.footer-section {
+    flex: 1; /* Cada sección ocupará el mismo espacio */
+    padding: 10px;
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+}
+
+.social-icons img {
+    width: 27px; /* Tamaño de los íconos */
+    margin-right: 10px; /* Espacio entre íconos */
 }
