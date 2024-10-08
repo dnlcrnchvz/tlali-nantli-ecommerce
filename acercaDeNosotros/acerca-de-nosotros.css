@@ -59,7 +59,7 @@
 .mision-section{
     padding: 100px 50px 0px 50px;
 }
-#titleMision{
+.titleMision{
     padding: 0em 0em 0em 0em;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
@@ -68,7 +68,7 @@
     background-color: #A8CA7E;
     border-radius: 10px;
 }
-#paragraphMision{
+.paragraphMision{
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
@@ -83,7 +83,7 @@
 .vision-section{
     padding: 100px 50px 0px 0px;
 }
-#titleVision{
+.titleVision{
     padding: 0em 0em 0em 0em;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
@@ -92,7 +92,7 @@
     background-color: #A8CA7E;
     border-radius: 10px;
 }
-#paragraphVision{
+.paragraphVision{
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
