@@ -5,7 +5,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('imagenes/fondo1.jpg'); /* Cambia esto a la ruta de tu imagen */
+    background-image: url('imagenes/imagenFondo1.jpg'); /* Cambia esto a la ruta de tu imagen */
     background-size: cover; /* Ajusta el tamaño de la imagen */
     background-position: center; /* Centra la imagen */
     filter: blur(8px); /* Aplica el desenfoque */
