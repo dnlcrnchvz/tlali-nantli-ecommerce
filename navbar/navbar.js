@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
             <!-- Mueve el formulario de búsqueda aquí -->
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Barra de Búsqueda" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <button id="botonBusqueda" : hover class="btn btn-outline-success" type="submit"> Buscar
+                </button>
             </form>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
