@@ -1,8 +1,23 @@
 .navbar {
-    background-color: #a8ca7e;
+    background-color: #a8ca7e; /* Color de fondo */
+    padding: 10px; /* Espaciado interno */
     height: 100px;
-
 }
 .navbar .nav-link:hover {
     color:#ffffff;
 }
+
+.navbar-nav .nav-item {
+    margin-left: 20px; /* Espaciado entre los elementos del navbar */
+    font-size: 20px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Centrar verticalmente logo y texto */
+}
+
+.form-control {
+    width: 200px; /* Ancho de la barra de búsqueda */
+}
+
