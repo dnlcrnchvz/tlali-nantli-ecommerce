@@ -1,0 +1,8 @@
+.navbar {
+    background-color: #a8ca7e;
+    height: 100px;
+
+}
+.navbar .nav-link:hover {
+    color:#ffffff;
+}
