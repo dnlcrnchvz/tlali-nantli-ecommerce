@@ -105,7 +105,6 @@
 
 /*seccion de equipo*/
 /* Estilos para la cuadrícula */
-/* Estilos para la cuadrícula */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columnas */
@@ -144,7 +143,7 @@
     font-size: 12px;
     margin-top: 5px;
     margin-bottom: 0; /* Elimina el margen inferior */
-    padding-bottom: 0; /* Asegúrate de que no haya relleno adicional */
+    padding-bottom: 0; /* Sin relleno adicional*/
     color: #000000;
 }
 
@@ -153,7 +152,7 @@
     font-size: 30px;
     font-family: "Quicksand", sans-serif;
     margin-top: 0; /* Elimina el margen superior */
-    padding-top: 0; /* Asegúrate de que no haya relleno superior */
+    padding-top: 0; /* Sin relleno adicional */
 }
 
 .parent {
