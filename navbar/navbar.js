@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let navbar = `
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="../paginaPrincipal/index.html">
                 <img src="../navbar/imagenes/logo-sin-fondo-tlali-nantli.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
                 Tlali Nantli
             </a>
@@ -17,19 +17,19 @@ document.addEventListener("DOMContentLoaded", function() {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="../paginaPrincipal/index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Catálogo</a>
+                        <a class="nav-link" href="../catalogo/catalogo.html">Catálogo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../acercaDeNosotros/acerca-de-nosotros.html">Acerca de nosotros</a>
+                        <a class="nav-link" href="../acercaDeNosotras/acercaDeNosotras.html">Acerca de nosotras</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../contacto/contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true" href="#">Inicio de sesión</a>
+                        <a class="nav-link" aria-disabled="true" href="../inicioDeSesion/inicioDeSesion.html">Inicio de sesión</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
