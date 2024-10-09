@@ -169,33 +169,6 @@
     text-align: center;
 }
 
-
-/* Footer */
-footer {
-    background-color: #A8CA7E; /* Color de fondo verde */
-    font-family: "Quicksand", sans-serif;
-    font-size:  16px;
-    color: black; /* Color del texto */
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-.footer-container {
-    display: flex;
-    width: 100%;
-}
-.footer-section {
-    flex: 1; /* Cada sección ocupará el mismo espacio */
-    padding: 10px;
-}
-.footer-section h2 {
-    margin-bottom: 10px;
-}
-.social-icons img {
-    width: 27px; /* Tamaño de los íconos */
-    margin-right: 10px; /* Espacio entre íconos */
-}
-
 /* Media queries */
 @media (max-width: 600px) {
     .primary {
