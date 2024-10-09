@@ -1,0 +1,26 @@
+.footer{
+    background-color: #a8ca7e;
+    display: flex;
+}
+
+/* Footer */
+/* footer {
+    background-color: #A8CA7E;
+    font-family: "Quicksand", sans-serif;
+    font-size:  16px;
+    color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}*/
+.footer-section {
+    flex: 1;
+    padding: 10px;
+}
+.footer-section h2 {
+    margin-bottom: 10px;
+}
+.social-icons img {
+    width: 27px;
+    margin-right: 10px;
+} 

@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
     let navbar = `
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="../paginaPrincipal/index.html">
-                <img src="../navbar/imagenes/logo-sin-fondo-tlali-nantli.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                <img src="../navbar/imagenes/logo-sin-fondo-tlali-nantli.png" alt="Logo" width="30" height="30" class="logo-navbar d-inline-block align-text-top">
                 Tlali Nantli
             </a>
             <!-- Mueve el formulario de búsqueda aquí -->
             <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control me-2" type="search" placeholder="Barra de Búsqueda" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
