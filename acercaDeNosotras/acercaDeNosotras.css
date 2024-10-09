@@ -108,34 +108,53 @@
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columnas */
-    gap: 10px; /* espacio entre contenedores */
+    gap: 50px; /* espacio entre contenedores */
     padding: 20px;
-    justify-items: center; /* Centrado de divs */
+    justify-items: center;
+    align-items: center;
 }
-/* Estilos para de contenedor de las imágenes */
+
+/* Estilos para el contenedor de las imágenes */
 .foto-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: auto; /* Ajustable según el contenido */
+    width: 400px;
+    height: 400px; /* Ajusta la altura según el contenido */
     text-align: center;
-    background-color:  #CBDDB5;
+    background-color: #CBDDB5;
+    border-radius: 10px;
+    padding: 10px;
 }
+
 /* Estilos para las imágenes */
 .foto-container img {
-    width: 140px; /* Reduce el tamaño de la imagen para ajustarse al contenedor */
-    height: 140px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
-    border-radius: 50%; /* borde imágenes para hacerlas circulares */
+    border-radius: 50%;
+    margin-bottom: 10px; /* Menor espacio entre imagen y texto */
+    margin-top: 10px; /* Espacio entre la imagen y el borde superior */
 }
+
 /* Estilos para los párrafos */
 .foto-container p {
-    font-family: "Quicksand", sans-serif; /*teto de parráfos*/
-    margin-top: 8px; /*  margen superior para acercar el texto */
-    font-size: 14px; /*  tamaño del texto según sea necesario */
-    color: #000000; /* Color del texto */
+    font-family: "Quicksand", sans-serif;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 0; /* Elimina el margen inferior */
+    padding-bottom: 0; /* Sin relleno adicional*/
+    color: #000000;
 }
+
+/* Estilos para los nombres */
+.Nombre {
+    font-size: 30px;
+    font-family: "Quicksand", sans-serif;
+    margin-top: 0; /* Elimina el margen superior */
+    padding-top: 0; /* Sin relleno adicional */
+}
+
 .parent {
     padding-top: 2em;
     display: grid;
@@ -149,8 +168,6 @@
     padding: 2px;
     text-align: center;
 }
-
-
 
 
 /* Footer */
