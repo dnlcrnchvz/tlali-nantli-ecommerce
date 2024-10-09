@@ -35,3 +35,46 @@
 {
     font-weight: normal;
 }
+
+.profile-card .card-img-top {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.profile-card .card-body {
+    text-align: center; /* Alinea el contenido del texto al centro */
+}
+
+/* Todas las cards tengan la misma altura */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row article {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Asegurar que todas las tarjetas ocupen el mismo alto */
+}
+
+.profile-card .card-title {
+    font-size: 1rem; /* Tamaño uniforme de texto */
+    margin-bottom: 75px; /* Espaciado entre el título y el botón */
+}
+
+.card-title {
+    height: 40px;
+}
+
+/* Botón de LinkedIn alineado al final */
+.profile-card .btn {
+    margin-top: auto;
+}
