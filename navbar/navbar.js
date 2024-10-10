@@ -4,11 +4,13 @@ document.addEventListener("DOMContentLoaded", function() {
     <div class="container-fluid">
         <a class="navbar-brand" href="../paginaPrincipal/index.html">
             <img src="../navbar/imagenes/logo-sin-fondo-tlali-nantli.png" alt="Logo" width="30" height="30" class="logo-navbar d-inline-block align-text-top">
-            Tlali Nantli
+            <h1 class="navbarTitle">Tlali Nantli</h1>
         </a>
         <form class="d-flex ms-auto" role="search">
-            <input class="form-control me-2" type="search" placeholder="Barra de Búsqueda" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <input class="formControl me-2 text-center" type="search" placeholder="Barra de Búsqueda" aria-label="Search">
+            <button type="submit" class="searchIcon">
+                <i class="fas fa-search"></i>
+            </button>
         </form>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -40,5 +42,5 @@ document.addEventListener("DOMContentLoaded", function() {
     </div>
 </nav>
     `;
-    document.getElementById('navbar-container').innerHTML = navbar; 
+    document.getElementById('navbarContainer').innerHTML = navbar; 
 });
