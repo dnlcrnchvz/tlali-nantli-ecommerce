@@ -29,5 +29,5 @@ document.addEventListener("DOMContentLoaded", function() {
         </div>
     </footer>
     `;
-    document.getElementById('footer-container').innerHTML = footer; 
+    document.getElementById('footerContainer').innerHTML = footer; 
 });
