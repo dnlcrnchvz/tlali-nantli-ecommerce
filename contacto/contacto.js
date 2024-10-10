@@ -1,6 +1,8 @@
+import {validarNombre} from "./src/componentes/validacionNombre.js";
 //Obtener referencia del formulario
 const mensaje=document.forms["formulario"];
 
+validarNombre(document.getElementById(nombre));
 const siguienteMensaje=async (nuevoMensaje)=>
 {
     const url="https://formsubmit.co/tlalinantliecom@gmail.com";
@@ -9,7 +11,7 @@ const siguienteMensaje=async (nuevoMensaje)=>
         method: "POST",
         headers:
             {
-                "Content.Type":"application/json",
+                "Content-Type":"application/json",
                 'Accept': 'application/json'
             },
         body: JSON.stringify(nuevoMensaje)//Conversión del mobjeto a JSON
@@ -26,9 +28,6 @@ const siguienteMensaje=async (nuevoMensaje)=>
         console.warn(error);
     }
 }
-
-siguienteMensaje();
-
 
 mensaje.addEventListener("submit",(event)=>
 {
@@ -47,11 +46,11 @@ mensaje.addEventListener("submit",(event)=>
 
     console.log(nuevoMensaje);
 
-    if(validador(nuevoMensaje))
+    if(validarNombre(nuevoMensaje))
     {
         siguienteMensaje(nuevoMensaje);
     }
-});
+}); 
 
 /* const nombre =document.querySelector("#nombre");
 nombre.setAttribute("pattern", "[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+"); */
