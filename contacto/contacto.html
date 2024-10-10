@@ -32,7 +32,7 @@
             <div class="row align-items-center">
               <!-- Columna 1: Formulario -->
               <article class="col-4 mt-2 formulario">
-                <form class="formularioD">
+                <form id="formulario">
                     <!-- apartado nombre -->
                     <div class="form-group">
                         <label for="apellido">Nombre</label>
@@ -42,6 +42,11 @@
                     <div class="form-group mt-2">
                       <label for="apellido">Apellido</label>
                       <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                    </div>
+                    <!-- apartado teléfono -->
+                    <div class="form-group mt-2">
+                      <label for="apellido">Teléfono</label>
+                      <input type="tel" class="form-control" id="telefono" placeholder="Número telefonico a 10 dígitos">
                     </div>
                     <!-- apartado email -->
                     <div class="form-group mt-2">
@@ -64,7 +69,7 @@
                 <!--Encabezado de cards-->
                 <div class="row">
                   <div class="col-6 linkedIn">
-                    <img src="imagenes/linkedIn.png" alt="Logo linkedIn" class="col-2">
+                    <img src="../contacto/src/imagenes/linkedIn.png" alt="Logo linkedIn" class="col-2">
                   </div>
 
                   <div class="col-6">
@@ -208,6 +213,7 @@
     </main>
 
     <script src="../navbar/navbar.js"></script><!--Se llama la barra de navegación-->
+    <script type="module" src="./contacto.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>

@@ -1,35 +1,60 @@
+//import {validarNombre} from "./src/componentes/validacionNombre.js";
+
 //Obtener referencia del formulario
 const mensaje=document.forms["formulario"];
 
-const validador=(nuevoMensaje)=>
-{
-    let valido=true;
-    const nombre = document.querySelector("#nombre");
-    //const email=document.querySelector("#email");
-    
-    if(nuevoMensaje.tel.length!=10)
-    {
-        alert("El número teléfonico no es valido");
-        valido=false;
-    }
-    else if(!(nombre.setAttribute("pattern", "[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+")))
-    {
-        alert("El número teléfonico no es valido");
-        valido=false;
+function validador(nuevoMensaje) {
+    // Expresiones regulares
+    const nombreApellidoRegex = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
+    const telefonoRegex = /^\d{10}$/; // Exactamente 10 dígitos para teléfono
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    // Validar nombre
+    if (!nombreApellidoRegex.test(nuevoMensaje.nombre)) {
+        alert("El nombre solo puede contener letras y espacios.");
+        return false;
     }
 
-    return valido;
+    // Validar apellido
+    else if (!nombreApellidoRegex.test(nuevoMensaje.apellido)) {
+        alert("El apellido solo puede contener letras y espacios.");
+        return false;
+    }
+
+    // Validar teléfono
+    else if (!telefonoRegex.test(nuevoMensaje.telefono)) {
+        alert("El teléfono debe contener exactamente 10 dígitos.");
+        return false;
+    }
+
+    // Validar email
+    else if (!emailRegex.test(nuevoMensaje.email)) {
+        alert("El correo electrónico no tiene un formato válido.");
+        return false;
+    }
+
+    // Validar campo mensaje
+    else if (nuevoMensaje.mensaje==="") {
+        alert("El cuadro de mensaje no debe de estar vacío.");
+        return false;
+    }else
+    {
+        return true;
+    }
+
+    // Si todas las validaciones pasan
+    
 }
 
 const siguienteMensaje=async (nuevoMensaje)=>
 {
-    const url="https://formsubmit.co/tlalinantliecom@gmail.com";
+    const url="https://formsubmit.co/ajax/tlalinantliecom@gmail.com";
     const options=
     {
         method: "POST",
         headers:
             {
-                "Content.Type":"application/json",
+                "Content-Type":"application/json",
                 'Accept': 'application/json'
             },
         body: JSON.stringify(nuevoMensaje)//Conversión del mobjeto a JSON
@@ -46,9 +71,6 @@ const siguienteMensaje=async (nuevoMensaje)=>
         console.warn(error);
     }
 }
-
-siguienteMensaje();
-
 
 mensaje.addEventListener("submit",(event)=>
 {
@@ -71,7 +93,7 @@ mensaje.addEventListener("submit",(event)=>
     {
         siguienteMensaje(nuevoMensaje);
     }
-});
+}); 
 
 /* const nombre =document.querySelector("#nombre");
 nombre.setAttribute("pattern", "[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+"); */
