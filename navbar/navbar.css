@@ -14,3 +14,32 @@
     size: 2 cm;
     shape-margin: 24 px;
 }
+
+.logo-navbar{
+    width: 60px;
+    height: 60px;
+}
+.navbarTitle{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.nav-item a{
+    font-size: 16px;
+}
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Centrar verticalmente logo y texto */
+}
+.navbar-nav .nav-item {
+    margin-left: 20px; /* Espaciado entre los elementos del navbar */
+    font-size: 20px;
+}
+.formControl {
+    width: 200px; /* Ancho de la barra de búsqueda*/
+    border-radius: 70px;
+    border-style: none;
+    height: 30px;
+    width: 200px;
+}
