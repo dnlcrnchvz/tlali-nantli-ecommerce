@@ -1,9 +1,20 @@
 .navbar {
     background-color: #a8ca7e;
+    height: 100 px;
+    font-family: playfair display;
+    font-size:x-large;
+
 }
 .navbar .nav-link:hover {
     color:#ffffff;
 }
+
+#botonBusqueda{
+    background-color:#a8ca7e;
+    size: 2 cm;
+    shape-margin: 24 px;
+}
+
 .logo-navbar{
     width: 60px;
     height: 60px;
@@ -26,7 +37,7 @@
     font-size: 20px;
 }
 .formControl {
-    width: 200px; /* Ancho de la barra de búsqueda */
+    width: 200px; /* Ancho de la barra de búsqueda*/
     border-radius: 70px;
     border-style: none;
     height: 30px;
