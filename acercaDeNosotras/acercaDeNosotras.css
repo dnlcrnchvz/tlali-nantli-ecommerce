@@ -1,3 +1,10 @@
+:root{
+    --verdeNavbar : #A8CA7E;
+    --verdeFondoTexto : #CBDDB5;
+    --beigeFondoTexto : #F5F5DC;
+    --verdeSubtituloTexto : #618434;
+}
+
 /* Estilos para el contenedor de fondo */
 .background {
     position: fixed; /* Fijo para que cubra toda la pantalla */
@@ -12,226 +19,186 @@
     z-index: -1; /* Coloca el fondo detrás del contenido */
 }
 
-
-/* body{
-    background-image: url("imagenes/fondo2.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} */
-
-/* Sección Nosotras */
-.primary {
+/* Sección Acerca de Nosotras ---------------------------------------------------------------*/
+.acercaDeNosotrasPrimary {
     display: flex;
+    margin: 5em;
 }
-.logo-container{
-    padding: 100px 50px 0px 30px;
+.logoContainer{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    height: fit-content;
 }
-.logo-container img{
-    width: 20em;
-    height: 20em;
+.logoContainer img{
+    width: 15em;
+    height: 15em;
 }
-.nosotras-section{
+.nosotrasSection{
     padding: 100px 0px;
 }
-.quienes-somos-container{
-    padding: 0em 3em 3em 3em;
-    background-color: #A8CA7E;
+.quienesSomosContainer{
+    padding: 0em 2em 2em 2em;
+    background-color: var(--verdeNavbar);
     border-radius: 10px;
 }
-.quienes-somos-title{
+.quienesSomosTitle{
     padding: 1em 0em;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
 }
-.quienes-somos-paragraph{
+.quienesSomosParagraph{
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
+    text-align: justify;
 }
 
-
-
-/* Sección Visión */
-.mision-section{
+/* Sección Misión & Visión-------------------------------------------------------------------------*/
+.misionSection{
     padding: 100px 50px 0px 50px;
 }
-.titleMision{
-    padding: 0em 0em 0em 0em;
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    background-color: #A8CA7E;
-    border-radius: 10px;
-}
-.paragraphMision{
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    background-color: #CBDDB5;
-    padding: 1em;
-    border-radius: 10px;
-    text-align: justify; 
-}
-
-/* Sección Visión */
-.vision-section{
+.visionSection{
     padding: 100px 50px 0px 0px;
 }
-.titleVision{
-    padding: 0em 0em 0em 0em;
+.misionTitle,
+.visionTitle{
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    background-color: #A8CA7E;
+    background-color: var(--verdeNavbar);
     border-radius: 10px;
 }
-.paragraphVision{
+.misionParagraph,
+.visionParagraph{
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    background-color: #CBDDB5;
-    padding: 1em;
+    background-color: var(--verdeFondoTexto);
+    padding: 2em;
     border-radius: 10px;
-    text-align: justify; 
+    text-align: justify;
 }
 
-/*seccion de equipo*/
-/* Estilos para la cuadrícula */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
-    gap: 50px; /* espacio entre contenedores */
-    padding: 20px;
-    justify-items: center;
-    align-items: center;
-}
-
-/* Estilos para el contenedor de las imágenes */
-.foto-container {
+/*seccion Equipo ------------------------------------------------------------------------*/
+.acercaDeNosotrasSecundary {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 400px;
-    height: 400px; /* Ajusta la altura según el contenido */
+    margin: 0em 5em 15em 5em;
+}
+.equipoContainer { 
     text-align: center;
-    background-color: #CBDDB5;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: var(--beigeFondoTexto);
     border-radius: 10px;
-    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-/* Estilos para las imágenes */
-.foto-container img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 10px; /* Menor espacio entre imagen y texto */
-    margin-top: 10px; /* Espacio entre la imagen y el borde superior */
-}
-
-/* Estilos para los párrafos */
-.foto-container p {
-    font-family: "Quicksand", sans-serif;
-    font-size: 12px;
-    margin-top: 5px;
-    margin-bottom: 0; /* Elimina el margen inferior */
-    padding-bottom: 0; /* Sin relleno adicional*/
-    color: #000000;
-}
-
-/* Estilos para los nombres */
-.Nombre {
-    font-size: 30px;
-    font-family: "Quicksand", sans-serif;
-    margin-top: 0; /* Elimina el margen superior */
-    padding-top: 0; /* Sin relleno adicional */
-}
-
-.parent {
-    padding-top: 2em;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    gap: 8px;
-}
-.equipoPresentacion{
-    background-color: #A8CA7E;
+.equipoTitle {
     font-family: "Playfair Display", serif;
-    padding: 2px;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 1.5em;
+    color: var(--verdeSubtituloTexto);
+}
+.equipoParagraph {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+/* cards */
+.gridContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+.fotoContainer {
+    width: 300px;
+    align-items: center;
     text-align: center;
+    background-color: var(--verdeFondoTexto);
+    border-radius: 10px;
+    padding: 2em;
+}
+.fotoDesarrolladora{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.nombreDesarrolladora {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    padding: 1em 0em;
+}
+.fotoContainer p {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-align: justify;
 }
 
-/* Media queries */
-@media (max-width: 600px) {
-    .primary {
-        flex-direction: column;
-    }
-    .logo-container {
-        padding: 50px 20px;
-        text-align: center;
-    }
-    .logo-container img {
-        width: 15em;
-        height: 15em;
-    }
-    .mision-section{
-        padding: 0px 50px;
-    }
-    .vision-section{
-        padding: 50px 50px;
-    }
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .foto-container img {
-        width: 100px;
-        height: 100px;
-    }
-    footer {
-        flex-direction: column;
-        align-items: center;
-    }
-    .footer-section {
-        padding: 5px;
-        text-align: center;
-    }
-    .social-icons img {
-        width: 20px;
-    }
-}
+/* Media queries -------------------------------------------------------------------------------*/
+/* Tablet */
 @media (min-width: 601px) and (max-width: 1024px) {
-    .primary {
+    .acercaDeNosotrasPrimary {
+        display: flex;
+        margin: 2em;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content:space-around;
     }
-    .primary > * {
-        flex: 0 0 48%;
-        margin: 1%;
+    .logoContainer img,
+    .quienesSomosContainer {
+        margin-top: 50px;
     }
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas en lugar de 4 */
+    .nosotrasSection{
+        padding-bottom: 0px;
     }
-    .foto-container img {
-        width: 120px;
-        height: 120px;
+    .quienesSomosContainer, 
+    .misionSection, 
+    .visionSection {
+        max-width: 350px;
     }
-    footer {
+    .visionSection {
+        padding: 100px 50px 0px 50px;
+    }
+}
+/* Telefono ----------------------------------------------------------------------------------*/
+@media (max-width: 600px) {
+    .acercaDeNosotrasPrimary {
+        display: flex;
+        display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        margin: 3em;
     }
-    .footer-section {
-        padding: 15px;
+    .acercaDeNosotrasSecundary,
+    .equipoSection {
+        justify-content:space-around;
     }
-    .social-icons img {
-    width: 25px;
+    .nosotrasSection,
+    .misionSection,
+    .visionSection{
+        margin: 0;
+        padding: 0;
+    }
+    .quienesSomosContainer,
+    .misionContainer,
+    .visionContainer {
+        margin-top: 30px;
+        margin-bottom: 0;
     }
 }
