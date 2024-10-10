@@ -1,11 +1,54 @@
-import {validarNombre} from "./src/componentes/validacionNombre.js";
+//import {validarNombre} from "./src/componentes/validacionNombre.js";
+
 //Obtener referencia del formulario
 const mensaje=document.forms["formulario"];
 
-validarNombre(document.getElementById(nombre));
+function validador(nuevoMensaje) {
+    // Expresiones regulares
+    const nombreApellidoRegex = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
+    const telefonoRegex = /^\d{10}$/; // Exactamente 10 dígitos para teléfono
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    // Validar nombre
+    if (!nombreApellidoRegex.test(nuevoMensaje.nombre)) {
+        alert("El nombre solo puede contener letras y espacios.");
+        return false;
+    }
+
+    // Validar apellido
+    else if (!nombreApellidoRegex.test(nuevoMensaje.apellido)) {
+        alert("El apellido solo puede contener letras y espacios.");
+        return false;
+    }
+
+    // Validar teléfono
+    else if (!telefonoRegex.test(nuevoMensaje.telefono)) {
+        alert("El teléfono debe contener exactamente 10 dígitos.");
+        return false;
+    }
+
+    // Validar email
+    else if (!emailRegex.test(nuevoMensaje.email)) {
+        alert("El correo electrónico no tiene un formato válido.");
+        return false;
+    }
+
+    // Validar campo mensaje
+    else if (nuevoMensaje.mensaje==="") {
+        alert("El cuadro de mensaje no debe de estar vacío.");
+        return false;
+    }else
+    {
+        return true;
+    }
+
+    // Si todas las validaciones pasan
+    
+}
+
 const siguienteMensaje=async (nuevoMensaje)=>
 {
-    const url="https://formsubmit.co/tlalinantliecom@gmail.com";
+    const url="https://formsubmit.co/ajax/tlalinantliecom@gmail.com";
     const options=
     {
         method: "POST",
@@ -46,7 +89,7 @@ mensaje.addEventListener("submit",(event)=>
 
     console.log(nuevoMensaje);
 
-    if(validarNombre(nuevoMensaje))
+    if(validador(nuevoMensaje))
     {
         siguienteMensaje(nuevoMensaje);
     }
