@@ -3,6 +3,7 @@
     --verdeFondoTexto : #CBDDB5;
     --beigeFondoTexto : #F5F5DC;
     --verdeSubtituloTexto : #618434;
+    --azulLinkedInBoton: #30646F;
 }
 
 /* Estilos para el contenedor de fondo */
@@ -55,6 +56,7 @@
     font-weight: weight;
     font-style: normal;
     text-align: justify;
+    font-size: small;
 }
 
 /* Sección Misión & Visión-------------------------------------------------------------------------*/
@@ -79,6 +81,7 @@
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
+    font-size: small;
     background-color: var(--verdeFondoTexto);
     padding: 2em;
     border-radius: 10px;
@@ -120,7 +123,7 @@
     justify-content: center;
     gap: 40px;
 }
-.fotoContainer {
+.desarrolladoraContainer {
     width: 300px;
     align-items: center;
     text-align: center;
@@ -138,16 +141,29 @@
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
+    font-size: medium;
     padding: 1em 0em;
 }
-.fotoContainer p {
+.desarrolladoraContainer p {
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
+    font-size: small;
     text-align: justify;
+    min-height: 270px;
 }
-
+.buttonCard{
+    background-color: var(--azulLinkedInBoton);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 35px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
 /* Media queries -------------------------------------------------------------------------------*/
 /* Tablet */
 @media (min-width: 601px) and (max-width: 1024px) {
