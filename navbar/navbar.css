@@ -4,6 +4,15 @@
 .navbar .nav-link:hover {
     color:#ffffff;
 }
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Centrar verticalmente logo y texto */
+}
+/* #botonBusqueda{ 
+    background-color:#a8ca7e;
+    size: 2 cm;
+    shape-margin: 24 px;
+} lo comente porque no hay un id con ese nombre*/
 .logo-navbar{
     width: 60px;
     height: 60px;
@@ -13,22 +22,66 @@
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
+    font-size: larger;
+}
+.formControl {
+    width: 250px; /* Ancho de la barra de búsqueda*/
+    height: 30px;
+    border-radius: 70px;
+    border-style: none;
+    padding: 10px;
+    outline: none;
+}
+.formControl:focus {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); /* Sombra más intensa al enfocarse */
+}
+.nav-item {
+    margin-left: 20px; /* Espaciado entre los elementos del navbar */
+    font-size: 20px;
 }
 .nav-item a{
     font-size: 16px;
 }
-.navbar-brand {
+button.navbar-toggler {
+    border: none;
+    transform: scale(1.1);
+}
+button.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+button.searchIcon {
+    border: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
     display: flex;
-    align-items: center; /* Centrar verticalmente logo y texto */
+    align-items: center;
+    justify-content: center;
 }
-.navbar-nav .nav-item {
-    margin-left: 20px; /* Espaciado entre los elementos del navbar */
-    font-size: 20px;
+.searchIcon:hover {
+    transform: scale(1.1);
 }
-.formControl {
-    width: 200px; /* Ancho de la barra de búsqueda */
-    border-radius: 70px;
-    border-style: none;
-    height: 30px;
-    width: 200px;
+
+/* Efecto activo */
+.searchIcon:active {
+    transform: scale(0.95);
+}
+/* Media queries */
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+    
+}
+/* Mobil */
+@media (max-width: 600px){
+    .navbar-brand{
+        width: 10px;
+    }
+    .navbarTitle{
+        display: none;
+    }
+    .formControl{
+        width: 190px;
+    }
 }

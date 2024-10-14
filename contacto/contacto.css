@@ -19,11 +19,17 @@
     align-content: center;
     text-align: left;
     padding: 3rem;
+     border-radius: 15px;
 }
 
 .formulario
 {
     align-content: center;
+}
+
+.formulario .btn {
+    display: block; /* Hace que el botón ocupe toda la fila */
+    margin: 0 auto; /* Centra el botón horizontalmente */
 }
 
 .logoLinkedIn
