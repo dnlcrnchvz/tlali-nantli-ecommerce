@@ -19,7 +19,7 @@
     align-content: center;
     text-align: left;
     padding: 3rem;
-     border-radius: 15px;
+    border-radius: 25px;
 }
 
 .formulario
@@ -28,12 +28,23 @@
 }
 
 .formulario .btn {
-    display: block; /* Hace que el botón ocupe toda la fila */
-    margin: 0 auto; /* Centra el botón horizontalmente */
+    display: block;
+    margin: 0 auto;
+    background-color: #92B8CB;
+    color: black;
+    padding: 10px 45px; /* Aumenta el padding horizontal para hacer el botón más ancho */
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    width: 200px;
+    text-align: center; /* Asegura que el texto esté centrado */
 }
 
-.logoLinkedIn
-{
+.formulario .btn:hover {
+    background-color: #92B8CB; 
+}
+
+.logoLinkedIn {
     width: auto;
 }
 
