@@ -34,8 +34,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     </li> 
                 </ul>
             </div>
-        //Nota: No sé cómo ajustar el contenido que se despliega a la ventana de uso
-
         <div class="dropdown">
             <div class="dropdown">
                 <button class="btn mi-boton-personalizado dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
