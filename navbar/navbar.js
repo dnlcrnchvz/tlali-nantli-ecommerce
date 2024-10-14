@@ -31,13 +31,23 @@ document.addEventListener("DOMContentLoaded", function() {
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-disabled="true" href="../inicioDeSesion/inicioDeSesion.html">Iniciar sesión</a>
-                    </li>
-                    
+                    </li> 
                 </ul>
             </div>
-            <a class="nav-link-carrito" href="#">
-                <img src="../navbar/imagenes/carritoCompras.png" alt="Carrito de compras" width="30" height="30">
-            </a>
+        //Nota: No sé cómo ajustar el contenido que se despliega a la ventana de uso
+
+        <div class="dropdown">
+            <div class="dropdown">
+                <button class="btn mi-boton-personalizado dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link-carrito" href="#">
+                    <img src="../navbar/imagenes/carritoCompras.png" alt="Carrito de compras" width="30" height="30"></a>
+                </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Saludo</a></li>
+                            <li><a class="dropdown-item" href="#">Producto</a></li>
+                            <li><a class="dropdown-item" href="#">Total</a></li>
+                    </ul>
+        </div>
         </div>
     </nav>
     `;
