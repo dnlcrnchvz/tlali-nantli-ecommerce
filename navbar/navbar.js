@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function() {
             <h1 class="navbarTitle">Tlali Nantli</h1>
         </a>
         <form class="d-flex ms-auto" role="search">
-            <input class="formControl me-2 text-center" type="search" placeholder="Barra de Búsqueda" aria-label="Search">
+            <input class="formControl me-2 text-center" type="search" placeholder="  Buscar" aria-label="Search">
             <button type="submit" class="searchIcon">
-                <i class="fas fa-search"></i>
+                <i id="botonBusqueda" class="fas fa-search"></i>
             </button>
         </form>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
