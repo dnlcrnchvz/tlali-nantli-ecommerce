@@ -1,20 +1,18 @@
+:root{
+    --verdeNavbar : #A8CA7E;
+    --blancoNavbar : #ffffff;
+    --azulBotones : #92B8CB;
+}
 .navbar {
-    background-color: #a8ca7e;
-    height: 100 px;
-    font-family: playfair display;
-    font-size:x-large;
-
+    background-color: var(--verdeNavbar);
 }
 .navbar .nav-link:hover {
-    color:#ffffff;
+    color:var(--blancoNavbar);
 }
-
-#botonBusqueda{
-    background-color:#a8ca7e;
-    size: 2 cm;
-    shape-margin: 24 px;
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Centrar verticalmente logo y texto */
 }
-
 .logo-navbar{
     width: 60px;
     height: 60px;
@@ -24,17 +22,46 @@
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
+    font-size: larger;
+}
+.formControl {
+    width: 250px; /* Ancho de la barra de búsqueda*/
+    height: 30px;
+    border-radius: 70px;
+    border-style: none;
+    padding: 10px;
+    outline: none;
+}
+.formControl:focus {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); /* Sombra más intensa al enfocarse */
+}
+.nav-item {
+    margin-left: 20px; /* Espaciado entre los elementos del navbar */
+    font-size: 20px;
 }
 .nav-item a{
     font-size: 16px;
 }
-.navbar-brand {
-    display: flex;
-    align-items: center; /* Centrar verticalmente logo y texto */
+button.navbar-toggler {
+    border: none;
+    transform: scale(1.1);
 }
-.navbar-nav .nav-item {
-    margin-left: 20px; /* Espaciado entre los elementos del navbar */
-    font-size: 20px;
+button.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+button.searchIcon {
+    border: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchIcon:hover {
+    transform: scale(1.1);
 }
 .formControl {
     width: 200px; /* Ancho de la barra de búsqueda*/
