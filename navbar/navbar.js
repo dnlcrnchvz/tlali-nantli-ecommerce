@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="../paginaPrincipal/index.html">
-            <img src="../navbar/imagenes/logo-sin-fondo-tlali-nantli.png" alt="Logo" width="30" height="30" class="logo-navbar d-inline-block align-text-top">
+            <img src="../navbar/imagenes/logoSinFondoTlaliNantli.png" alt="Logo" width="30" height="30" class="logo-navbar d-inline-block align-text-top">
             <h1 class="navbarTitle">Tlali Nantli</h1>
         </a>
         <form class="d-flex ms-auto" role="search">
