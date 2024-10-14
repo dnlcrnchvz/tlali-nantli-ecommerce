@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                             <li><a class="dropdown-item" href="#">Saludo</a></li>
                             <li><a class="dropdown-item" href="#">Producto</a></li>
-                            <li><a class="dropdown-item" href="#">Total</a></li>
+                            <li><a class="dropdown-item" href="#">Total </a></li>
                     </ul>
         </div>
         </div>
