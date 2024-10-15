@@ -63,14 +63,31 @@ button.searchIcon {
 .searchIcon:hover {
     transform: scale(1.1);
 }
-.formControl {
-    width: 200px; /* Ancho de la barra de búsqueda*/
-    border-radius: 70px;
-    border-style: none;
-    height: 30px;
-    width: 200px;
+button.adminButton{
+    background-color: var(--azulBotones);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: fit-content;
 }
-
-#botonBusqueda{
-    background-color: rgb(231, 231, 231);    
+/* Efecto activo */
+.searchIcon:active {
+    transform: scale(0.95);
+}
+/* Media queries */
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+    
+}
+/* Mobil */
+@media (max-width: 600px){
+    .navbar-brand{
+        width: 10px;
+    }
+    .navbarTitle{
+        display: none;
+    }
+    .formControl{
+        width: 190px;
+    }
 }
