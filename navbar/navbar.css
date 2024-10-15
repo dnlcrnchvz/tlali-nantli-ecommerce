@@ -85,3 +85,39 @@ button.searchIcon {
         width: 190px;
     }
 }
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    background-color: #A8CA7E; /* Color de fondo del navbar */
+    padding: 10px 20px; /* Espaciado interno */
+}
+.navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+}
+.navbarTitle {
+    font-size: 32px; /* Tamaño del título */
+    margin-left: 10px; /* Espacio a la izquierda */
+    color: #000000; /* Color del texto */
+    font-weight: bold; /* Negrita */
+}
+.formControl {
+    border: 1px solid #ccc; /* Bordes de la barra de búsqueda */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    width: 300px; /* Ancho de la barra de búsqueda */
+    margin-right: 15px; /* Espacio a la derecha */
+}
+
+.btn-info {
+    background-color: #92B8CB; /* Color de fondo para los botones */
+    color: rgb(0, 0, 0); /* Color del texto */
+    border: none; /* Sin bordes */
+    padding: 10px 15px; /* Espaciado interno */
+    margin-left: 10px; /* Espacio entre botones */
+}

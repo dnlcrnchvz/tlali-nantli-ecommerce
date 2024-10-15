@@ -60,11 +60,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     <i class="fas fa-search"></i>
                 </button>
             </form>
-            
-            
             <div class="ms-3">
-                <button class="btn btn-info">Crear artículo</button>
-                <button class="btn btn-info">Cerrar sesión</button>
+                <button class="btn-info">Crear artículo</button>
+                <button class="btn-info">Cerrar sesión</button>
             </div>
         </div>
     </nav>
