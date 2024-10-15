@@ -43,3 +43,31 @@ document.addEventListener("DOMContentLoaded", function() {
     `;
     document.getElementById('navbarContainer').innerHTML = navbar; 
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    let navbar = `
+   <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+                <img src="../navbar/imagenes/logoSinFondoTlaliNantli.png" alt="Logo" width="30" height="30" class="logo-navbar d-inline-block align-text-top">
+                <h1 class="navbarTitle">Artículos</h1>
+            </a>
+            <form class="d-flex ms-auto" role="search">
+                <input class="formControl me-2 text-center" type="search" placeholder="Barra de Búsqueda" aria-label="Search">
+                <button type="submit" class="searchIcon">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            
+            
+            <div class="ms-3">
+                <button class="btn btn-info">Crear artículo</button>
+                <button class="btn btn-info">Cerrar sesión</button>
+            </div>
+        </div>
+    </nav>
+    `;
+    document.getElementById('navbar2Container').innerHTML = navbar; 
+});
