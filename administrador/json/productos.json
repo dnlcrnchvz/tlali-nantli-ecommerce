@@ -1,0 +1,10 @@
+[
+    {
+        "id":1,
+        "categoria":"maquillaje",
+        "nombre": "AceiteDeLavanda",
+        "costo": 100,
+        "descripcion": "Aceite esencial corporal. Contenido: 125ml. Importante. Descontinuar su uso en caso de presentar irritación, enrojecimiento o alguna molestia, si persiste consulte a su médico",
+        "image": "./img/aceiteLavanda"
+    }
+]
