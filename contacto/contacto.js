@@ -1,5 +1,3 @@
-//import {validarNombre} from "./src/componentes/validacionNombre.js";
-
 //Obtener referencia del formulario
 const mensaje=document.forms["formulario"];
 
@@ -94,7 +92,3 @@ mensaje.addEventListener("submit",(event)=>
         siguienteMensaje(nuevoMensaje);
     }
 }); 
-
-/* const nombre =document.querySelector("#nombre");
-nombre.setAttribute("pattern", "[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+"); */
-
