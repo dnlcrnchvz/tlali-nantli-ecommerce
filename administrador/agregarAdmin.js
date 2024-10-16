@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
     let agregar = `
     <form id="addForm" class="actualizarForm">
         <h1 class="actualizarFormTitle">Agregar producto</h1>
+        <label for="updateImagen">Imagen del producto:</label>
+        <input type="file" id="updateImagen" name="updateImagen" class="actualizarFormFile" accept="image/*>
         <label for="addNombre">Nombre del producto:</label>
         <input type="text" id="addInput" name="addNombre" class="actualizarFormInput">
         <label for="addDescripcion">Descripción del producto:</label>
@@ -11,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <input type="text" id="addInput" name="addPrecio" class="actualizarFormInput">
         <button type="submit" class="actualizarFormButton">Agregar</button>
     </form>
-    `;
+    `; 
     document.getElementById('crearBtn').onclick = function() {
         document.getElementById('agregarContainer').style.display = "block";
         document.getElementById('agregarContainer').innerHTML = agregar;
