@@ -18,3 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
     };
     document.getElementById('agregarContainer').innerHTML = agregar; 
 });
+
+const datosDelProducto = () =>{
+    const url = "./administrador/productos.json";
+}
