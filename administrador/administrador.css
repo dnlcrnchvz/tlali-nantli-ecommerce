@@ -1,3 +1,46 @@
 main{
     margin-top: 100px;
 }
+#actualizarContainer,
+#agregarContainer {
+    display: none;
+}
+.actualizarForm{
+    border: solid 1px black;
+    padding: 20px;
+    width: 500px;
+    height: 300px;
+    align-content: center;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-align: justify;
+}
+.actualizarFormTitle{
+    font-size: 1.3em;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.actualizarFormInput{
+    width: 250px;
+    height: 20px;
+    border-radius: 20px;
+    border-style: none;
+    padding: 10px;
+    background-color: rgb(207, 207, 207);
+}
+.actualizarFormInput:focus {
+    border-style: none;
+    outline: none;
+    box-shadow: 0 0 5px greenyellow;
+}
+.actualizarFormButton{
+    background-color: var(--azulBotones);
+    border-style: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px;
+    border-radius: 20px;
+    margin-top: 40px;
+}
