@@ -1,0 +1,79 @@
+{
+    "productos":
+    {
+        "maquillaje": 
+        [
+            {
+                "nombreProducto": "Couleur Caramel",
+                "descripcionProducto": "Aporta un color intenso, cremosidad e hidratación.",
+                "contenido": "3.5g",
+                "advertencias": "Descontinuar su uso en caso de presentar irritación, enrojecimiento o alguna molestia, si persiste consulte a su médico.",
+                "precioProducto": 319,
+                "imagen":"./img/aceiteLavanda.png"
+            },
+            {
+                "nombreProducto": "Máscara de Pestaña",
+                "descripcionProducto": "Aporta volumen y longitud intensos a tus pestañas, con una fórmula que evita grumos.",
+                "contenido": "8 ml",
+                "precioProducto": 250,
+                "imagen":"./img/aceiteLavanda.png"
+            },
+            {
+                "nombreProducto": "Spray Fijador de Maquillaje",
+                "descripcionProducto": "Prolonga la duración de tu maquillaje, proporcionando un acabado fresco y natural, mientras controla el brillo.",
+                "precioProducto": 300,
+                "imagen":"./img/aceiteLavanda.png"
+            },
+            {
+                "nombreProducto": "Base de maquillaje",
+                "descripcionProducto": "Base de maquillaje semi-líquida con ácido hialurónico",
+                "precioProducto": 360,
+                "imagen":"./img/aceiteLavanda.png"
+            },
+            {
+                "nombreProducto": "Delineador Líquido",
+                "descripcionProducto": "Delineador líquido de alta precisión a base de agua",
+                "precioProducto": 359,
+                "imagen":"./img/aceiteLavanda.png"
+            }
+        ],
+        "cuidadoPersonal":
+        [
+            {
+                "categoria": "Cuidado personal",
+                "nombreProducto": "Pads desmaquillantes",
+                "descripcionProducto": "Almohadillas de algodón reutilizables, 5 piezas",
+                "precioProducto": 200,
+                "imagen":"./img/aceiteLavanda.png"
+            },
+            {
+                "categoria": "Cuidado personal",
+                "nombreProducto": "Aceite de Almendras dulces ecológico",
+                "descripcionProducto": "Nutritivo corporal",
+                "precioProducto": 300,
+                "imagen":"./img/aceiteLavanda.png"
+            },
+            {
+                "categoria": "Cuidado personal",
+                "nombreProducto": "Suero Acido Hialuronico",
+                "descripcionProducto": "Enriquecido con agua de glaciar y tres tipos de ácido hialurónico, este suero ofrece un poderoso impulso de hidratación para una piel flexible y tersa. ",
+                "precioProducto": 350,
+                "imagen":"./img/aceiteLavanda.png"
+            },
+            {
+                "categoria": "Cuidado personal",
+                "nombreProducto": "Bálsamo labial hidratante",
+                "descripcionProducto": "Bálsamo de karité hidratante olor sandía",
+                "precioProducto": 100,
+                "imagen":"./img/aceiteLavanda.png"
+            },
+            {
+                "categoria": "Cuidado personal",
+                "nombreProducto": "Aceite de lavanda",
+                "descripcionProducto": "Aceite esencial corporal. Contenido: 125ml. Importante. Descontinuar su uso en caso de presentar irritación, enrojecimiento o alguna molestia, si persiste consulte a su médico",
+                "precioProducto": 100,
+                "imagen":"./img/aceiteLavanda.png"
+            }
+        ]
+    }
+}
