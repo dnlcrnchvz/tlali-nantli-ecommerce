@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <label for="addNombre" class="crudFormLabel">Nombre del producto:</label>
         <input type="text" id="addNombre" name="addNombre" class="crudFormInput" maxlength="50" placeholder="Max 50 caracteres" required>
         <label for="addDescripcion" class="crudFormLabel">Descripción del producto:</label>
-        <input type="text" id="addDescripcion" name="addDescripcion" class="crudFormInput" maxlenth="100" placeholder="Max 100 caracteres" required>
+        <input type="text" id="addDescripcion" name="addDescripcion" class="crudFormInput" maxlength="100" placeholder="Max 100 caracteres" required>
         <label for="addPrecio" class="crudFormLabel">Precio del producto:</label>
         <input type="text" id="addPrecio" name="addPrecio" class="crudFormInput" min="0" step="0.01" placeholder="Ej: 99.99" required>
         <button type="submit" class="crudFormButton">Agregar</button>
