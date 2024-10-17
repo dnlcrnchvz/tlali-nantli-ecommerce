@@ -1,17 +1,5 @@
-/* Estilos globales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f8f8f8;
-}
-
 /* Contenedor de las tarjetas */
-.container {
+.product-card {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 columnas */
     grid-gap: 20px; /* Espacio entre las tarjetas */
@@ -22,14 +10,15 @@ body {
 
 /* Estilo de la tarjeta */
 .card {
-    background-color: #fff;
+    margin: 10px;
+    background-color: #D9D9D9;
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 100%; /* Asegura que la tarjeta ocupe todo el ancho de su columna */
-    height: 350px; /* Altura fija para todas las tarjetas */
+    height: 410px; /* Altura fija para todas las tarjetas */
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Distribuye el contenido de la tarjeta */
@@ -45,7 +34,7 @@ body {
 
 /* Cuerpo de la tarjeta (texto y botones) */
 .card-body {
-    padding: 10px;
+    padding: 0px;
 }
 
 /* Estilo del título de la tarjeta */
