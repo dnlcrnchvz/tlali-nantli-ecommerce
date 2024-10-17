@@ -10,11 +10,13 @@ const datosProductos=(url)=>{
             //Asegúrate de que los datos existen antes de acceder a ellos
             console.table(datos.productos);
             document.getElementById("cards").innerHTML=`
+                <link rel="stylesheet" href="productos.css">
                 <div id="card0" class="card product-card" style="width: 18rem;">
                     <img id="imgCard0" src=" " class="card-img-top" alt=" ">
                     <div class="card-body">
                         <h5 class="card-title" id="nomCard0"></h5>
                         <p class="card-text" id="descCard0"></p>
+                        <p class="card-text" id="precCard0"></p>
                     </div>
                     <div class="product-actions">
                         <button class="btn-actualizar">Actualizar</button>
@@ -27,6 +29,7 @@ const datosProductos=(url)=>{
                     <div class="card-body">
                         <h5 class="card-title" id="nomCard1"></h5>
                         <p class="card-text" id="descCard1"></p>
+                        <p class="card-text" id="precCard1"></p>
                     </div>
                     <div class="product-actions">
                         <button class="btn-actualizar">Actualizar</button>
@@ -39,6 +42,7 @@ const datosProductos=(url)=>{
                     <div class="card-body">
                         <h5 class="card-title" id="nomCard2"></h5>
                         <p class="card-text" id="descCard2"></p>
+                        <p class="card-text" id="precCard2"></p>
                     </div>
                     <div class="product-actions">
                         <button class="btn-actualizar">Actualizar</button>
@@ -51,6 +55,7 @@ const datosProductos=(url)=>{
                     <div class="card-body">
                         <h5 class="card-title" id="nomCard3"></h5>
                         <p class="card-text" id="descCard3"></p>
+                        <p class="card-text" id="precCard3"></p>
                     </div>
                     <div class="product-actions">
                         <button class="btn-actualizar">Actualizar</button>
@@ -63,6 +68,7 @@ const datosProductos=(url)=>{
                     <div class="card-body">
                         <h5 class="card-title" id="nomCard4"></h5>
                         <p class="card-text" id="descCard4"></p>
+                        <p class="card-text" id="precCard4"></p>
                     </div>
                     <div class="product-actions">
                         <button class="btn-actualizar">Actualizar</button>
@@ -75,6 +81,7 @@ const datosProductos=(url)=>{
                     <div class="card-body">
                         <h5 class="card-title" id="nomCard5"></h5>
                         <p class="card-text" id="descCard5"></p>
+                        <p class="card-text" id="precCard5"></p>
                     </div>
                     <div class="product-actions">
                         <button class="btn-actualizar">Actualizar</button>
@@ -87,6 +94,7 @@ const datosProductos=(url)=>{
                     <div class="card-body">
                         <h5 class="card-title" id="nomCard6"></h5>
                         <p class="card-text" id="descCard6"></p>
+                        <p class="card-text" id="precCard6"></p>
                     </div>
                     <div class="product-actions">
                         <button class="btn-actualizar">Actualizar</button>
@@ -99,6 +107,7 @@ const datosProductos=(url)=>{
                     <div class="card-body">
                         <h5 class="card-title" id="nomCard7"></h5>
                         <p class="card-text" id="descCard7"></p>
+                        <p class="card-text" id="precCard7"></p>
                     </div>
                     <div class="product-actions">
                         <button class="btn-actualizar">Actualizar</button>
@@ -111,6 +120,7 @@ const datosProductos=(url)=>{
                     <div class="card-body">
                         <h5 class="card-title" id="nomCard8"></h5>
                         <p class="card-text" id="descCard8"></p>
+                        <p class="card-text" id="precCard8"></p>
                     </div>
                     <div class="product-actions">
                         <button class="btn-actualizar">Actualizar</button>
@@ -123,6 +133,7 @@ const datosProductos=(url)=>{
                     <div class="card-body">
                         <h5 class="card-title" id="nomCard9"></h5>
                         <p class="card-text" id="descCard9"></p>
+                        <p class="card-text" id="precCard9"></p>
                     </div>
                     <div class="product-actions">
                         <button class="btn-actualizar">Actualizar</button>
@@ -135,7 +146,8 @@ const datosProductos=(url)=>{
                 {
                     document.getElementById(`imgCard${i}`).innerHTML=`<img id="imgCard${i}" src="${datos.productos.maquillaje[i].imagen}" class="card-img-top" alt="...">`
                     document.getElementById(`nomCard${i}`).textContent=datos.productos.maquillaje[i].nombreProducto;
-                    document.getElementById(`descCard${i}`).textContent=datos.productos.maquillaje[i].descripcionProducto;
+                    document.getElementById(`descCard${i}`).textContent=datos.productos.maquillaje[i].descripcionProducto.substr(0,60)+"...";
+                    document.getElementById(`precCard${i}`).textContent=datos.productos.maquillaje[i].precioProducto+" pesos mexicanos";
                 }
 
                 //Muestra los prouctos de la categoría cuidadoPersonal
@@ -144,7 +156,8 @@ const datosProductos=(url)=>{
                     {
                         document.getElementById(`imgCard${j}`).innerHTML=`<img id="imgCard${j}" src="${datos.productos.cuidadoPersonal[i].imagen}" class="card-img-top" alt="...">`
                         document.getElementById(`nomCard${j}`).textContent=datos.productos.cuidadoPersonal[i].nombreProducto;
-                        document.getElementById(`descCard${j}`).textContent=datos.productos.cuidadoPersonal[i].descripcionProducto;
+                        document.getElementById(`descCard${j}`).textContent=datos.productos.cuidadoPersonal[i].descripcionProducto.substr(0,60)+"...";
+                        document.getElementById(`precCard${j}`).textContent=datos.productos.cuidadoPersonal[i].precioProducto+" pesos mexicanos";
                         j++;
                     }
         })
