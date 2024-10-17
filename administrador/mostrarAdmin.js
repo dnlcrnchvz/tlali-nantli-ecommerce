@@ -144,7 +144,7 @@ const datosProductos=(url)=>{
                 //Muestra los productos de la categoría maquillaje
                 for (let i = 0; i < datos.productos.maquillaje.length; i++)
                 {
-                    document.getElementById(`imgCard${i}`).innerHTML=`<img id="imgCard${i}" src="${datos.productos.maquillaje[i].imagen}" class="card-img-top" alt="...">`
+                    document.getElementById(`imgCard${i}`).src=`${datos.productos.maquillaje[i].imagen}`
                     document.getElementById(`nomCard${i}`).textContent=datos.productos.maquillaje[i].nombreProducto;
                     document.getElementById(`descCard${i}`).textContent=datos.productos.maquillaje[i].descripcionProducto.substr(0,50)+"...";
                     document.getElementById(`precCard${i}`).textContent=datos.productos.maquillaje[i].precioProducto+" pesos mexicanos";
@@ -154,7 +154,7 @@ const datosProductos=(url)=>{
                 let j=5;//Se crea está variable para poder poner la información correcta en los cards idicados
                 for (let i = 0; i < datos.productos.cuidadoPersonal.length; i++)
                     {
-                        document.getElementById(`imgCard${j}`).innerHTML=`<img id="imgCard${j}" src="${datos.productos.cuidadoPersonal[i].imagen}" class="card-img-top" alt="...">`
+                        document.getElementById(`imgCard${j}`).src=`${datos.productos.cuidadoPersonal[i].imagen}`
                         document.getElementById(`nomCard${j}`).textContent=datos.productos.cuidadoPersonal[i].nombreProducto;
                         document.getElementById(`descCard${j}`).textContent=datos.productos.cuidadoPersonal[i].descripcionProducto.substr(0,50)+"...";
                         document.getElementById(`precCard${j}`).textContent=datos.productos.cuidadoPersonal[i].precioProducto+" pesos mexicanos";
