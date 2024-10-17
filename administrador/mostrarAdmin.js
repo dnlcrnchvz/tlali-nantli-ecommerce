@@ -10,123 +10,123 @@ const datosProductos=(url)=>{
             //Asegúrate de que los datos existen antes de acceder a ellos
             console.table(datos.productos);
             document.getElementById("cards").innerHTML=`
-                <div id="card0" class="card" style="width: 18rem;">
+                <div id="card0" class="card product-card" style="width: 18rem;">
                     <img id="imgCard0" src=" " class="card-img-top" alt=" ">
                     <div class="card-body">
                         <h5 class="card-title" id="nomCard0"></h5>
                         <p class="card-text" id="descCard0"></p>
                     </div>
-                    <div class="card-body">
-                        <button type="submit">Actualizar</button>
-                        <button type="submit">Eliminar</button>
+                    <div class="product-actions">
+                        <button class="btn-actualizar">Actualizar</button>
+                        <button class="btn-eliminar">Eliminar</button>
                     </div>
                 </div>
-                
-                <div id="card1" class="card" style="width: 18rem;">
+
+                <div id="card1" class="card product-card" style="width: 18rem;">
                     <img id="imgCard1" src="" class="card-img-top" alt=" ">
                     <div class="card-body">
                         <h5 class="card-title" id="nomCard1"></h5>
                         <p class="card-text" id="descCard1"></p>
                     </div>
-                    <div class="card-body">
-                        <button type="submit">Actualizar</button>
-                        <button type="submit">Eliminar</button>
+                    <div class="product-actions">
+                        <button class="btn-actualizar">Actualizar</button>
+                        <button class="btn-eliminar">Eliminar</button>
                     </div>
                 </div>
-                
-                <div id="card2" class="card" style="width: 18rem;">
+
+                <div id="card2" class="card product-card" style="width: 18rem;">
                     <img id="imgCard2" src="" class="card-img-top" alt=" ">
                     <div class="card-body">
                         <h5 class="card-title" id="nomCard2"></h5>
                         <p class="card-text" id="descCard2"></p>
                     </div>
-                    <div class="card-body">
-                        <button type="submit">Actualizar</button>
-                        <button type="submit">Eliminar</button>
+                    <div class="product-actions">
+                        <button class="btn-actualizar">Actualizar</button>
+                        <button class="btn-eliminar">Eliminar</button>
                     </div>
                 </div>
-                
-                <div id="card3" class="card" style="width: 18rem;">
+
+                <div id="card3" class="card product-card" style="width: 18rem;">
                     <img id="imgCard3" src="" class="card-img-top" alt=" ">
                     <div class="card-body">
                         <h5 class="card-title" id="nomCard3"></h5>
                         <p class="card-text" id="descCard3"></p>
                     </div>
-                    <div class="card-body">
-                        <button type="submit">Actualizar</button>
-                        <button type="submit">Eliminar</button>
+                    <div class="product-actions">
+                        <button class="btn-actualizar">Actualizar</button>
+                        <button class="btn-eliminar">Eliminar</button>
                     </div>
                 </div>
-                
-                <div id="card4" class="card" style="width: 18rem;">
+
+                <div id="card4" class="card product-card" style="width: 18rem;">
                     <img id="imgCard4" src="" class="card-img-top" alt=" ">
                     <div class="card-body">
                         <h5 class="card-title" id="nomCard4"></h5>
                         <p class="card-text" id="descCard4"></p>
                     </div>
-                    <div class="card-body">
-                        <button type="submit">Actualizar</button>
-                        <button type="submit">Eliminar</button>
+                    <div class="product-actions">
+                        <button class="btn-actualizar">Actualizar</button>
+                        <button class="btn-eliminar">Eliminar</button>
                     </div>
                 </div>
-                
-                <div id="card5" class="card" style="width: 18rem;">
+
+                <div id="card5" class="card product-card" style="width: 18rem;">
                     <img id="imgCard5" src="" class="card-img-top" alt=" ">
                     <div class="card-body">
                         <h5 class="card-title" id="nomCard5"></h5>
                         <p class="card-text" id="descCard5"></p>
                     </div>
-                    <div class="card-body">
-                        <button type="submit">Actualizar</button>
-                        <button type="submit">Eliminar</button>
+                    <div class="product-actions">
+                        <button class="btn-actualizar">Actualizar</button>
+                        <button class="btn-eliminar">Eliminar</button>
                     </div>
                 </div>
-                
-                <div id="card6" class="card" style="width: 18rem;">
+
+                <div id="card6" class="card product-card" style="width: 18rem;">
                     <img id="imgCard6" src="" class="card-img-top" alt=" ">
                     <div class="card-body">
                         <h5 class="card-title" id="nomCard6"></h5>
                         <p class="card-text" id="descCard6"></p>
                     </div>
-                    <div class="card-body">
-                        <button type="submit">Actualizar</button>
-                        <button type="submit">Eliminar</button>
+                    <div class="product-actions">
+                        <button class="btn-actualizar">Actualizar</button>
+                        <button class="btn-eliminar">Eliminar</button>
                     </div>
                 </div>
-                
-                <div id="card7" class="card" style="width: 18rem;">
+
+                <div id="card7" class="card product-card" style="width: 18rem;">
                     <img id="imgCard7" src="" class="card-img-top" alt=" ">
                     <div class="card-body">
                         <h5 class="card-title" id="nomCard7"></h5>
                         <p class="card-text" id="descCard7"></p>
                     </div>
-                    <div class="card-body">
-                        <button type="submit">Actualizar</button>
-                        <button type="submit">Eliminar</button>
+                    <div class="product-actions">
+                        <button class="btn-actualizar">Actualizar</button>
+                        <button class="btn-eliminar">Eliminar</button>
                     </div>
                 </div>
-                
-                <div id="card8" class="card" style="width: 18rem;">
+
+                <div id="card8" class="card product-card" style="width: 18rem;">
                     <img id="imgCard8" src="" class="card-img-top" alt=" ">
                     <div class="card-body">
                         <h5 class="card-title" id="nomCard8"></h5>
                         <p class="card-text" id="descCard8"></p>
                     </div>
-                    <div class="card-body">
-                        <button type="submit">Actualizar</button>
-                        <button type="submit">Eliminar</button>
+                    <div class="product-actions">
+                        <button class="btn-actualizar">Actualizar</button>
+                        <button class="btn-eliminar">Eliminar</button>
                     </div>
                 </div>
-                
-                <div id="card9" class="card" style="width: 18rem;">
+
+                <div id="card9" class="card product-card" style="width: 18rem;">
                     <img id="imgCard9" src="" class="card-img-top" alt=" ">
                     <div class="card-body">
                         <h5 class="card-title" id="nomCard9"></h5>
                         <p class="card-text" id="descCard9"></p>
                     </div>
-                    <div class="card-body">
-                        <button type="submit">Actualizar</button>
-                        <button type="submit">Eliminar</button>
+                    <div class="product-actions">
+                        <button class="btn-actualizar">Actualizar</button>
+                        <button class="btn-eliminar">Eliminar</button>
                     </div>
                 </div>`
 
