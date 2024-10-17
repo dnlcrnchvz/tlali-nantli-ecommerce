@@ -36,8 +36,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         <p class="card-text">$ ${precio}</p>
                     </div>
                     <div class="card-body">
-                        <button type="button">Actualizar</button>
-                        <button type="button">Eliminar</button>
+                        <button class="btn-actualizar" type="button">Actualizar</button>
+                        <button class="btn-eliminar" type="button">Eliminar</button>
                     </div>
                 </div>
             `;
