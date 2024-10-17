@@ -16,12 +16,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 Crear artículo
                 <i class="fas fa-plus"></i>
             </button>
-            <button id="actualizarBtn" class="btn adminButton" type="button">
-                Actualizar artículo
-            </button>
-            <button id="eliminarBtn" class="btn adminButton" type="button">
-                Eliminar artículo
-            </button>
             <button id="salirBtn" class="btn adminButton" type="button">
                 Cerrar sesión
                 <i class="fas fa-sign-out-alt"></i>
