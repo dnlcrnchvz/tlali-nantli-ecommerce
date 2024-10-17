@@ -7,7 +7,6 @@
     <!-- Hoja de estilos -->
     <link rel="stylesheet" href="/administrador/administrador.css">
     <link rel="stylesheet" href="/navbar/navbar.css">
-    <link rel="stylesheet" href="../footer/footer.css">
     <link rel="stylesheet" href="productos.css"><!--Estilos de cards de productos-->
     <!-- Icono de la pagina -->
     <link rel="shortcut icon" href="/navbar/imagenes/logo-sin-fondo-tlali-nantli.png" type="image/x-icon">
@@ -32,9 +31,8 @@
     </header>
     <main>
         <!-- Aqui se cargaran los forms de agregar y actualizar -->
-        <div id="agregarContainer"></div>
-        <div id="actualizarContainer"></div>
-
+        <div id="agregarContainer" class="agregarContainer"></div>
+        <div id="actualizarContainer" class="agregarContainer"></div>
         <!--Se muestran los productos-->
         <!--Cards de producto-->
         <section class="product-list" id="cards">
@@ -43,7 +41,6 @@
     </main>
     <!-- Scripts  de JavaScript-->
     <script src="../navbar/navbarAdmin.js"></script> <!-- script del navbar.js -->
-    <script src="../footer/footer.js"></script> <!-- script del footer.js -->
     <script src="../administrador/agregarAdmin.js"></script> <!-- Script form agregar -->
     <script src="../administrador/actualizarAdmin.js"></script>
     <script src="mostrarAdmin.js"></script>
