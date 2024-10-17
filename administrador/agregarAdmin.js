@@ -36,14 +36,51 @@ document.addEventListener("DOMContentLoaded", function() {
                         <p class="card-text">$ ${precio}</p>
                     </div>
                     <div class="card-body">
-                        <button class="btn-actualizar" type="button">Actualizar</button>
-                        <button class="btn-eliminar" type="button">Eliminar</button>
+                        <button class="btn-actualizar" id="actualizarBtn" type="button">Actualizar</button>
+                        <button class="btn-eliminar" id="eliminarBtn" type="button">Eliminar</button>
                     </div>
                 </div>
             `;
             document.getElementById('agregarCardContainer').appendChild(card);
             document.getElementById('addForm').reset();
             document.getElementById('agregarContainer').style.display = "none";
+            /* Eliminar card */
+            card.querySelector('#eliminarBtn').onclick = function() {
+                card.remove();
+            };
+            /* Actualizar card */
+            card.querySelector('#actualizarBtn').onclick = function() {
+                const container = document.getElementById('actualizarContainer');
+                container.style.display = "block";
+                const nombreActual = card.querySelector('.card-title').textContent;
+                const descripcionActual = card.querySelector('.card-text').textContent;
+                const precioActual = card.querySelectorAll('.card-text')[1].textContent.slice(2);
+                container.innerHTML = `
+                    <form id="updateForm" class="crudForm">
+                        <button type="button" class="crudFormClose"><i class="fas fa-times"></i></button>
+                        <h1 class="crudFormTitle">Actualizar producto</h1>
+                        <label for="updateImagen" class="crudFormLabel">Imagen del producto:</label>
+                        <input type="file" id="updateImagen" name="updateImagen" class="crudFormInputFile" accept="image/*">
+                        <label for="updateNombre" class="crudFormLabel">Nombre del producto:</label>
+                        <input type="text" id="updateNombre" name="updateNombre" class="crudFormInput" value="${nombreActual}">
+                        <label for="updateDescripcion" class="crudFormLabel">Descripción del producto:</label>
+                        <input type="text" id="updateDescripcion" name="updateDescripcion" class="crudFormInput" value="${descripcionActual}">
+                        <label for="updatePrecio" class="crudFormLabel">Precio del producto:</label>
+                        <input type="text" id="updatePrecio" name="updatePrecio" class="crudFormInput" value="${precioActual}">
+                        <button type="submit" class="crudFormButton">Actualizar</button>
+                    </form>
+                `;
+                document.querySelector('.crudFormClose').onclick = function() {
+                    container.style.display = "none";
+                };
+                document.getElementById('updateForm').onsubmit = function(event) {
+                    event.preventDefault();
+                    card.querySelector('.card-title').textContent = document.getElementById('updateNombre').value;
+                    card.querySelector('.card-text').textContent = document.getElementById('updateDescripcion').value;
+                    card.querySelectorAll('.card-text')[1].textContent = `$ ${document.getElementById('updatePrecio').value}`;
+                    container.style.display = "none";
+                };
+            };
         });
     };
 });

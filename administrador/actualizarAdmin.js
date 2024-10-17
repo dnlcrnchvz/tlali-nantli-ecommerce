@@ -17,6 +17,9 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('actualizarBtn').onclick = function() {
         document.getElementById('actualizarContainer').style.display = "block";
         document.getElementById('actualizarContainer').innerHTML = actualizar;
+        document.querySelector('.crudFormClose').onclick = function() {
+            document.getElementById('agregarContainer').style.display = "none";
+        };
     };
     document.getElementById('actualizarContainer').innerHTML = actualizar; 
 });
