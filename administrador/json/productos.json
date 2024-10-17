@@ -9,32 +9,52 @@
                 "contenido": "3.5g",
                 "advertencias": "Descontinuar su uso en caso de presentar irritación, enrojecimiento o alguna molestia, si persiste consulte a su médico.",
                 "precioProducto": 319,
+<<<<<<< HEAD
                 "imagen":"./img/aceiteLavanda.png"
+=======
+                "imagen":".img/lapizLabial.png"
+>>>>>>> 3c500c55e2a00a6b89b09bc22948d941e5e51c88
             },
             {
                 "nombreProducto": "Máscara de Pestaña",
                 "descripcionProducto": "Aporta volumen y longitud intensos a tus pestañas, con una fórmula que evita grumos.",
                 "contenido": "8 ml",
                 "precioProducto": 250,
+<<<<<<< HEAD
                 "imagen":"./img/aceiteLavanda.png"
+=======
+                "imagen":"./img/mascaraPestañas.png"
+>>>>>>> 3c500c55e2a00a6b89b09bc22948d941e5e51c88
             },
             {
                 "nombreProducto": "Spray Fijador de Maquillaje",
                 "descripcionProducto": "Prolonga la duración de tu maquillaje, proporcionando un acabado fresco y natural, mientras controla el brillo.",
                 "precioProducto": 300,
+<<<<<<< HEAD
                 "imagen":"./img/aceiteLavanda.png"
+=======
+                "imagen":"./img/fijadorMaquillaje.png"
+>>>>>>> 3c500c55e2a00a6b89b09bc22948d941e5e51c88
             },
             {
                 "nombreProducto": "Base de maquillaje",
                 "descripcionProducto": "Base de maquillaje semi-líquida con ácido hialurónico",
                 "precioProducto": 360,
+<<<<<<< HEAD
                 "imagen":"./img/aceiteLavanda.png"
+=======
+                "imagen":"./img/baseMaquillaje.png"
+>>>>>>> 3c500c55e2a00a6b89b09bc22948d941e5e51c88
             },
             {
                 "nombreProducto": "Delineador Líquido",
                 "descripcionProducto": "Delineador líquido de alta precisión a base de agua",
                 "precioProducto": 359,
+<<<<<<< HEAD
                 "imagen":"./img/aceiteLavanda.png"
+=======
+                "imagen":"./img/delineadorLiquido.png"
+>>>>>>> 3c500c55e2a00a6b89b09bc22948d941e5e51c88
             }
         ],
         "cuidadoPersonal":
@@ -44,28 +64,44 @@
                 "nombreProducto": "Pads desmaquillantes",
                 "descripcionProducto": "Almohadillas de algodón reutilizables, 5 piezas",
                 "precioProducto": 200,
+<<<<<<< HEAD
                 "imagen":"./img/aceiteLavanda.png"
+=======
+                "imagen":"./img/padsdesmaquillantes.png"
+>>>>>>> 3c500c55e2a00a6b89b09bc22948d941e5e51c88
             },
             {
                 "categoria": "Cuidado personal",
                 "nombreProducto": "Aceite de Almendras dulces ecológico",
                 "descripcionProducto": "Nutritivo corporal",
                 "precioProducto": 300,
+<<<<<<< HEAD
                 "imagen":"./img/aceiteLavanda.png"
+=======
+                "imagen":"./img/aceiteAlmendras.png"
+>>>>>>> 3c500c55e2a00a6b89b09bc22948d941e5e51c88
             },
             {
                 "categoria": "Cuidado personal",
                 "nombreProducto": "Suero Acido Hialuronico",
                 "descripcionProducto": "Enriquecido con agua de glaciar y tres tipos de ácido hialurónico, este suero ofrece un poderoso impulso de hidratación para una piel flexible y tersa. ",
                 "precioProducto": 350,
+<<<<<<< HEAD
                 "imagen":"./img/aceiteLavanda.png"
+=======
+                "imagen":"./img/sueroAcido.png"
+>>>>>>> 3c500c55e2a00a6b89b09bc22948d941e5e51c88
             },
             {
                 "categoria": "Cuidado personal",
                 "nombreProducto": "Bálsamo labial hidratante",
                 "descripcionProducto": "Bálsamo de karité hidratante olor sandía",
                 "precioProducto": 100,
+<<<<<<< HEAD
                 "imagen":"./img/aceiteLavanda.png"
+=======
+                "imagen":"./img/balsamoLabial.png"
+>>>>>>> 3c500c55e2a00a6b89b09bc22948d941e5e51c88
             },
             {
                 "categoria": "Cuidado personal",

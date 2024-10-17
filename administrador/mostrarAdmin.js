@@ -11,7 +11,7 @@ const datosProductos=(url)=>{
             console.table(datos.productos);
             document.getElementById("cards").innerHTML=`
                 <div id="card0" class="card" style="width: 18rem;">
-                    <img id="imgCard0" src="" class="card-img-top" alt=" ">
+                    <img id="imgCard0" src=" " class="card-img-top" alt=" ">
                     <div class="card-body">
                         <h5 class="card-title" id="nomCard0"></h5>
                         <p class="card-text" id="descCard0"></p>
