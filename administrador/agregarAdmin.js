@@ -17,6 +17,9 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('crearBtn').onclick = function() {
         document.getElementById('agregarContainer').style.display = "block";
         document.getElementById('agregarContainer').innerHTML = agregar;
+        document.querySelector('.crudFormClose').onclick = function() {
+            document.getElementById('agregarContainer').style.display = "none";
+        };
         document.getElementById('addForm').addEventListener('submit', function(event) {
             event.preventDefault();
             const nombre = document.getElementById('addNombre').value;
@@ -25,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const card = document.createElement('div');
             card.classList.add('card');
             card.innerHTML = `
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 15rem; height: 20rem">
                     <img src="" class="card-img-top" alt=" ">
                     <div class="card-body">
                         <h5 class="card-title">${nombre}</h5>
