@@ -18,7 +18,7 @@ const datosProductos=(url)=>{
                     </div>
                     <div class="product-actions">
                         <button class="btn-actualizar">Actualizar</button>
-                        <button class="btn-eliminar">Eliminar</button>
+                        <button class="btn-eliminar" onclick="borrarProducto()">Eliminar</button>
                     </div>
                 </div>
 
@@ -30,7 +30,7 @@ const datosProductos=(url)=>{
                     </div>
                     <div class="product-actions">
                         <button class="btn-actualizar">Actualizar</button>
-                        <button class="btn-eliminar">Eliminar</button>
+                        <button class="btn-eliminar" onclick="borrarProducto()">Eliminar</button>
                     </div>
                 </div>
 
@@ -42,7 +42,7 @@ const datosProductos=(url)=>{
                     </div>
                     <div class="product-actions">
                         <button class="btn-actualizar">Actualizar</button>
-                        <button class="btn-eliminar">Eliminar</button>
+                        <button class="btn-eliminar" onclick="borrarProducto()">Eliminar</button>
                     </div>
                 </div>
 
@@ -54,7 +54,7 @@ const datosProductos=(url)=>{
                     </div>
                     <div class="product-actions">
                         <button class="btn-actualizar">Actualizar</button>
-                        <button class="btn-eliminar">Eliminar</button>
+                        <button class="btn-eliminar" onclick="borrarProducto()">Eliminar</button>
                     </div>
                 </div>
 
@@ -66,7 +66,7 @@ const datosProductos=(url)=>{
                     </div>
                     <div class="product-actions">
                         <button class="btn-actualizar">Actualizar</button>
-                        <button class="btn-eliminar">Eliminar</button>
+                        <button class="btn-eliminar" onclick="borrarProducto()">Eliminar</button>
                     </div>
                 </div>
 
@@ -78,7 +78,7 @@ const datosProductos=(url)=>{
                     </div>
                     <div class="product-actions">
                         <button class="btn-actualizar">Actualizar</button>
-                        <button class="btn-eliminar">Eliminar</button>
+                        <button class="btn-eliminar" onclick="borrarProducto()">Eliminar</button>
                     </div>
                 </div>
 
@@ -90,7 +90,7 @@ const datosProductos=(url)=>{
                     </div>
                     <div class="product-actions">
                         <button class="btn-actualizar">Actualizar</button>
-                        <button class="btn-eliminar">Eliminar</button>
+                        <button class="btn-eliminar" onclick="borrarProducto()">Eliminar</button>
                     </div>
                 </div>
 
@@ -102,7 +102,7 @@ const datosProductos=(url)=>{
                     </div>
                     <div class="product-actions">
                         <button class="btn-actualizar">Actualizar</button>
-                        <button class="btn-eliminar">Eliminar</button>
+                        <button class="btn-eliminar" onclick="borrarProducto()">Eliminar</button>
                     </div>
                 </div>
 
@@ -114,7 +114,7 @@ const datosProductos=(url)=>{
                     </div>
                     <div class="product-actions">
                         <button class="btn-actualizar">Actualizar</button>
-                        <button class="btn-eliminar">Eliminar</button>
+                        <button class="btn-eliminar" onclick="borrarProducto()">Eliminar</button>
                     </div>
                 </div>
 
@@ -126,7 +126,7 @@ const datosProductos=(url)=>{
                     </div>
                     <div class="product-actions">
                         <button class="btn-actualizar">Actualizar</button>
-                        <button class="btn-eliminar">Eliminar</button>
+                        <button class="btn-eliminar" onclick="borrarProducto()">Eliminar</button>
                     </div>
                 </div>`
 
