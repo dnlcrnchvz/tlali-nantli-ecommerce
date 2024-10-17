@@ -1,16 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
     let actualizar = `
-    <form id="updateForm" class="actualizarForm">
-        <h1 class="actualizarFormTitle">Actualizar producto</h1>
-        <label for="updateImagen">Imagen del producto:</label>
-        <input type="file" id="updateImagen" name="updateImagen" class="actualizarFormFile" accept="image/*>
-        <label for="updateNombre">Nombre del producto:</label>
-        <input type="text" id="updateNombre" name="updateNombre" class="actualizarFormInput">
-        <label for="updateDescripcion">Descripción del producto:</label>
-        <input type="text" id="updateDescripcion" name="updateDescripcion" class="actualizarFormInput">
-        <label for="updatePrecio">Precio del producto:</label>
-        <input type="text" id="updatePrecio" name="updatePrecio" class="actualizarFormInput">
-        <button type="submit" class="actualizarFormButton">Actualizar</button>
+    <form id="updateForm" class="crudForm">
+        <button class="crudFormClose"><i class="fas fa-times"></i></button>
+        <h1 class="crudFormTitle">Actualizar producto</h1>
+        <label for="updateImagen" class="crudFormLabel">Imagen del producto:</label>
+        <input type="file" id="updateImagen" name="updateImagen" class="crudFormInputFile" accept="image/*">
+        <label for="updateNombre" class="crudFormLabel">Nombre del producto:</label>
+        <input type="text" id="updateNombre" name="updateNombre" class="crudFormInput">
+        <label for="updateDescripcion" class="crudFormLabel">Descripción del producto:</label>
+        <input type="text" id="updateDescripcion" name="updateDescripcion" class="crudFormInput">
+        <label for="updatePrecio" class="crudFormLabel">Precio del producto:</label>
+        <input type="text" id="updatePrecio" name="updatePrecio" class="crudFormInput">
+        <button type="submit" class="crudFormButton">Actualizar</button>
     </form>
     `;
     document.getElementById('actualizarBtn').onclick = function() {
@@ -19,4 +20,3 @@ document.addEventListener("DOMContentLoaded", function() {
     };
     document.getElementById('actualizarContainer').innerHTML = actualizar; 
 });
-
