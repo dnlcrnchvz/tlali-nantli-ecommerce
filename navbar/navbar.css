@@ -1,18 +1,18 @@
+:root{
+    --verdeNavbar : #A8CA7E;
+    --blancoNavbar : #ffffff;
+    --azulBotones : #92B8CB;
+}
 .navbar {
-    background-color: #a8ca7e;
+    background-color: var(--verdeNavbar);
 }
 .navbar .nav-link:hover {
-    color:#ffffff;
+    color:var(--blancoNavbar);
 }
 .navbar-brand {
     display: flex;
     align-items: center; /* Centrar verticalmente logo y texto */
 }
-/* #botonBusqueda{ 
-    background-color:#a8ca7e;
-    size: 2 cm;
-    shape-margin: 24 px;
-} lo comente porque no hay un id con ese nombre*/
 .logo-navbar{
     width: 60px;
     height: 60px;
@@ -63,7 +63,13 @@ button.searchIcon {
 .searchIcon:hover {
     transform: scale(1.1);
 }
-
+button.adminButton{
+    background-color: var(--azulBotones);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+}
 /* Efecto activo */
 .searchIcon:active {
     transform: scale(0.95);
