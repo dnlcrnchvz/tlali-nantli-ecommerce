@@ -1,12 +1,22 @@
 main{
     margin-top: 100px;
 }
-#actualizarContainer,
-#agregarContainer {
+/* Forms */
+.actualizarContainer,
+.agregarContainer{
     display: none;
+    position: fixed;
+    top: 57%;
+    left: 50%;
+    padding: 20px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: auto;
 }
-.actualizarForm{
-    border: solid 1px black;
+/* Contenedor form */
+.crudForm{
     padding: 20px;
     width: 500px;
     height: 300px;
@@ -17,29 +27,52 @@ main{
     font-style: normal;
     text-align: justify;
 }
-.actualizarFormTitle{
+/* Boton para cerrar form*/
+.crudFormClose{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 25px;
+    height: 25px;
+    background: none;
+    cursor: pointer;
+    border: solid 2px black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+/* Titulo */
+.crudFormTitle{
     font-size: 1.3em;
     text-align: center;
     padding-bottom: 40px;
 }
-.actualizarFormInput{
+/* Etiquetas */
+.crudFormLabel{
+    font-size: 13px;
+}
+/* Input de imagen */
+.crudFormInputFile{
     width: 250px;
-    height: 20px;
+    font-size: 12px;
+}
+/* Inputs de texto */
+.crudFormInput{
+    width: 250px;
+    height: 10px;
+    font-size: 12px;
     border-radius: 20px;
     border-style: none;
     padding: 10px;
     background-color: rgb(207, 207, 207);
 }
-.actualizarFormFile{
-    width: 250px;
-    font-size: 12px;
-}
-.actualizarFormInput:focus {
+.crudFormInput:focus {
     border-style: none;
     outline: none;
-    box-shadow: 0 0 5px greenyellow;
+    box-shadow: 0 0 5px rgb(228, 228, 228);
 }
-.actualizarFormButton{
+/* Boton de acción */
+.crudFormButton{
     background-color: var(--azulBotones);
     border-style: none;
     cursor: pointer;
