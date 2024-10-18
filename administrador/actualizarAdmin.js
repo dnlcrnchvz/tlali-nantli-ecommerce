@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <button type="submit" class="crudFormButton">Actualizar</button>
     </form>
     `;
-    document.getElementById('actualizarBtn').onlick = function() {
+    document.getElementById('actualizarBtn').onclick = function() {
         document.getElementById('actualizarContainer').style.display = "block";
         document.getElementById('actualizarContainer').innerHTML = actualizar;
         document.querySelector('.crudFormClose').onclick = function() {
@@ -31,3 +31,5 @@ document.addEventListener("DOMContentLoaded", function() {
     };
     document.getElementById('actualizarContainer').innerHTML = actualizar; 
 });
+
+
