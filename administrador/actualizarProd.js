@@ -8,7 +8,7 @@ const actProd = (index) => {
 
         const nombreActual = document.getElementById(`nomCard${index}`).textContent;
         const descripcionActual = document.getElementById(`descCard${index}`).textContent;
-        const precioActual = document.getElementById(`precCard${index}`).textContent.slice(2); // Se quita el símbolo de $
+        const precioActual = document.getElementById(`precCard${index}`).textContent.slice(2,5); // Se quita el símbolo de $
 
         container.innerHTML = `
             <form id="updateForm" class="crudForm">
@@ -38,7 +38,7 @@ const actProd = (index) => {
             // Actualizar los datos de la card
             document.getElementById(`nomCard${index}`).textContent = document.getElementById('updateNombre').value;
             document.getElementById(`descCard${index}`).textContent = document.getElementById('updateDescripcion').value;
-            document.getElementById(`precCard${index}`).textContent = `$ ${document.getElementById('updatePrecio').value}`;
+            document.getElementById(`precCard${index}`).textContent = `$ ${document.getElementById('updatePrecio').value} MXN`;
 
             container.style.display = "none"; // Cerrar el contenedor después de actualizar
         };
