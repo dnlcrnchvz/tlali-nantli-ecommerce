@@ -19,7 +19,7 @@ const datosProductos=(url)=>{
                         <p class="card-text" id="precCard0"></p>
                     </div>
                     <div class="product-actions">
-                        <button class="btn-actualizar" id="actualizarBtn" onclick="actProd(0) type="button">Actualizar</button>
+                        <button class="btn-actualizar" id="actualizarBtn" onclick="actProd(0)" type="button">Actualizar</button>
                         <button id="btn0" class="btn-eliminar" onclick="borrarProducto(0)">Eliminar</button>
                     </div>
                 </div>
@@ -32,7 +32,7 @@ const datosProductos=(url)=>{
                         <p class="card-text" id="precCard1"></p>
                     </div>
                     <div class="product-actions">
-                        <button class="btn-actualizar" id="actualizarBtn" onclick="actProd(1) type="button">Actualizar</button>
+                        <button class="btn-actualizar" id="actualizarBtn" onclick="actProd(1)" type="button">Actualizar</button>
                         <button id="btn1" class="btn-eliminar" onclick="borrarProducto(1)">Eliminar</button>
                     </div>
                 </div>
@@ -45,7 +45,7 @@ const datosProductos=(url)=>{
                         <p class="card-text" id="precCard2"></p>
                     </div>
                     <div class="product-actions">
-                        <button class="btn-actualizar" id="actualizarBtn" onclick="actProd(2) type="button">Actualizar</button>
+                        <button class="btn-actualizar" id="actualizarBtn" onclick="actProd(2)" type="button">Actualizar</button>
                         <button id="btn2"  class="btn-eliminar" onclick="borrarProducto(2)">Eliminar</button>
                     </div>
                 </div>
@@ -58,7 +58,7 @@ const datosProductos=(url)=>{
                         <p class="card-text" id="precCard3"></p>
                     </div>
                     <div class="product-actions">
-                        <button class="btn-actualizar" id="actualizarBtn" onclick="actProd(3) type="button">Actualizar</button>
+                        <button class="btn-actualizar" id="actualizarBtn" onclick="actProd(3)" type="button">Actualizar</button>
                         <button id="btn3"  class="btn-eliminar" onclick="borrarProducto(3)">Eliminar</button>
                     </div>
                 </div>
@@ -71,7 +71,7 @@ const datosProductos=(url)=>{
                         <p class="card-text" id="precCard4"></p>
                     </div>
                     <div class="product-actions">
-                        <button class="btn-actualizar" id="actualizarBtn" onclick="actProd(4) type="button">Actualizar</button>
+                        <button class="btn-actualizar" id="actualizarBtn" onclick="actProd(4)" type="button">Actualizar</button>
                         <button id="btn4" class="btn-eliminar" onclick="borrarProducto(4)">Eliminar</button>
                     </div>
                 </div>
@@ -84,7 +84,7 @@ const datosProductos=(url)=>{
                         <p class="card-text" id="precCard5"></p>
                     </div>
                     <div class="product-actions">
-                        <button class="btn-actualizar" id="actualizarBtn" onclick="actProd(5) type="button">Actualizar</button>
+                        <button class="btn-actualizar" id="actualizarBtn" onclick="actProd(5)" type="button">Actualizar</button>
                         <button id="btn5" class="btn-eliminar" onclick="borrarProducto(5)">Eliminar</button>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ const datosProductos=(url)=>{
                         <p class="card-text" id="precCard6"></p>
                     </div>
                     <div class="product-actions">
-                        <button class="btn-actualizar" id="actualizarBtn" onclick="actProd(6) type="button"">Actualizar</button>
+                        <button class="btn-actualizar" id="actualizarBtn" onclick="actProd(6)" type="button">Actualizar</button>
                         <button id="btn6" class="btn-eliminar" onclick="borrarProducto(6)">Eliminar</button>
                     </div>
                 </div>
@@ -110,7 +110,7 @@ const datosProductos=(url)=>{
                         <p class="card-text" id="precCard7"></p>
                     </div>
                     <div class="product-actions">
-                        <button class="btn-actualizar" id="actualizarBtn" onclick="actProd(7) type="button"">Actualizar</button>
+                        <button class="btn-actualizar" id="actualizarBtn" onclick="actProd(7)" type="button">Actualizar</button>
                         <button id="btn7" class="btn-eliminar" onclick="borrarProducto(7)">Eliminar</button>
                     </div>
                 </div>
