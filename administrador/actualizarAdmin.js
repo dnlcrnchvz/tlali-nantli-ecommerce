@@ -32,3 +32,5 @@ document.addEventListener("DOMContentLoaded", function() {
     };
     document.getElementById('actualizarContainer').innerHTML = actualizar; 
 });
+
+

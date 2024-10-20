@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     <form id="addForm" class="crudForm">
         <button type="button" class="crudFormClose"><i class="fas fa-times"></i></button>
         <h1 class="crudFormTitle">Agregar producto</h1>
+<<<<<<< HEAD
         <div id="alertaUpdate" class="alert alert-danger d-none mt-3"></div> //Contenedor alerta
 
         <div class="mb-3">
@@ -21,6 +22,16 @@ document.addEventListener("DOMContentLoaded", function() {
             <label for="addPrecio" class="crudFormLabel">Precio del producto:</label>   
             <input type="text" id="addPrecio" name="addPrecio" class="crudFormInput" min="0" step="0.01" placeholder="Ej: 99.99" required>
         </div>
+=======
+        <label for="updateImagen" class="crudFormLabel">Imagen del producto:</label>
+        <input type="file" id="updateImagen" name="updateImagen" class="crudFormInputFile" accept="image/*">
+        <label for="addNombre" class="crudFormLabel">Nombre del producto:</label>
+        <input type="text" id="addNombre" name="addNombre" class="crudFormInput" maxlength="50" placeholder="Max 50 caracteres" required>
+        <label for="addDescripcion" class="crudFormLabel">Descripción del producto:</label>
+        <input type="text" id="addDescripcion" name="addDescripcion" class="crudFormInput" maxlength="100" placeholder="Max 100 caracteres" required>
+        <label for="addPrecio" class="crudFormLabel">Precio del producto:</label>
+        <input type="text" id="addPrecio" name="addPrecio" class="crudFormInput" min="0" step="0.01" placeholder="Ej: 100" required>
+>>>>>>> 00370221c20c89e83b4a2b45bdf168fd237a5e23
         <button type="submit" class="crudFormButton">Agregar</button>
     </form>
     `; 
@@ -93,4 +104,36 @@ document.addEventListener("DOMContentLoaded", function() {
             };
         });
     };
+
+
+    
+//obtener referencia del formulario 
+const agregarArticulo = document.forms["addForm"];
+function validacion(agregarProducto){
+ // Expresiones regulares
+ const nombreProductoRegex = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
+ const descripcionRegex = /""/; 
+ const precioRegex = /^\d{3}$/; // 3 dígitos para el precio
+
+ // Validar nombre del producto
+ if (!nombreProductoRegex.test(agregarProducto.nombre)) {
+    alert("El nombre del producto solo puede contener letras y espacios.");
+    return false;
+}
+
+ // Validar campo de descripción
+ else if (!descripcionRegex==="") {
+    alert("El cuadro de descripción no debe de estar vacío.");
+    return false;
+}else
+{
+    return true;
+}
+//validar precio 
+if (!precioRegex.test(agregarProducto.precio)){
+    alert("El precio del producto solo puede contener 3 dígitos numericos");
+    return false;
+}
+
+}
 });

@@ -147,7 +147,7 @@ const datosProductos=(url)=>{
                     document.getElementById(`imgCard${i}`).src=`${datos.productos.maquillaje[i].imagen}`
                     document.getElementById(`nomCard${i}`).textContent=datos.productos.maquillaje[i].nombreProducto;
                     document.getElementById(`descCard${i}`).textContent=datos.productos.maquillaje[i].descripcionProducto.substr(0,50)+"...";
-                    document.getElementById(`precCard${i}`).textContent=datos.productos.maquillaje[i].precioProducto+" pesos mexicanos";
+                    document.getElementById(`precCard${i}`).textContent=`$ ${datos.productos.maquillaje[i].precioProducto} MXN`;
                 }
 
                 //Muestra los prouctos de la categoría cuidadoPersonal
@@ -157,7 +157,7 @@ const datosProductos=(url)=>{
                         document.getElementById(`imgCard${j}`).src=`${datos.productos.cuidadoPersonal[i].imagen}`
                         document.getElementById(`nomCard${j}`).textContent=datos.productos.cuidadoPersonal[i].nombreProducto;
                         document.getElementById(`descCard${j}`).textContent=datos.productos.cuidadoPersonal[i].descripcionProducto.substr(0,50)+"...";
-                        document.getElementById(`precCard${j}`).textContent=`$${datos.productos.cuidadoPersonal[i].precioProducto}`+" pesos mexicanos";
+                        document.getElementById(`precCard${j}`).textContent=`$ ${datos.productos.cuidadoPersonal[i].precioProducto} MXN`;
                         j++;
                     }
         })

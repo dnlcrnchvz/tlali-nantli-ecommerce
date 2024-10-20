@@ -81,7 +81,7 @@ mensaje.addEventListener("submit",(event)=>
         nombre: mensaje.elements["nombre"].value,
         apellido: mensaje.elements["apellido"].value,
         telefono: mensaje.elements["telefono"].value,
-        email: mensaje.elements["email"].value,
+        email: mensaje.elements["correoElectronico"].value,
         mensaje: mensaje.elements["mensaje"].value
     }
 
