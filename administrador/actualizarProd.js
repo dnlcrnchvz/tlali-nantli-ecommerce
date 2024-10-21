@@ -12,17 +12,27 @@ const actProd = (index) => {
 
         container.innerHTML = `
             <form id="updateForm" class="crudForm">
-                <button type="button" class="crudFormClose"><i class="fas fa-times"></i></button>
+                <button class="crudFormClose"><i class="fas fa-times"></i></button>
                 <h1 class="crudFormTitle">Actualizar producto</h1>
-                <label for="updateImagen" class="crudFormLabel">Imagen del producto:</label>
-                <input type="file" id="updateImagen" name="updateImagen" class="crudFormInputFile" accept="image/*">
-                <label for="updateNombre" class="crudFormLabel">Nombre del producto:</label>
-                <input type="text" id="updateNombre" name="updateNombre" class="crudFormInput" value="${nombreActual}">
-                <label for="updateDescripcion" class="crudFormLabel">Descripción del producto:</label>
-                <input type="text" id="updateDescripcion" name="updateDescripcion" class="crudFormInput" value="${descripcionActual}">
-                <label for="updatePrecio" class="crudFormLabel">Precio del producto:</label>
-                <input type="text" id="updatePrecio" name="updatePrecio" class="crudFormInput" value="${precioActual}">
-                <button type="submit" class="crudFormButton">Actualizar</button>
+                <div class="mb-1 divForm">
+                    <label for="updateImagen" class="crudFormLabel">Imagen del producto:</label>
+                    <input type="file" id="updateImagen" name="updateImagen" class="crudFormInputFile" accept="image/*">
+                </div>
+                <div class="mb-1 divForm">
+                    <label for="updateNombre" class="crudFormLabel">Nombre del producto:</label>
+                    <input type="text" id="updateNombre" name="updateNombre" class="crudFormInput">
+                </div>
+                <div class="mb-1 divForm">
+                    <label for="updateDescripcion" class="crudFormLabel">Descripción del producto:</label>
+                    <input type="text" id="updateDescripcion" name="updateDescripcion" class="crudFormInput">
+                </div>
+                <div class="mb-1 divForm">
+                    <label for="updatePrecio" class="crudFormLabel">Precio del producto:</label>
+                    <input type="text" id="updatePrecio" name="updatePrecio" class="crudFormInput">
+                </div>
+                <div class="mb-1 divButton">
+                    <button type="submit" class="crudFormButton">Actualizar</button>
+                </div>
             </form>
         `;
 
