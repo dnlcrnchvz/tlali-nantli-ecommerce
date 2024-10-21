@@ -59,14 +59,27 @@ document.addEventListener("DOMContentLoaded", function() {
                     <form id="updateForm" class="crudForm">
                         <button type="button" class="crudFormClose"><i class="fas fa-times"></i></button>
                         <h1 class="crudFormTitle">Actualizar producto</h1>
-                        <label for="updateImagen" class="crudFormLabel">Imagen del producto:</label>
-                        <input type="file" id="updateImagen" name="updateImagen" class="crudFormInputFile" accept="image/*">
-                        <label for="updateNombre" class="crudFormLabel">Nombre del producto:</label>
-                        <input type="text" id="updateNombre" name="updateNombre" class="crudFormInput" value="${nombreActual}">
-                        <label for="updateDescripcion" class="crudFormLabel">Descripción del producto:</label>
-                        <input type="text" id="updateDescripcion" name="updateDescripcion" class="crudFormInput" value="${descripcionActual}">
-                        <label for="updatePrecio" class="crudFormLabel">Precio del producto:</label>
-                        <input type="text" id="updatePrecio" name="updatePrecio" class="crudFormInput" value="${precioActual}">
+                        
+                        <div class="m-3">
+                            <label for="updateImagen" class="crudFormLabel">Imagen del producto:</label>
+                            <input type="file" id="updateImagen" name="updateImagen" class="crudFormInputFile" accept="image/*">
+                        </div>
+                        
+                        <div class="m-3">
+                            <label for="updateNombre" class="crudFormLabel">Nombre del producto:</label>
+                            <input type="text" id="updateNombre" name="updateNombre" class="crudFormInput" value="${nombreActual}">
+                        </div>
+                        
+                        <div class="m-3">
+                            <label for="updateDescripcion" class="crudFormLabel">Descripción del producto:</label>
+                            <input type="text" id="updateDescripcion" name="updateDescripcion" class="crudFormInput" value="${descripcionActual}">
+                        </div>
+                        
+                        <div class="m-3">
+                            <label for="updatePrecio" class="crudFormLabel">Precio del producto:</label>
+                            <input type="text" id="updatePrecio" name="updatePrecio" class="crudFormInput" value="${precioActual}">
+                        </div>
+                        
                         <button type="submit" class="crudFormButton">Actualizar</button>
                     </form>
                 `;
@@ -86,33 +99,30 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     
-//obtener referencia del formulario 
-const agregarArticulo = document.forms["addForm"];
-function validacion(agregarProducto){
- // Expresiones regulares
- const nombreProductoRegex = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
- const descripcionRegex = /""/; 
- const precioRegex = /^\d{3}$/; // 3 dígitos para el precio
+    function validacion(agregarProducto) {
+        // Expresiones regulares
+        const nombreProductoRegex = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
+        const descripcionRegex = /^.+$/; // Al menos un carácter para descripción
+        const precioRegex = /^\d{1,3}(\.\d{1,2})?$/; // Precio con 1 a 3 dígitos, opción a 2 decimales
 
- // Validar nombre del producto
- if (!nombreProductoRegex.test(agregarProducto.nombre)) {
-    alert("El nombre del producto solo puede contener letras y espacios.");
-    return false;
-}
+        // Validar nombre del producto
+        if (!nombreProductoRegex.test(agregarProducto.addNombre.value)) {
+            alert("El nombre del producto solo puede contener letras y espacios.");
+            return false;
+        }
 
- // Validar campo de descripción
- else if (!descripcionRegex==="") {
-    alert("El cuadro de descripción no debe de estar vacío.");
-    return false;
-}else
-{
-    return true;
-}
-//validar precio 
-if (!precioRegex.test(agregarProducto.precio)){
-    alert("El precio del producto solo puede contener 3 dígitos numericos");
-    return false;
-}
+        // Validar campo de descripción
+        if (!descripcionRegex.test(agregarProducto.addDescripcion.value)) {
+            alert("El cuadro de descripción no debe de estar vacío.");
+            return false;
+        }
 
-}
+        // Validar precio 
+        if (!precioRegex.test(agregarProducto.addPrecio.value)) {
+            alert("El precio del producto debe ser un número y puede incluir hasta 2 decimales.");
+            return false;
+        }
+
+        return true;
+    }
 });
