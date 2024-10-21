@@ -20,15 +20,15 @@ const actProd = (index) => {
                 </div>
                 <div class="mb-1 divForm">
                     <label for="updateNombre" class="crudFormLabel">Nombre del producto:</label>
-                    <input type="text" id="updateNombre" name="updateNombre" class="crudFormInput">
+                    <input type="text" id="updateNombre" name="updateNombre" class="crudFormInput" value="${nombreActual}">
                 </div>
                 <div class="mb-1 divForm">
                     <label for="updateDescripcion" class="crudFormLabel">Descripción del producto:</label>
-                    <input type="text" id="updateDescripcion" name="updateDescripcion" class="crudFormInput">
+                    <input type="text" id="updateDescripcion" name="updateDescripcion" class="crudFormInput" value="${descripcionActual}">
                 </div>
                 <div class="mb-1 divForm">
                     <label for="updatePrecio" class="crudFormLabel">Precio del producto:</label>
-                    <input type="text" id="updatePrecio" name="updatePrecio" class="crudFormInput">
+                    <input type="text" id="updatePrecio" name="updatePrecio" class="crudFormInput" value="${precioActual}">
                 </div>
                 <div class="mb-1 divButton">
                     <button type="submit" class="crudFormButton">Actualizar</button>
