@@ -1,28 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
     let agregar = `
     <form id="addForm" class="crudForm">
-        <button class="crudFormClose"><i class="fas fa-times"></i></button>
+        <button type="button" class="crudFormClose"><i class="fas fa-times"></i></button>
         <h1 class="crudFormTitle">Agregar producto</h1>
-        <div id="alertaUpdate" class="alert alert-danger d-none mt-3"></div>
-        <div class="mb-1 divForm">
-            <label for="updateImagen" class="crudFormLabel">Imagen del producto:</label>
-            <input type="file" id="updateImagen" name="updateImagen" class="crudFormInputFile" accept="image/*">
-        </div>
-        <div class="mb-1 divForm">
-            <label for="addNombre" class="crudFormLabel">Nombre del producto:</label>
-            <input type="text" id="addNombre" name="addNombre" class="crudFormInput" maxlength="50" placeholder="Max 50 caracteres" required>
-        </div>
-        <div class="mb-1 divForm">
-            <label for="addDescripcion" class="crudFormLabel">Descripción del producto:</label>
-            <input type="text" id="addDescripcion" name="addDescripcion" class="crudFormInput" maxlength="100" placeholder="Max 100 caracteres" required>
-        </div>
-        <div class="mb-1 divForm">
-            <label for="addPrecio" class="crudFormLabel">Precio del producto:</label>   
-            <input type="text" id="addPrecio" name="addPrecio" class="crudFormInput" min="0" step="0.01" placeholder="Ej: 99.99" required>
-        </div>
-        <div class="mb-1 divButton">
-            <button type="submit" class="crudFormButton">Agregar</button>
-        </div>
+        <label for="updateImagen" class="crudFormLabel">Imagen del producto:</label>
+        <input type="file" id="updateImagen" name="updateImagen" class="crudFormInputFile" accept="image/*">
+        <label for="addNombre" class="crudFormLabel">Nombre del producto:</label>
+        <input type="text" id="addNombre" name="addNombre" class="crudFormInput" maxlength="50" placeholder="Max 50 caracteres" required>
+        <label for="addDescripcion" class="crudFormLabel">Descripción del producto:</label>
+        <input type="text" id="addDescripcion" name="addDescripcion" class="crudFormInput" maxlength="100" placeholder="Max 100 caracteres" required>
+        <label for="addPrecio" class="crudFormLabel">Precio del producto:</label>
+        <input type="text" id="addPrecio" name="addPrecio" class="crudFormInput" min="0" step="0.01" placeholder="Ej: 100" required>
+        <button type="submit" class="crudFormButton">Agregar</button>
     </form>
     `; 
     document.getElementById('crearBtn').onclick = function() {
@@ -67,10 +56,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 const descripcionActual = card.querySelector('.card-text').textContent;
                 const precioActual = card.querySelectorAll('.card-text')[1].textContent.slice(2);
                 container.innerHTML = `
-                    <form id="updateForm" class="crudForm">
-                        <button class="crudFormClose"><i class="fas fa-times"></i></button>
+                     <form id="updateForm" class="crudForm">
+                        <button type="button" class="crudFormClose"><i class="fas fa-times"></i></button>
                         <h1 class="crudFormTitle">Actualizar producto</h1>
-<<<<<<< HEAD
                         
                         <div class="m-3">
                             <label for="updateImagen" class="crudFormLabel">Imagen del producto:</label>
@@ -93,27 +81,6 @@ document.addEventListener("DOMContentLoaded", function() {
                         </div>
                         
                         <button type="submit" class="crudFormButton">Actualizar</button>
-=======
-                        <div class="mb-1 divForm">
-                            <label for="updateImagen" class="crudFormLabel">Imagen del producto:</label>
-                            <input type="file" id="updateImagen" name="updateImagen" class="crudFormInputFile" accept="image/*">
-                        </div>
-                        <div class="mb-1 divForm">
-                            <label for="updateNombre" class="crudFormLabel">Nombre del producto:</label>
-                            <input type="text" id="updateNombre" name="updateNombre" class="crudFormInput">
-                        </div>
-                        <div class="mb-1 divForm">
-                            <label for="updateDescripcion" class="crudFormLabel">Descripción del producto:</label>
-                            <input type="text" id="updateDescripcion" name="updateDescripcion" class="crudFormInput">
-                        </div>
-                        <div class="mb-1 divForm">
-                            <label for="updatePrecio" class="crudFormLabel">Precio del producto:</label>
-                            <input type="text" id="updatePrecio" name="updatePrecio" class="crudFormInput">
-                        </div>
-                        <div class="mb-1 divButton">
-                            <button type="submit" class="crudFormButton">Actualizar</button>
-                        </div>
->>>>>>> 69b328e491e9331bd79abfed74ed73ec549efb9c
                     </form>
                 `;
                 document.querySelector('.crudFormClose').onclick = function() {
@@ -156,6 +123,6 @@ document.addEventListener("DOMContentLoaded", function() {
             return false;
         }
 
-        return true;
-    }
+        return true;
+    }
 });
