@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     event.preventDefault();
                     card.querySelector('.card-title').textContent = document.getElementById('updateNombre').value;
                     card.querySelector('.card-text').textContent = document.getElementById('updateDescripcion').value;
-                    card.querySelectorAll('.card-text')[1].textContent = `$ {document.getElementById('updatePrecio').value}`;
+                    card.querySelectorAll('.card-text')[1].textContent = `$ ${document.getElementById('updatePrecio').value}`;
                     container.style.display = "none";
                 };
             };
