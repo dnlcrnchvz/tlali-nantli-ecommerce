@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     event.preventDefault();
                     card.querySelector('.card-title').textContent = document.getElementById('updateNombre').value;
                     card.querySelector('.card-text').textContent = document.getElementById('updateDescripcion').value;
-                    card.querySelectorAll('.card-text')[1].textContent = `$ ${document.getElementById('updatePrecio').value}`;
+                    card.querySelectorAll('.card-text')[1].textContent = `$ {document.getElementById('updatePrecio').value}`;
                     container.style.display = "none";
                 };
             };
@@ -87,32 +87,28 @@ document.addEventListener("DOMContentLoaded", function() {
 
     
 //obtener referencia del formulario 
-const agregarArticulo = document.forms["addForm"];
 function validacion(agregarProducto){
  // Expresiones regulares
  const nombreProductoRegex = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
- const descripcionRegex = /""/; 
+ const descripcionRegex = /^.+$/; 
  const precioRegex = /^\d{3}$/; // 3 dígitos para el precio
 
- // Validar nombre del producto
- if (!nombreProductoRegex.test(agregarProducto.nombre)) {
+ // Validar nombre
+ if (!nombreProductoRegex.test(agregarProducto.addNombre.value)) {
     alert("El nombre del producto solo puede contener letras y espacios.");
     return false;
 }
 
- // Validar campo de descripción
- else if (!descripcionRegex==="") {
+ // Validar descripción
+ if (!descripcionRegex.test(agregarProducto.addDescripcion.value)) {
     alert("El cuadro de descripción no debe de estar vacío.");
     return false;
-}else
-{
-    return true;
 }
 //validar precio 
-if (!precioRegex.test(agregarProducto.precio)){
-    alert("El precio del producto solo puede contener 3 dígitos numericos");
+if (!precioRegex.test(agregarProducto.addPrecio.value)){
+    alert("El precio del producto solo puede contener 3 dígitos y ser numero entero.");
     return false;
 }
-
+return true; //todas las validaciones pasaron
 }
 });
