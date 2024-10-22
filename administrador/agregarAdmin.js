@@ -28,14 +28,19 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('crearBtn').onclick = function() {
         document.getElementById('agregarContainer').style.display = "block";
         document.getElementById('agregarContainer').innerHTML = agregar;
+
+        // Cerrar el formulario
         document.querySelector('.crudFormClose').onclick = function() {
             document.getElementById('agregarContainer').style.display = "none";
         };
+
+        // Manejo del formulario de agregar
         document.getElementById('addForm').addEventListener('submit', function(event) {
             event.preventDefault();
             const nombre = document.getElementById('addNombre').value;
             const descripcion = document.getElementById('addDescripcion').value;
             const precio = document.getElementById('addPrecio').value;
+
             const card = document.createElement('div');
             card.classList.add('card');
             card.innerHTML = `
@@ -52,21 +57,27 @@ document.addEventListener("DOMContentLoaded", function() {
                     </div>
                 </div>
             `;
+
             document.getElementById('agregarCardContainer').appendChild(card);
             document.getElementById('addForm').reset();
             document.getElementById('agregarContainer').style.display = "none";
-            /* Eliminar card */
+
+            // Eliminar card
             card.querySelector('#eliminarBtn').onclick = function() {
                 card.remove();
             };
-            /* Actualizar card */
+
+            // Actualizar card
             card.querySelector('#actualizarBtn').onclick = function() {
                 const container = document.getElementById('actualizarContainer');
                 container.style.display = "block";
                 const nombreActual = card.querySelector('.card-title').textContent;
                 const descripcionActual = card.querySelector('.card-text').textContent;
                 const precioActual = card.querySelectorAll('.card-text')[1].textContent.slice(2);
+                
                 container.innerHTML = `
+                    <form id="updateForm" class="crudForm">
+                        <button type="button" class="crudFormClose"><i class="fas fa-times"></i></button>
                     <form id="updateForm" class="crudForm">
                         <button class="crudFormClose"><i class="fas fa-times"></i></button>
                         <h1 class="crudFormTitle">Actualizar producto</h1>
@@ -91,22 +102,29 @@ document.addEventListener("DOMContentLoaded", function() {
                         </div>
                     </form>
                 `;
+
+                // Cerrar el formulario de actualización
                 document.querySelector('.crudFormClose').onclick = function() {
                     container.style.display = "none";
                 };
+
+                // Manejo del formulario de actualización
                 document.getElementById('updateForm').onsubmit = function(event) {
                     event.preventDefault();
                     card.querySelector('.card-title').textContent = document.getElementById('updateNombre').value;
                     card.querySelector('.card-text').textContent = document.getElementById('updateDescripcion').value;
                     card.querySelectorAll('.card-text')[1].textContent = `$ {document.getElementById('updatePrecio').value}`;
                     container.style.display = "none";
+                    if (validacion(this)) { // Llama a la validación aquí
+                        card.querySelector('.card-title').textContent = document.getElementById('updateNombre').value;
+                        card.querySelector('.card-text').textContent = document.getElementById('updateDescripcion').value;
+                        card.querySelectorAll('.card-text')[1].textContent = `$ ${document.getElementById('updatePrecio').value}`;
+                        container.style.display = "none";
+                    }
                 };
             };
         });
     };
-
-
-
 //obtener referencia del formulario 
 function validacion(agregarProducto){
     // Expresiones regulares
