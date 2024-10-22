@@ -56,17 +56,30 @@ document.addEventListener("DOMContentLoaded", function() {
                 const descripcionActual = card.querySelector('.card-text').textContent;
                 const precioActual = card.querySelectorAll('.card-text')[1].textContent.slice(2);
                 container.innerHTML = `
-                    <form id="updateForm" class="crudForm">
+                     <form id="updateForm" class="crudForm">
                         <button type="button" class="crudFormClose"><i class="fas fa-times"></i></button>
                         <h1 class="crudFormTitle">Actualizar producto</h1>
-                        <label for="updateImagen" class="crudFormLabel">Imagen del producto:</label>
-                        <input type="file" id="updateImagen" name="updateImagen" class="crudFormInputFile" accept="image/*">
-                        <label for="updateNombre" class="crudFormLabel">Nombre del producto:</label>
-                        <input type="text" id="updateNombre" name="updateNombre" class="crudFormInput" value="${nombreActual}">
-                        <label for="updateDescripcion" class="crudFormLabel">Descripción del producto:</label>
-                        <input type="text" id="updateDescripcion" name="updateDescripcion" class="crudFormInput" value="${descripcionActual}">
-                        <label for="updatePrecio" class="crudFormLabel">Precio del producto:</label>
-                        <input type="text" id="updatePrecio" name="updatePrecio" class="crudFormInput" value="${precioActual}">
+                        
+                        <div class="m-3">
+                            <label for="updateImagen" class="crudFormLabel">Imagen del producto:</label>
+                            <input type="file" id="updateImagen" name="updateImagen" class="crudFormInputFile" accept="image/*">
+                        </div>
+                        
+                        <div class="m-3">
+                            <label for="updateNombre" class="crudFormLabel">Nombre del producto:</label>
+                            <input type="text" id="updateNombre" name="updateNombre" class="crudFormInput" value="${nombreActual}">
+                        </div>
+                        
+                        <div class="m-3">
+                            <label for="updateDescripcion" class="crudFormLabel">Descripción del producto:</label>
+                            <input type="text" id="updateDescripcion" name="updateDescripcion" class="crudFormInput" value="${descripcionActual}">
+                        </div>
+                        
+                        <div class="m-3">
+                            <label for="updatePrecio" class="crudFormLabel">Precio del producto:</label>
+                            <input type="text" id="updatePrecio" name="updatePrecio" class="crudFormInput" value="${precioActual}">
+                        </div>
+                        
                         <button type="submit" class="crudFormButton">Actualizar</button>
                     </form>
                 `;
@@ -85,34 +98,29 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 
 
-    
+
 //obtener referencia del formulario 
-const agregarArticulo = document.forms["addForm"];
 function validacion(agregarProducto){
  // Expresiones regulares
  const nombreProductoRegex = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
- const descripcionRegex = /""/; 
+ const descripcionRegex = /^.+$/; 
  const precioRegex = /^\d{3}$/; // 3 dígitos para el precio
 
- // Validar nombre del producto
- if (!nombreProductoRegex.test(agregarProducto.nombre)) {
+ // Validar nombre
+ if (!nombreProductoRegex.test(agregarProducto.addNombre.value)) {
     alert("El nombre del producto solo puede contener letras y espacios.");
     return false;
 }
 
- // Validar campo de descripción
- else if (!descripcionRegex==="") {
+ // Validar descripción
+ if (!descripcionRegex.test(agregarProducto.addDescripcion.value)) {
     alert("El cuadro de descripción no debe de estar vacío.");
     return false;
-}else
-{
-    return true;
 }
 //validar precio 
-if (!precioRegex.test(agregarProducto.precio)){
-    alert("El precio del producto solo puede contener 3 dígitos numericos");
+if (!precioRegex.test(agregarProducto.addPrecio.value)){
+    alert("El precio del producto solo puede contener 3 dígitos y ser numero entero.");
     return false;
 }
-
+return true; //todas las validaciones pasaron
 }
-});
