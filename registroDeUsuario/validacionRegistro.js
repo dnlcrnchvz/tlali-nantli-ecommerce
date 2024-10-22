@@ -8,63 +8,34 @@ document.addEventListener('DOMContentLoaded', () =>
     const telefonoRegex = /^\d{10}$/; // Exactamente 10 dígitos para 
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     //Leer inputs
-    const inputText = document.getElementById('nombre');
-    const telefono = document.getElementById("telefono");
+    const nombre=document.getElementById('nombre');
+    const apellidoP=document.getElementById("apellidoP");
+    const apellidoM=document.getElementById("apellidoM");
+    const telefono=document.getElementById("telefono");
+    const correo=document.getElementById("correo");
+    const contrasenia=document.getElementById("contrasenia");
+    const confirContrasenia=document.getElementById("confirContrasenia");
+    let value;
 
-    inputText.addEventListener('input', () => 
+    nombre.addEventListener('input', () => 
     {
-        const value = inputText.value;
+        value=nombre.value;
 
-        // Expresión regular para validar que solo sean letras
-
+        //Validar entrada en el campo nombre
         if (!nombreApellidoRegex.test(value))//si el nombre contiene carácteres especiales o números
         {
-            inputText.classList.add('is-invalid');//Se inserta la clase is-invalit a la etiqueta input 
+            nombre.classList.add('is-invalid');//Se inserta la clase is-invalit a la etiqueta input 
             mensaje.textContent = "Por favor, ingresa solo letras (sin números ni caracteres especiales).";
         }
         else
         {
-            inputText.classList.remove('is-invalid');//Borrar la clase in-invalid al input nombre
-            inputText.classList.add('is-valid');//Agregar clase is-valid al input del nombre
-        } 
-
-
-        // Validar nombre
-        /* if (!nombreApellidoRegex.test(nuevoRegistro.nombre)) 
-        {
-            alert("El nombre solo puede contener letras y espacios.");
-            return false;
-        } */
-
-        // Validar apellido
-        /* else if (!nombreApellidoRegex.test(nuevoRegistro.apellido)) {
-            alert("El apellido solo puede contener letras y espacios.");
-            return false;
+            nombre.classList.remove('is-invalid');//Borrar la clase in-invalid al input nombre
+            nombre.classList.add('is-valid');//Agregar clase is-valid al input del nombre
         }
+    });
 
-        // Validar teléfono
-        else if (!telefonoRegex.test(nuevoRegistro.telefono)) {
-            alert("El teléfono debe contener exactamente 10 dígitos.");
-            return false;
-        }
-
-        // Validar email
-        else if (!emailRegex.test(nuevoRegistro.email)) {
-            alert("El correo electrónico no tiene un formato válido.");
-            return false;
-        }
-
-        // Validar campo mensaje
-        else if (nuevoRegistro.mensaje==="") {
-            alert("El cuadro de mensaje no debe de estar vacío.");
-            return false;
-        }else
-        {
-            return true;
-        } */
-
-        // Si todas las validaciones pasan
-        //Se leen las entradas del formulario
+        
+        // Si todas las validaciones pasan, Se leen las entradas del formulario
         const nuevoRegistro=
         {
             nombre: registro.elements["nombre"].value/* ,
@@ -75,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () =>
         }
 
         JSON.stringify(nuevoRegistro)//Conversión del mobjeto a JSON
-    });
 });
 
 
