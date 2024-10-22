@@ -124,3 +124,4 @@ if (!precioRegex.test(agregarProducto.addPrecio.value)){
 }
 return true; //todas las validaciones pasaron
 }
+})
