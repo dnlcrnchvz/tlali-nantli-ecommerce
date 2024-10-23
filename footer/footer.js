@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let footer = `
     <footer class="footer">
         <div class="footer-section">
-            <h2>Administrador</h2>
+            <h2><a href="../administrador/administrador.html">Administrador</a></h2>
         </div>
         <div class="footer-section">
             <h2>Información</h2>
