@@ -14,14 +14,19 @@ document.addEventListener("DOMContentLoaded", function() {
         <button type="submit" class="crudFormButton">Agregar</button>
     </form>
     `; 
+
     document.getElementById('crearBtn').onclick = function() {
         document.getElementById('agregarContainer').style.display = "block";
         document.getElementById('agregarContainer').innerHTML = agregar;
         document.querySelector('.crudFormClose').onclick = function() {
             document.getElementById('agregarContainer').style.display = "none";
         };
+
         document.getElementById('addForm').addEventListener('submit', function(event) {
             event.preventDefault();
+
+            if (!validacion(this)) return; // Se validan los campos del formulario para agregar producto
+
             const nombre = document.getElementById('addNombre').value;
             const descripcion = document.getElementById('addDescripcion').value;
             const precio = document.getElementById('addPrecio').value;
@@ -44,11 +49,13 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('agregarCardContainer').appendChild(card);
             document.getElementById('addForm').reset();
             document.getElementById('agregarContainer').style.display = "none";
-            /* Eliminar card */
+
+            // Eliminar card
             card.querySelector('#eliminarBtn').onclick = function() {
                 card.remove();
             };
-            /* Actualizar card */
+
+            // Actualizar card
             card.querySelector('#actualizarBtn').onclick = function() {
                 const container = document.getElementById('actualizarContainer');
                 container.style.display = "block";
@@ -67,27 +74,32 @@ document.addEventListener("DOMContentLoaded", function() {
                         
                         <div class="m-3">
                             <label for="updateNombre" class="crudFormLabel">Nombre del producto:</label>
-                            <input type="text" id="updateNombre" name="updateNombre" class="crudFormInput" value="${nombreActual}">
+                            <input type="text" id="updateNombre" name="updateNombre" class="crudFormInput" value="${nombreActual}" required>
                         </div>
                         
                         <div class="m-3">
                             <label for="updateDescripcion" class="crudFormLabel">Descripción del producto:</label>
-                            <input type="text" id="updateDescripcion" name="updateDescripcion" class="crudFormInput" value="${descripcionActual}">
+                            <input type="text" id="updateDescripcion" name="updateDescripcion" class="crudFormInput" value="${descripcionActual}" required>
                         </div>
                         
                         <div class="m-3">
                             <label for="updatePrecio" class="crudFormLabel">Precio del producto:</label>
-                            <input type="text" id="updatePrecio" name="updatePrecio" class="crudFormInput" value="${precioActual}">
+                            <input type="text" id="updatePrecio" name="updatePrecio" class="crudFormInput" value="${precioActual}" min="0" step="0.01" required>
                         </div>
                         
                         <button type="submit" class="crudFormButton">Actualizar</button>
                     </form>
                 `;
+
                 document.querySelector('.crudFormClose').onclick = function() {
                     container.style.display = "none";
                 };
+
                 document.getElementById('updateForm').onsubmit = function(event) {
                     event.preventDefault();
+                    
+                    if (!validacionAct(this)) return; // Validación al actualizar producto
+
                     card.querySelector('.card-title').textContent = document.getElementById('updateNombre').value;
                     card.querySelector('.card-text').textContent = document.getElementById('updateDescripcion').value;
                     card.querySelectorAll('.card-text')[1].textContent = `$ ${document.getElementById('updatePrecio').value}`;
@@ -96,32 +108,60 @@ document.addEventListener("DOMContentLoaded", function() {
             };
         });
     };
+});
 
+// Se validan las entradas del formulario para agregar un producto
+function validacion(form) {
+    // Expresiones regulares
+    const nombreProductoRegex = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
+    const descripcionRegex = /^.+$/; 
+    const precioRegex = /^\d+(\.\d{1,2})?$/; // Permitimos precios con hasta 2 decimales
 
+    // Validar nombre
+    if (!nombreProductoRegex.test(form.addNombre.value)) {
+        alert("El nombre del producto solo puede contener letras y espacios.");
+        return false;
+    }
 
-//obtener referencia del formulario 
-function validacion(agregarProducto){
- // Expresiones regulares
- const nombreProductoRegex = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
- const descripcionRegex = /^.+$/; 
- const precioRegex = /^\d{3}$/; // 3 dígitos para el precio
+    // Validar descripción
+    if (!descripcionRegex.test(form.addDescripcion.value)) {
+        alert("El cuadro de descripción no debe de estar vacío.");
+        return false;
+    }
 
- // Validar nombre
- if (!nombreProductoRegex.test(agregarProducto.addNombre.value)) {
-    alert("El nombre del producto solo puede contener letras y espacios.");
-    return false;
+    // Validar precio 
+    if (!precioRegex.test(form.addPrecio.value) || form.addPrecio.value < 0) {
+        alert("El precio del producto debe ser un número positivo y puede incluir decimales.");
+        return false;
+    }
+
+    return true; // Todas las validaciones pasaron
 }
 
- // Validar descripción
- if (!descripcionRegex.test(agregarProducto.addDescripcion.value)) {
-    alert("El cuadro de descripción no debe de estar vacío.");
-    return false;
+// Función que valida las entradas del formulario para actualizar productos
+function validacionAct(form) {
+    // Expresiones regulares
+    const nombreProductoRegex = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
+    const descripcionRegex = /^.+$/; 
+    const precioRegex = /^\d+(\.\d{1,2})?$/; // Permitimos precios con hasta 2 decimales
+
+    // Validar nombre
+    if (!nombreProductoRegex.test(form.updateNombre.value)) {
+        alert("El nombre del producto solo puede contener letras y espacios.");
+        return false;
+    }
+
+    // Validar descripción
+    if (!descripcionRegex.test(form.updateDescripcion.value)) {
+        alert("El cuadro de descripción no debe de estar vacío.");
+        return false;
+    }
+
+    // Validar precio 
+    if (!precioRegex.test(form.updatePrecio.value) || form.updatePrecio.value < 0) {
+        alert("El precio del producto debe ser un número positivo y puede incluir decimales.");
+        return false;
+    }
+
+    return true; // Todas las validaciones pasaron
 }
-//validar precio 
-if (!precioRegex.test(agregarProducto.addPrecio.value)){
-    alert("El precio del producto solo puede contener 3 dígitos y ser numero entero.");
-    return false;
-}
-return true; //todas las validaciones pasaron
-}
-})
