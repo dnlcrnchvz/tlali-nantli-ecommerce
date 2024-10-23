@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <div id="alertaUpdate" class="alert alert-danger d-none mt-3"></div>
         <div class="mb-1 divForm">
             <label for="updateImagen" class="crudFormLabel">Imagen del producto:</label>
-            <input type="file" id="updateImagen" name="updateImagen" class="crudFormInputFile" accept="image/*">
+            <input type="file" id="updateImagen" name="updateImagen" class="crudFormInputFile" accept="image/*" required>
         </div>
         <div class="mb-1 divForm">
             <label for="addNombre" class="crudFormLabel">Nombre del producto:</label>
@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", function() {
         </div>
     </form>
     `; 
-
     document.getElementById('crearBtn').onclick = function() {
         document.getElementById('agregarContainer').style.display = "block";
         document.getElementById('agregarContainer').innerHTML = agregar;
@@ -39,17 +38,35 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById('addForm').addEventListener('submit', function(event) {
             event.preventDefault();
 
-            if (!validacion(this)) return; // Se validan los campos del formulario para agregar producto
+            // Validamos los datos del formulario
+            if (!validacion(this)) return;
 
+            // Capturamos los datos del formulario
             const nombre = document.getElementById('addNombre').value;
             const descripcion = document.getElementById('addDescripcion').value;
             const precio = document.getElementById('addPrecio').value;
+            const imagen = document.getElementById('updateImagen').files[0]; // Imagen del producto
 
+            // Crear el objeto del producto
+            const nuevoProducto = {
+                nombre: nombre,
+                descripcion: descripcion,
+                precio: parseFloat(precio), // Convertimos a número
+                imagen: imagen ? imagen.name : '' // Guardamos solo el nombre de la imagen
+            };
+
+            // Convertimos el objeto a formato JSON
+            const nuevoProductoJSON = JSON.stringify(nuevoProducto);
+            console.log("Producto agregado en JSON:", nuevoProductoJSON);
+
+            // Creamos la tarjeta del producto
             const card = document.createElement('div');
             card.classList.add('card');
+            const imagenUrl = imagen ? URL.createObjectURL(imagen) : ''; // Crear URL temporal para la imagen
+
             card.innerHTML = `
                 <div class="card" style="width: 15rem; height: 20rem">
-                    <img src="" class="card-img-top" alt=" ">
+                    <img src="${imagenUrl}" class="card-img-top" alt="${nombre}">
                     <div class="card-body">
                         <h5 class="card-title">${nombre}</h5>
                         <p class="card-text">${descripcion}</p>
@@ -75,15 +92,14 @@ document.addEventListener("DOMContentLoaded", function() {
             card.querySelector('#actualizarBtn').onclick = function() {
                 const container = document.getElementById('actualizarContainer');
                 container.style.display = "block";
+
                 const nombreActual = card.querySelector('.card-title').textContent;
                 const descripcionActual = card.querySelector('.card-text').textContent;
                 const precioActual = card.querySelectorAll('.card-text')[1].textContent.slice(2);
-                
+
                 container.innerHTML = `
                     <form id="updateForm" class="crudForm">
                         <button type="button" class="crudFormClose"><i class="fas fa-times"></i></button>
-                    <form id="updateForm" class="crudForm">
-                        <button class="crudFormClose"><i class="fas fa-times"></i></button>
                         <h1 class="crudFormTitle">Actualizar producto</h1>
                         <div class="mb-1 divForm">
                             <label for="updateImagen" class="crudFormLabel">Imagen del producto:</label>
@@ -91,15 +107,15 @@ document.addEventListener("DOMContentLoaded", function() {
                         </div>
                         <div class="mb-1 divForm">
                             <label for="updateNombre" class="crudFormLabel">Nombre del producto:</label>
-                            <input type="text" id="updateNombre" name="updateNombre" class="crudFormInput" value="${nombreActual}" required>
+                            <input type="text" id="updateNombre" name="updateNombre" class="crudFormInput" value="${nombreActual}">
                         </div>
                         <div class="mb-1 divForm">
                             <label for="updateDescripcion" class="crudFormLabel">Descripción del producto:</label>
-                            <input type="text" id="updateDescripcion" name="updateDescripcion" class="crudFormInput" value="${descripcionActual}" required>
+                            <input type="text" id="updateDescripcion" name="updateDescripcion" class="crudFormInput" value="${descripcionActual}">
                         </div>
                         <div class="mb-1 divForm">
                             <label for="updatePrecio" class="crudFormLabel">Precio del producto:</label>
-                            <input type="text" id="updatePrecio" name="updatePrecio" class="crudFormInput" value="${precioActual}" min="0" step="0.01" required>
+                            <input type="text" id="updatePrecio" name="updatePrecio" class="crudFormInput" value="${precioActual}">
                         </div>
                         <div class="mb-1 divButton">
                             <button type="submit" class="crudFormButton">Actualizar</button>
@@ -115,73 +131,74 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Manejo del formulario de actualización
                 document.getElementById('updateForm').onsubmit = function(event) {
                     event.preventDefault();
-                    
-                    if (!validacionAct(this)) return; // Validación al actualizar producto
 
-                    card.querySelector('.card-title').textContent = document.getElementById('updateNombre').value;
-                    card.querySelector('.card-text').textContent = document.getElementById('updateDescripcion').value;
-                    card.querySelectorAll('.card-text')[1].textContent = `$ {document.getElementById('updatePrecio').value}`;
-                    container.style.display = "none";
-                    if (validacion(this)) { // Llama a la validación aquí
-                        card.querySelector('.card-title').textContent = document.getElementById('updateNombre').value;
-                        card.querySelector('.card-text').textContent = document.getElementById('updateDescripcion').value;
-                        card.querySelectorAll('.card-text')[1].textContent = `$ ${document.getElementById('updatePrecio').value}`;
-                        container.style.display = "none";
+                    // Capturamos los datos del formulario de actualización
+                    const nuevoNombre = document.getElementById('updateNombre').value;
+                    const nuevaDescripcion = document.getElementById('updateDescripcion').value;
+                    const nuevoPrecio = document.getElementById('updatePrecio').value;
+                    const nuevaImagen = document.getElementById('updateImagen').files[0]; // Imagen actualizada
+
+                    // Crear objeto con los datos actualizados
+                    const productoActualizado = {
+                        nombre: nuevoNombre,
+                        descripcion: nuevaDescripcion,
+                        precio: parseFloat(nuevoPrecio), // Convertimos a número
+                        imagen: nuevaImagen ? nuevaImagen.name : '' // Guardamos solo el nombre de la imagen
+                    };
+
+                    // Convertir el objeto a formato JSON
+                    const productoActualizadoJSON = JSON.stringify(productoActualizado);
+                    console.log("Producto actualizado en JSON:", productoActualizadoJSON);
+
+                    // Actualizamos los valores en la tarjeta
+                    card.querySelector('.card-title').textContent = nuevoNombre;
+                    card.querySelector('.card-text').textContent = nuevaDescripcion;
+                    card.querySelectorAll('.card-text')[1].textContent = `$ ${nuevoPrecio}`;
+
+                    if (nuevaImagen) {
+                        const nuevaImagenUrl = URL.createObjectURL(nuevaImagen);
+                        card.querySelector('img').src = nuevaImagenUrl; // Actualizamos la imagen
                     }
+
+                    container.style.display = "none";
                 };
             };
         });
     };
-//obtener referencia del formulario 
-function validacion(agregarProducto){
-    // Expresiones regulares
-    const nombreProductoRegex = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
-    const descripcionRegex = /^.+$/; 
-    const precioRegex = /^\d{3}$/; // 3 dígitos para el precio
-   
-    // Validar nombre
-    if (!nombreProductoRegex.test(agregarProducto.addNombre.value)) {
-       alert("El nombre del producto solo puede contener letras y espacios.");
-       return false;
-   }
-   
-    // Validar descripción
-    if (!descripcionRegex.test(agregarProducto.addDescripcion.value)) {
-       alert("El cuadro de descripción no debe de estar vacío.");
-       return false;
-   }
-   //validar precio 
-   if (!precioRegex.test(agregarProducto.addPrecio.value)){
-       alert("El precio del producto solo puede contener 3 dígitos y ser numero entero.");
-       return false;
-   }
-   return true; //todas las validaciones pasaron
-   }
-   });
 
-function validacionAct(form) {
-    // Expresiones regulares
-    const nombreProductoRegex = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
-    const descripcionRegex = /^.+$/; 
-    const precioRegex = /^\d+(\.\d{1,2})?$/; // Permitimos precios con hasta 2 decimales
+    // Función de validación
+    function validacion(agregarProducto) {
+        const nombreProductoRegex = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
+        const descripcionRegex = /^.+$/; 
+        const precioRegex = /^\d+(\.\d{1,2})?$/; // permite números enteros o con decimales
 
-    // Validar nombre
-    if (!nombreProductoRegex.test(form.updateNombre.value)) {
-        alert("El nombre del producto solo puede contener letras y espacios.");
-        return false;
+        // Validar imagen
+        if (!agregarProducto.updateImagen.files.length) {
+            alert("Por favor, selecciona una imagen.");
+            return false;
+        }
+
+        // Validar nombre
+        const nombre = agregarProducto.addNombre.value;
+        if (!nombreProductoRegex.test(nombre)) {
+            alert("El nombre solo puede contener letras y espacios.");
+            return false;
+        }
+
+        // Validar descripción
+        const descripcion = agregarProducto.addDescripcion.value;
+        if (!descripcionRegex.test(descripcion)) {
+            alert("La descripción no puede estar vacía.");
+            return false;
+        }
+
+        // Validar precio
+        const precio = agregarProducto.addPrecio.value;
+        if (!precioRegex.test(precio) || precio <= 0) {
+            alert("El precio debe ser un número mayor que cero.");
+            return false;
+        }
+
+        return true; // Todas las validaciones pasaron
     }
-
-    // Validar descripción
-    if (!descripcionRegex.test(form.updateDescripcion.value)) {
-        alert("El cuadro de descripción no debe de estar vacío.");
-        return false;
-    }
-
-    // Validar precio 
-    if (!precioRegex.test(form.updatePrecio.value) || form.updatePrecio.value < 0) {
-        alert("El precio del producto debe ser un número positivo y puede incluir decimales.");
-        return false;
-    }
-
-    return true; // Todas las validaciones pasaron
-}
+});
