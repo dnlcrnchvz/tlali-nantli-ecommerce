@@ -35,8 +35,11 @@
 .searchInput:focus {
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); /* Sombra más intensa al enfocarse */
 }
+.searchInputAdmin{
+    width: 400px;
+}
 .formControl {
-    width: 250px; /* Ancho de la barra de búsqueda*/
+    width: 400px; /* Ancho de la barra de búsqueda*/
     height: 30px;
     border-radius: 70px;
     border-style: none;
@@ -123,7 +126,13 @@ button.adminButton{
         position: absolute;
         top: 30px;
         right: 60px;
-    }   
+    }  
+    .searchInputAdmin{
+        width: 250px;
+    }
+    .formControl {
+        width: 250px;
+    }
 }
 /* Mobil -------------------------------------------------------------------------------------------*/
 @media (max-width: 600px){
