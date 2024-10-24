@@ -1,29 +1,44 @@
-/* Footer */
 .footer {
     background-color: #A8CA7E;
     font-family: "Quicksand", sans-serif;
-    font-size:  14px;
-    color: black;
-    padding: 5px;
-    display: flex;
-    justify-content: space-between;
-}
-.footer-section {
-    flex: 1;
-    padding: 5px;
-}
-
-.social-icons img {
-    width: 27px;
-    margin-right: 10px;
-}
-
-h2 {
-    font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    font-size: large;
-
-    transform: scale(0.75);
+}
+.footerContainer{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.subtitleFooter{
+    font-size: 20px;
+}
+.InformacionSection a,
+.administradorSection a{
+    color: black;
+}
+.fa-instagram,
+.fa-x-twitter,
+.fa-facebook{
+    color: black;
+}
+.socialIcons{
+    display: flex;
+    justify-content: space-around;
+}
+.socialI{
+    width: 25px;
+    height: 25px;
+}
+/* Media queries */
+/* Mobil */
+@media (max-width: 600px){
+    .subtitleFooter,
+    .InformacionSection a{
+        font-size: 13px;
+    }
+    .footerContainer{
+        padding: 10px;
+    }
 }
