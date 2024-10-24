@@ -32,55 +32,83 @@
         <div id="navbarContainer"></div>
     </header>
 
+    <div class="background"></div> <!-- Contenedor de fondo -->  
+
+  <section id="leyenda">
+    <h2>¡Bienvenida!</h2>
+    <p>Únete a la comunidad de Tlali Nantli y disfruta de una experiencia de compra personalizada.
+      Regístrate para acceder a promociones exclusivas, recibir novedades sobre nuestros productos orgánicos y hacer que
+      tu proceso de compra sea más rápido y sencillo.
+      Solo toma unos minutos crear tu cuenta y comenzar a disfrutar de los beneficios de ser parte de nuestro compromiso
+      con el bienestar natural.</p>
+  </section>
+
     <main class="registro shadow-lg p-4" role="main"> 
-        <header class="text-center mb-4" style="margin-top: 80px;"> 
-            <h2>Registro de nuevo usuario</h2> </header> 
-            
+      <div id="contenedorFormulario">            
             <form class="row g-3 " id="formulario">
-                <div class="col-md-4">
+              <header class="text-center mb-4"> 
+                <h2 id="titulo-formulario" >Datos de usuario:</h2>
+              </header> 
+
+                <div class="col-md-12 divForm">
                   <label for="nombre" class="form-label">Nombre(s)</label>
                   <input type="text" class="form-control" id="nombre" placeholder="Mark" aria-describedby="Ingresa tu nombre o nombres" value="" required>
                   <p id="mensajeNom"></p>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-12 divForm">
                   <label for="apellidoP" class="form-label">Apellido paterno</label>
                   <input type="text" class="form-control" id="apellidoP" placeholder="Ramirez" value="" aria-describedby="validationServer05Feedback" required>
                   <p id="mensajeApP"></p>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-12 divForm">
                     <label for="apellidoM" class="form-label">Apellido materno</label>
                     <input type="text" class="form-control" id="apellidoM" placeholder="Acosta" value="" aria-describedby="validationServer05Feedback" required>
                     <p id="mensajeApM"></p>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-12 divForm">
                   <label for="telefono" class="form-label">Télefono</label>
                   <input type="tel" class="form-control" id="telefono" placeholder="5555555555" aria-describedby="validationServer03Feedback" required>
                   <p id="mensajeTel"></p>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-12 divForm">
                   <label for="correo" class="form-label">Correo electrónico</label>
                   <input type="text" class="form-control" id="correo" placeholder="markAcosta@dominio.com" aria-describedby="validationServer05Feedback" required>
                   <p id="mensajeCorreo"></p>
                 </div>
 
-                <section class="mb-3">
+                <section class="mb-12" id="div-contrasenias">
+                  <div class="divForm">
                     <label for="contrasenia" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="contrasenia" aria-describedby="validationServer06Feedback" placeholder="Ingrese su contraseña" required>
-                    <p id="mensajeContrasenia">La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, una minúscula, una mayúscula y un cáractere especial.</p>
-
+                    <input type="password" class="form-control" id="contrasenia" aria-describedby="validationServer06Feedback"
+                      placeholder="Ingrese su contraseña" required>
+                  </div>
+        
+        
+                  <p id="mensajeContrasenia" class="mb-12">La contraseña debe tener al entre 8 y 16 caracteres, al menos un
+                    dígito, una minúscula, una mayúscula y un cáractere especial.</p>
+        
+        
+                  <div class="divForm">
                     <label for="confirContrasenia" class="form-label">Confirma la contraseña</label>
-                    <input type="password" class="form-control" id="confirContrasenia" aria-describedby="validationServer06Feedback" placeholder="Confirme su contraseña" required>
+                    <input type="password" class="form-control" id="confirContrasenia"
+                      aria-describedby="validationServer06Feedback" placeholder="Confirme su contraseña" required>
                     <p id="mensajeConfContra"></p>
+                  </div>
                 </section>
 
-                <div class="col-12">
-                  <button class="btn btn-primary" type="submit" onclick="registroUser(event)">Registrase</button>
+                <div class="col-12 divButton">
+                  <button class="btn btn-primary" type="submit" id="boton">Submit form</button>
                 </div>
+                <div id="div-inicia-sesion">
+                  <a id="link-inicia-sesion" href="/inicioDeSesion/inicioDeSesion.html">Inicia Sesión</a>
+                </div>
+
               </form>
+            </div>
         </main>
     
 
