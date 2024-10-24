@@ -1,0 +1,189 @@
+.background
+{
+    position: fixed; /* Fijo para que cubra toda la pantalla */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../contacto/src/imagenes/fondo2.jpg');/*Imagen de fondo*/
+    background-size: cover; /*Ajusta el tamaño de la imagen*/
+    background-position: center; /*Centra la imagen*/
+    filter: opacity(100%); /*Desenfoca la imagen*/
+    z-index: -1; /*Coloca el fondo detrás del contenido*/    
+}
+.registro {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+/* Contenedor form */
+#contenedorFormulario{
+    align-content: center;
+}
+
+
+#formulario{
+    align-content: center;
+}
+
+
+#leyenda{
+    font-family: "Quicksand", sans-serif;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+
+}
+
+
+main{
+    padding: 20px;
+    width: 700px;
+    height: 50px;
+    margin:auto;
+    align-content:center;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-align: justify;
+    font-size: 16 px;
+    display:inline-block;
+    border-radius:3%;
+    background-color:white;
+}
+
+
+/* Contenedor de label e input: ambos se comodan en una sola línea */
+.divForm{
+    display:flex;  
+}
+.divButton{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Titulo */
+h2{
+    font-size: 1.3em;
+    padding-bottom: 10px;
+}
+#titulo-formulario{
+    text-align: left;
+    font-size: 1 em;
+    padding-bottom: 10px;
+
+
+}
+/* Etiquetas */
+.form-label{
+    white-space: nowrap;
+    font-size: 13px;
+    margin-right: 5px;
+    width: 150px;
+}
+
+
+
+
+/* Inputs de texto */
+.form-control{
+   
+    height: 20px;
+    border-radius: 20px;
+    border-style: none;
+    padding: 10px;
+   
+}
+#nombre, #apellidoP, #apellidoM, #correo, #telefono, #contrasenia, #confirContrasenia{
+    background-color: #e7e6e6;
+    font-size: 12px;
+    width: 450px;
+    display: flex;
+  align-items: center;
+  gap: 10px;
+   
+}
+.form-control:focus {
+    border-style: none;
+    outline: none;
+    box-shadow: 0 0 5px rgb(228, 228, 228);
+}
+/* Boton de acción */
+#boton{
+    background-color: var(--azulBotones);
+    border-style: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px;
+    border-radius: 20px;
+   
+   
+}
+/* contenedor de link de inicio de sesión */
+#div-inicia-sesion{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+   
+}
+
+
+/* link de inicio de sesion */
+#link-inicia-sesion{
+    color: black;
+}
+
+
+#mensajeContrasenia{
+    font-size: 12px;
+    text-align: center;
+    margin: 20px;
+
+
+}
+
+
+/* Media queries -------------------------------------------------------------------------------*/
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+    #contenedorFormulario, .divButton {
+        width: auto;
+        height: auto;
+    }
+}
+/* Telefono ----------------------------------------------------------------------------------*/
+@media (max-width: 600px) {
+    .main, #contenedorFormulario, .divButton {
+        width: auto;
+        height: auto;
+    }
+    .divForm, #div-contrasenias{
+        display:contents;  
+    }
+    .form-label{
+        font-size: 13px;
+        width: 150px;
+    }
+
+
+    .registro{
+        padding: 0px;
+        width: 350px;
+        height: 550px;
+    }
+    .crudFormTitle{
+        padding: 40px 20px 20px 20px;
+    }
+    .crudFormLabel,
+    .crudFormInput,
+    .crudFormInputFile{
+        font-size: 10px;
+    }
+   
+}
