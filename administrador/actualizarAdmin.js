@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+/* document.addEventListener("DOMContentLoaded", function() {
     let actualizar = `
     <form id="updateForm" class="crudForm">
         <button class="crudFormClose"><i class="fas fa-times"></i></button>
@@ -32,6 +32,6 @@ document.addEventListener("DOMContentLoaded", function() {
         };
     };
     document.getElementById('actualizarContainer').innerHTML = actualizar; 
-});
+}); */
 
 
