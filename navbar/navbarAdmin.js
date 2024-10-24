@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <h1 class="navbarTitle">Artículos</h1>
             </a>
             <form class="d-flex searchInputAdmin" role="search">
-                <input class="formControl me-2 text-center" type="search" placeholder="Barra de Búsqueda" aria-label="Search">
+                <input class="formControlAdmin me-2 text-center" type="search" placeholder="Barra de Búsqueda" aria-label="Search">
                 <button type="submit" class="searchIcon">
                     <i class="fas fa-search searchI"></i>
                 </button>
