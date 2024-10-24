@@ -148,15 +148,4 @@ document.addEventListener('DOMContentLoaded', () =>
             mensaje.textContent="";
         }
     });
-    // Si todas las validaciones pasan, Se leen las entradas del formulario
-    const nuevoRegistro=
-        {
-            nombre: registro.elements["nombre"].value/* ,
-            apellidoP: registro.elements["apellido"].value,
-            apellidoM: registro.elements["apellido"].value,
-            telefono: registro.elements["telefono"].value,
-            email: registro.elements["email"].value */
-        }
-
-    JSON.stringify(nuevoRegistro)//Conversión del mobjeto a JSON
 });
