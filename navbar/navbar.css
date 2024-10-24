@@ -24,23 +24,23 @@
     font-style: normal;
     font-size: larger;
 }
+.searchInput{
+    background-color: #ffffff;
+    height: 30px;
+    border-radius: 70px;
+    border-style: none;
+    outline: none;
+}
+.searchInput:focus {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); /* Sombra más intensa al enfocarse */
+}
 .formControl {
     width: 250px; /* Ancho de la barra de búsqueda*/
     height: 30px;
     border-radius: 70px;
     border-style: none;
-    padding: 10px;
     outline: none;
-}
-.formControl:focus {
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); /* Sombra más intensa al enfocarse */
-}
-.nav-item {
-    margin-left: 20px; /* Espaciado entre los elementos del navbar */
-    font-size: 20px;
-}
-.nav-item a{
-    font-size: 16px;
+    font-size: 13px;
 }
 button.navbar-toggler {
     border: none;
@@ -49,6 +49,17 @@ button.navbar-toggler {
 button.navbar-toggler:focus {
     outline: none;
     box-shadow: none;
+}
+.nav-item {
+    margin-left: 20px; /* Espaciado entre los elementos del navbar */
+    font-size: 20px;
+}
+.nav-item a{
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 button.searchIcon {
     border: none;
@@ -63,6 +74,9 @@ button.searchIcon {
 .searchIcon:hover {
     transform: scale(1.1);
 }
+.searchI{
+    color: rgb(174, 174, 174);
+}
 button.adminButton{
     background-color: var(--azulBotones);
     border: none;
@@ -70,14 +84,29 @@ button.adminButton{
     transition: background-color 0.3s ease;
     width: fit-content;
 }
-/* Efecto activo */
+.carritoIcon{
+    border-style: none;
+    background: none;
+    /* position: relative; */
+}
+.carritoI{
+    color: black;
+}
+.carritoDiv{
+    margin-right: 20px;
+    margin-left: 25px;
+}
 .searchIcon:active {
     transform: scale(0.95);
 }
 /* Media queries */
 /* Tablet */
 @media (min-width: 601px) and (max-width: 1024px) {
-    
+    .carritoDiv{
+        position: absolute;
+        top: 30px;
+        right: 60px;
+    }   
 }
 /* Mobil */
 @media (max-width: 600px){
@@ -90,4 +119,9 @@ button.adminButton{
     .formControl{
         width: 190px;
     }
+    .carritoDiv{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }   
 }

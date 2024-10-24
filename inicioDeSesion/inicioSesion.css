@@ -1,0 +1,61 @@
+.background
+{
+    position: fixed; /* Fijo para que cubra toda la pantalla */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../contacto/src/imagenes/fondo2.jpg');/*Imagen de fondo*/
+    background-size: cover; /*Ajusta el tamaño de la imagen*/
+    background-position: center; /*Centra la imagen*/
+    filter: opacity(10%); /*Desenfoca la imagen*/
+    z-index: -1; /*Coloca el fondo detrás del contenido*/    
+}
+
+
+.formulario {
+    margin: 0 auto 2rem; 
+    max-width: 850px; 
+    background-color: #DECA98;
+    filter: opacity(90%); 
+    text-align: left;
+    padding: 3rem;
+    border-radius: 25px;
+}
+
+
+h1 {
+    font-family: 'Playfair Display', serif; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.formulario label, 
+.formulario input, 
+.formulario textarea {
+    font-family: 'Quicksand', sans-serif; 
+}
+
+/* Botón */
+.formulario .btn {
+    display: block;
+    margin: 20px auto;
+    background-color: #92B8CB;
+    color: black;
+    padding: 10px 45px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    width: 180px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif; /* Aplica la fuente Quicksand al botón */
+}
+/* Hover del botón */
+.formulario .btn:hover {
+    background-color: #92B8CB;
+}
+
+.titulo {
+    margin-top: 300px;
+}
