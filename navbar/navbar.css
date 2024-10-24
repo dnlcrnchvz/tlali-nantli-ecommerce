@@ -39,12 +39,15 @@
     width: 400px;
 }
 .formControl {
-    width: 400px; /* Ancho de la barra de búsqueda*/
+    width: 250px; /* Ancho de la barra de búsqueda*/
     height: 30px;
     border-radius: 70px;
     border-style: none;
     outline: none;
     font-size: 13px;
+}
+.formControlAdmin{
+    width: 400px;
 }
 button.navbar-toggler {
     border: none;
