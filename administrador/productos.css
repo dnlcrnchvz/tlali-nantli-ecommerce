@@ -18,7 +18,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 100%; /* Asegura que la tarjeta ocupe todo el ancho de su columna */
-    height: 500px; /* Altura fija para todas las tarjetas */
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Distribuye el contenido de la tarjeta */

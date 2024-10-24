@@ -24,7 +24,8 @@
     font-style: normal;
     font-size: larger;
 }
-.searchInput{
+.searchInput,
+.searchInputAdmin{
     background-color: #ffffff;
     height: 30px;
     border-radius: 70px;
@@ -34,8 +35,19 @@
 .searchInput:focus {
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); /* Sombra más intensa al enfocarse */
 }
+.searchInputAdmin{
+    width: 400px;
+}
 .formControl {
     width: 250px; /* Ancho de la barra de búsqueda*/
+    height: 30px;
+    border-radius: 70px;
+    border-style: none;
+    outline: none;
+    font-size: 13px;
+}
+.formControlAdmin{
+    width: 400px;
     height: 30px;
     border-radius: 70px;
     border-style: none;
@@ -84,6 +96,22 @@ button.adminButton{
     transition: background-color 0.3s ease;
     width: fit-content;
 }
+.buttonTitle{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacio entre el texto y el ícono */
+}
+.crearIcon, .buttonTitle{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
 .carritoIcon{
     border-style: none;
     background: none;
@@ -99,16 +127,22 @@ button.adminButton{
 .searchIcon:active {
     transform: scale(0.95);
 }
-/* Media queries */
-/* Tablet */
+/* Media queries---------------------------------------------------------------------------------- */
+/* Tablet -----------------------------------------------------------------------------------------*/
 @media (min-width: 601px) and (max-width: 1024px) {
     .carritoDiv{
         position: absolute;
         top: 30px;
         right: 60px;
-    }   
+    }  
+    .searchInputAdmin{
+        width: 250px;
+    }
+    .formControl {
+        width: 250px;
+    }
 }
-/* Mobil */
+/* Mobil -------------------------------------------------------------------------------------------*/
 @media (max-width: 600px){
     .navbar-brand{
         width: 10px;
@@ -116,12 +150,22 @@ button.adminButton{
     .navbarTitle{
         display: none;
     }
-    .formControl{
-        width: 190px;
+    .formControl,
+    .searchInputAdmin{
+        width: 200px;
+    }
+    .searchInputAdmin{
+        margin-left: 30px;
     }
     .carritoDiv{
         position: absolute;
         top: 30px;
         right: 30px;
-    }   
+    }
+    .buttonTitle{
+        display: none;
+    }
+    .buttonAdmin{
+        margin-right: 10px;
+    }
 }
