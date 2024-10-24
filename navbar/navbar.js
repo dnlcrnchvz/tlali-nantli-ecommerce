@@ -6,14 +6,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 <img src="../navbar/imagenes/logoSinFondoTlaliNantli.png" alt="Logo" width="30" height="30" class="logo-navbar d-inline-block align-text-top">
                 <h1 class="navbarTitle">Tlali Nantli</h1>
             </a>
-            <form class="d-flex ms-auto" role="search">
+            <form class="d-flex searchInput" role="search">
                 <input class="formControl me-2 text-center" type="search" placeholder="Barra de Búsqueda" aria-label="Search">
                 <button type="submit" class="searchIcon">
-                    <i class="fas fa-search"></i>
+                    <i class="fas fa-search searchI"></i>
                 </button>
             </form>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler barsIcon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars barsI"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -32,12 +32,15 @@ document.addEventListener("DOMContentLoaded", function() {
                     <li class="nav-item">
                         <a class="nav-link" aria-disabled="true" href="../inicioDeSesion/inicioDeSesion.html">Iniciar sesión</a>
                     </li>
-                    
                 </ul>
             </div>
-            <a class="nav-link-carrito" href="#">
-                <img src="../navbar/imagenes/carritoCompras.png" alt="Carrito de compras" width="30" height="30">
-            </a>
+            <div class="carritoDiv">
+                <button type="" class="carritoIcon">
+                    <a class="nav-link-carrito" href="#">
+                        <i class="fa-solid fa-cart-shopping carritoI"></i>
+                    </a>
+                </button>
+            </div>
         </div>
     </nav>
     `;
