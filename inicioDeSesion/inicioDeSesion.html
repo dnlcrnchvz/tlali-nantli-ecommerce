@@ -55,11 +55,39 @@
                     </p>
                 </footer> 
             </form>
+   
+        <!-- Título-->
+        <h2 class="mensaje">¿Ya tienes una cuenta?<br>¡Inicia sesión!</h2>
+      
+        <!-- Contenedor principal del formulario -->
+        <main class="contenedor">
+          <form id="inicioSesion" class="text-center">
+            <section class="mb-3">
+              <label for="email" class="form-label">Correo electrónico:</label>
+              <input type="email" class="form-control" id="email" placeholder="tlali_nantli@gmail.com" required>
+            </section>
+            
+            <section class="mb-3">
+              <label for="password" class="form-label">Contraseña:</label>
+              <input type="password" class="form-control" id="password" placeholder="xxxxxxxxxxxxxx" required>
+            </section>
+            
+            <section class="d-grid">
+              <button type="submit" class="btn" id="boton">Iniciar sesión</button>
+            </section>
+          </form>
+          
+          <footer class="text-center mt-3">
+            <p>¿No tienes una cuenta?  <br><a href="../registroDeUsuario/registroDeUsuario.html">¡Regístrate aquí!</a></p>
+          </footer>
         </main>
     
 
+    
+    <footer id="footerContainer"></footer>
     <!-- Scripts  de JavaScript-->
     <script src="../navbar/navbar.js"></script> <!-- script del navbar.js -->
+    <script src="./inicioSesion.js"></script>
     <script src="../footer/footer.js"></script> <!-- script del footer.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
