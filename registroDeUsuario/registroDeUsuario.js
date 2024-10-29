@@ -8,7 +8,7 @@ confirmacionContraseña = [];
 
 let elementoBotonRegistro = document.querySelector('#botonRegistro');
 
-elementoBotonRegistro.addEventListener('click', registrarUsuario());
+elementoBotonRegistro.addEventListener('click', registrarUsuario);
 function registrarUsuario(){
 let nombreAdd = document.querySelector('#nombre').value,
 apellidoPaternoAdd = document.querySelector('#apellidoP').value,
@@ -16,7 +16,7 @@ apellidoMaternoAdd = document.querySelector('#apellidoM').value,
 telefonoAdd = document.querySelector('#telefono').value,
 correoAdd = document.querySelector('#correo').value,
 contraseñaAdd = document.querySelector('#contrasenia').value,
-confirmacionContraseñaAdd = document.querySelector('#confircontrasenia').value;
+confirmacionContraseñaAdd = document.querySelector('#confirContrasenia').value;
 
 nombre.push(nombreAdd);
 apellidoPaterno.push(apellidoPaternoAdd);
