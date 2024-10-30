@@ -13,7 +13,7 @@ document.getElementById("inicioSesion").addEventListener("submit", (event)=>
     const mensaje=document.getElementById("mensaje");
 
     const usuario="tlalinantliecom@gmail.com";
-    const password="tlaliNantli";
+    const password="Tlalinantli12";
         
     if (correo.value === "" || contrasenia.value === "")//Valida si un campo está vacio
         {
