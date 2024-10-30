@@ -99,3 +99,19 @@ body {
     text-decoration: underline;
   }
   
+  /*Estilo icono mostrar contraseña*/
+  .input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .form-control {
+      padding-right: 30px; /* Espacio para el icono */
+  }
+
+  .bi {
+      position: absolute;
+      right: 10px; /* Ajusta el espacio del icono desde el borde derecho */
+      cursor: pointer; /* Cambia el cursor para indicar que se puede hacer clic */
+  }
