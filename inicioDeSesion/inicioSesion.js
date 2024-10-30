@@ -1,4 +1,5 @@
 import { redirigirPaginaInicio } from "./redireccionamientoPagInicio.js";
+
 // Obtener referencia del formulario
 const registro = document.forms["formulario"];
 
@@ -32,8 +33,9 @@ document.getElementById("inicioSesion").addEventListener("submit", (event) =>
                 if (indiceUsuario !== -1 && contrasenasAlmacenadas[indiceUsuario] === contraseniaInput)
                 {
                     // Se redirige a página de inicio
-                    mensaje.textContent = "Inicio de sesión correcto";
-                    mensaje.style.color = "green";
+                    /* mensaje.textContent = "Inicio de sesión correcto";
+                    mensaje.style.color = "green"; */
+                    redirigirPaginaInicio();
                 } 
                 else
                 { // Si la contraseña o usuario no coinciden
