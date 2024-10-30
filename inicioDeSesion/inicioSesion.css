@@ -1,101 +1,115 @@
-.background
-{
-    position: fixed; /* Fijo para que cubra toda la pantalla */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('./imagenes/fondo3.jpg');/*Imagen de fondo*/
-    background-size: cover; /*Ajusta el tamaño de la imagen*/
-    background-position: center; /*Centra la imagen*/
-    filter: opacity(90%); /*Desenfoca la imagen*/
-    z-index: -1; /*Coloca el fondo detrás del contenido*/    
-}
-
-
-
 /* Centrar todo el contenido de la página */
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    background-color: #e4f2e7; /* Fondo del contenedor*/
-  }
-  
-  /* Estilo del título */
-  .mensaje {
-    font-family: 'Playfair Display', serif;
-    font-size: 32px;
-    color: #000000;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  /* Estilos del contenedor */
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: #e4f2e7;
+}
+
+/* Fondo de imágen */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('./imagenes/fondo3.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: opacity(90%);
+  z-index: -1;
+}
+
+/* Estilo del título */
+.mensaje {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: #000000;
+  text-align: center;
+  margin-top: 150px; /* Ajusta según la altura del navbar */
+  margin-bottom: 20px;
+}
+
+
+/* Estilos del contenedor del formulario */
 .contenedor {
-    width: 421px;
-    height: 435px;
-    padding: 50px;
-    border-radius: 15px;
-    background-color: white;
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    
+  width: 421px;
+  height: 435px;
+  padding: 50px;
+  border-radius: 15px;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Quicksand', sans-serif;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px; /* Espacio extra debajo del formulario */
 }
 
-  
-  /* Estilos del formulario */
-  .form-label {
-    display: block;
-    text-align: left;
-    margin-bottom: 5px;
-    font-size: 20px;
-  }
-  
-  #email, #password {
-    background-color: #E7E6E6;
-    width: 100%;
-    height: 40px;
-    border: none;
-    border-radius: 10px;
-    padding: 0 10px;
-    font-size: 16px;
-  }
-  
-  /* Botón de iniciar sesión */
-  #boton {
-    background-color: #92B8CB;
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 50px;
-    width: 204px; /* Ancho */
-    height: 35px;
-    font-size: 18px;
-    margin-top: 15px;
-    cursor: pointer;
-    display: block; 
-    margin-left: auto; /* Centrado horizontal */
-    margin-right: auto; /* Centrado horizontal */
+/* Estilos del formulario */
+.form-label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 20px;
 }
 
-  
-  /* foother de inicio de sesion*/
-  footer {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 16px;
-    margin-top: 20px;
+#email, #password {
+  background-color: #E7E6E6;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+/* Botón de iniciar sesión */
+#boton {
+  background-color: #92B8CB;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 50px;
+  width: 204px;
+  height: 35px;
+  font-size: 18px;
+  margin-top: 15px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Texto y enlace dentro del contenedor de inicio de sesión */
+.contenedor .text-center {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.contenedor .text-center a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.contenedor .text-center a:hover {
+  text-decoration: underline;
+}
+
+  /*Estilo icono mostrar contraseña*/
+  .input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
   }
-  
-  footer a {
-    color: #000000;
-    text-decoration: none;
+
+  .form-control {
+      padding-right: 30px; /* Espacio para el icono */
   }
-  
-  footer a:hover {
-    text-decoration: underline;
+
+  .bi {
+      position: absolute;
+      right: 10px; /* Ajusta el espacio del icono desde el borde derecho */
+      cursor: pointer; /* Cambia el cursor para indicar que se puede hacer clic */
   }
-  
