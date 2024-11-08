@@ -1,0 +1,21 @@
+#titulo{
+    font-family: "Playfair Display", sans-serif;
+    margin-top: 90px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+    padding-bottom: 2%;
+}
+#imagenContainer{
+    height: 5%;
+    width:100%
+}
+
+.categorias {
+    display: flex;
+    justify-content: space-around;
+    gap: 8px;
+    font-family: "Quicksand";
+    text-align: center;
+
+}
