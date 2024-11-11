@@ -61,13 +61,22 @@
     color: #333;
     font-weight: bold;
     text-align: center;
+    font-family: 'Playfair Display', serif;
+
 }
 
 .card-text {
+    font-family: 'Quicksand', sans-serif;
     font-size: 14px;
     color: #666;
     margin-bottom: 10px;
     text-align: center;
+}
+
+.card-price {
+    text-align: center;
+    font-size: 1.em;  /* Ajusta el tamaño del texto si es necesario */
+    margin-top: 10px;  /* Agrega un margen superior si quieres separar el precio del texto anterior */
 }
 
 /* Estilo del botón */
@@ -76,10 +85,24 @@
     color: rgb(0, 0, 0);
     border: none;
     border-radius: 50px;
-    width: 100%;
+    width: 65%; /* Reduce el ancho al 80% */
     height: 35px;
     font-size: 16px;
     cursor: pointer;
     margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+}
+
+#boton:hover {
+    background-color: #6fa06f; /* Color ligeramente más oscuro al pasar el cursor */
+    transform: scale(1.05); /* Agranda el botón ligeramente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltarlo */
+}
+
+#boton:active {
+    transform: scale(0.95); /* Reduce el tamaño al hacer clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Cambia la sombra cuando el botón está activo */
 }
