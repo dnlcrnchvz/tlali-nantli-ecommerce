@@ -1,0 +1,83 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('./imagenes/fondo3.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: opacity(90%);
+  z-index: -1;
+}
+.primarySection{
+  margin-top: 80px;
+  padding: 40px 50px;
+}
+.primaryParagraph,
+.primaryTitle{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.registrateAquiContainer,
+.registrateAquiParagraph,
+.primaryParagraph{
+  margin: 0;
+}
+.primaryParagraph{
+  font-size: 25px;
+}
+.primaryTitle{
+  margin-bottom: 20px;
+}
+.iniciarSesionSection{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+  padding: 0px 50px;
+}
+.iniciarSesionFormulario{
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+.iniciarSesionSection label,
+.iniciarSesionSection input,
+.iniciarSesionSection button,
+.registrateAquiParagraph{
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.iniciarSesionSection label,
+.registrateAquiParagraph{
+  font-weight: 500;
+}
+.contraseñaInput{
+  outline-style: none;
+  border: none;
+  outline: none;
+  width: 90%;
+}
+.iniciarSesionButton{
+  background-color: #92B8CB;
+  border: none;
+  border-radius: 20px;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 45px;
+  width: 185px;
+}
+/* Media queries---------------------------------------------------------------------------------- */
+/* Tablet -----------------------------------------------------------------------------------------*/
+@media (min-width: 601px) and (max-width: 1024px) {
+}
+/* Mobil -------------------------------------------------------------------------------------------*/
+@media (max-width: 600px){
+  .iniciarSesionSection{
+    padding: 20px;
+  }
+}

@@ -1,0 +1,108 @@
+/* Estilo del Banner */
+.banner-container {
+    position: relative;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    
+}
+
+.banner-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Contenedor de las cards */
+.seccion-productos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las cards bajen de línea si no caben en una sola fila */
+    justify-content: center; /* Centra las cards horizontalmente */
+    gap: 25px; /* Espacio entre las cards */
+    padding: 20px; /* Margen interno del contenedor */
+}
+
+/* Estilos de las cards */
+.card {
+    width: 18rem; /* Mantiene el tamaño estándar de la card */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño en hover */
+}
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+
+}
+
+.card-text {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-price {
+    text-align: center;
+    font-size: 1.em;  /* Ajusta el tamaño del texto si es necesario */
+    margin-top: 10px;  /* Agrega un margen superior si quieres separar el precio del texto anterior */
+}
+
+/* Estilo del botón */
+#boton {
+    background-color: #A8CA7E;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 50px;
+    width: 65%; /* Reduce el ancho al 80% */
+    height: 35px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+}
+
+#boton:hover {
+    background-color: #6fa06f; /* Color ligeramente más oscuro al pasar el cursor */
+    transform: scale(1.05); /* Agranda el botón ligeramente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltarlo */
+}
+
+#boton:active {
+    transform: scale(0.95); /* Reduce el tamaño al hacer clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Cambia la sombra cuando el botón está activo */
+}
