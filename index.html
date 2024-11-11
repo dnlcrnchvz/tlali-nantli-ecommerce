@@ -1,115 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Tlali Nantli</title>
     <!-- Hoja de estilos -->
-    <link rel="stylesheet" href="../navbar/navbar.css">
-    <link rel="stylesheet" href="../footer/footer.css">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="../navbar/navbar.css" />
+    <link rel="stylesheet" href="../footer/footer.css" />
+    <link rel="stylesheet" href="./index.css" />
     <!-- Icono de la pagina -->
-    <link rel="shortcut icon" href="/navbar/imagenes/logoSinFondoTlaliNantli.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/navbar/imagenes/logoSinFondoTlaliNantli.png" type="image/x-icon"/>
     <!-- Fonts -->
     <!-- Playfair Display -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"/>
     <!-- Quicksand -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet"/>
     <!-- Enlace a Bootstrap CSS para estilo y diseño responsivo -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  </head>
+  <body>
     <!-- Encabezado de la pagina-->
     <header>
-        <!-- Contenedor del Navbar -->
-        <div id="navbarContainer"></div>
+      <!-- Contenedor del Navbar -->
+      <div id="navbarContainer"></div>
     </header>
-    <!-- carrusel -->
-    <section id="carrusel">
-        <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./imagenesInicio/ecoFriendly.jpg" class="d-block w-100" alt="bolsa de tela con productos organicos">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Descubre el poder de lo natural </h5>
-                  <p class="pCarrusel">Productos libres de toxicos</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./imagenesInicio/carrusel.jpeg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Más que maquillaje</h5>
-                  <p class="pCarrusel" >Ingredientes que nutren tu piel.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./imagenesInicio/cosmetic.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Lo mejor de la naturaleza</h5>
-                  <p class="pCarrusel" >Ahora en tu piel</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-    </section>
-    <main style="margin-top: 100px;"> <!-- estilo para que el main no se ponga detras del navbar -->
-        <h3 id="titulo">Categorías de productos</h3>
     <!-- Contenido principal -->
-<section class="categorias">
-    <div class="maquillaje">
-        <div class="card" style="width: 15rem;">
-            <img src="./imagenesInicio/maquillaje.jpeg" class="card-img-top" alt="maquillaje organico">
-            <div class="card-body">
-              <h4 class="card-text">Maquillaje</h4>
+    <main style="margin-top: 80px"><!-- Estilo para que el main no se ponga detras del navbar -->
+      <!-- Sección carrusel -->
+      <section class="carruselSection">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"  class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./imagenesInicio/ecoFriendly.jpg" class="d-block w-100 carousel-image" alt="bolsa de tela con productos organicos"/>
+              <div class="carousel-caption d-none d-md-block">
+                <h3 class="carruselTitle">Descubre el poder de lo natural</h3>
+                <p class="carruselParagraph">Productos libres de toxicos</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./imagenesInicio/carrusel.jpeg" class="d-block w-100 carousel-image" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h3 class="carruselTitle">Más que maquillaje</h3>
+                <p class="carruselParagraph">Ingredientes que nutren tu piel.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./imagenesInicio/cosmetic.jpg" class="d-block w-100 carousel-image" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h3 class="carruselTitle">Lo mejor de la naturaleza</h3>
+                <p class="carruselParagraph">Ahora en tu piel</p>
+              </div>
             </div>
           </div>
-    </div>
-    <div class="cuidadoPersonal">
-        <div class="card" style="width: 15rem;">
-            <img src="./imagenesInicio/cuidadoPersonal.jpeg" class="card-img-top" alt="productos de cuidado personal">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- Sección categorias -->
+      <section class="categoriasSection">
+        <h1 class="indexTitle">Categorías de productos</h1>
+        <div class="categoriasContainer">
+          <div class="card categoriasCard">
+            <img src="./imagenesInicio/maquillaje.jpeg" class="card-img-top" alt="maquillaje organico"/>
             <div class="card-body">
-                <h4 class="card-text">Cuidado personal</h4>
+              <h2 class="card-text">Maquillaje</h2>
             </div>
           </div>
-    </div>
-    <div class="bestSeller">
-        <div class="card" style="width: 15rem;">
-            <img src="./imagenesInicio/bestSellers.jpeg" class="card-img-top" alt="productos mas vendidos de la pagina">
+          <div class="card categoriasCard">
+            <img src="./imagenesInicio/cuidadoPersonal.jpeg" class="card-img-top" alt="productos de cuidado personal"/>
             <div class="card-body">
-                <h4 class="card-text">Best sellers</h4>
+              <h2 class="card-text">Cuidado personal</h2>
             </div>
           </div>
-    </div>
-</section>
-    
+          <div class="card categoriasCard">
+            <img src="./imagenesInicio/bestSellers.jpeg" class="card-img-top" alt="productos mas vendidos de la pagina" />
+            <div class="card-body">
+              <h2 class="card-text">Best sellers</h2>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- Footer -->
-    <footer style="margin-top: 500px;"> <!-- estilo provisional mientras esta vacia la pag, para que el footer este más abajo -->
-        <!-- Contenedor del Footer -->
-        <!-- Aquí se cargará el Footer desde el archivo footer.js -->
-        <div id="footerContainer"></div>
+    <footer style="margin-top: 500px"><!-- Estilo provisional mientras esta vacia la pag, para que el footer este más abajo -->
+      <!-- Contenedor del Footer -->
+      <!-- Aquí se cargará el Footer desde el archivo footer.js -->
+      <div id="footerContainer"></div>
     </footer>
     <!-- Scripts  de JavaScript-->
-    <script src="../navbar/navbar.js"></script> <!-- script del navbar.js -->
-    <script src="../footer/footer.js"></script> <!-- script del footer.js -->
+    <script src="../navbar/navbar.js"></script><!-- Script del navbar.js -->
+    <script src="../footer/footer.js"></script><!-- Script del footer.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>

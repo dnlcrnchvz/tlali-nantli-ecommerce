@@ -1,4 +1,71 @@
-#titulo{
+.carousel-inner,
+.carousel-item,
+.carousel-image{
+    height: 200px;
+}
+.carousel-image{
+    object-fit: cover;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.indexTitle{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-align: center;
+    padding-top: 30px;
+}
+.carruselTitle,
+.carruselParagraph{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.categoriasContainer{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.categoriasCard{
+    width: 250px;
+}
+.card-img-top{
+    height: 130px;
+    object-fit: cover;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.card-text{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
+}
+/* Media queries---------------------------------------------------------------------------------- */
+/* Tablet -----------------------------------------------------------------------------------------*/
+@media (min-width: 601px) and (max-width: 1024px) {
+    .categoriasCard{
+        width: 200px;
+    }
+}
+/* Mobil -------------------------------------------------------------------------------------------*/
+@media (max-width: 600px) {
+    .categoriasCard{
+        width: 100px;
+    }
+    .card-text{
+        font-size: 10px;
+        height: 20px;
+    }
+}
+/* .index{
     font-family: "Playfair Display", sans-serif;
     margin-top: 90px;
     margin-left: 200px;
@@ -26,3 +93,4 @@ h5{
 {
     font-family: "quicksand", sans-serif;
 }
+ */
