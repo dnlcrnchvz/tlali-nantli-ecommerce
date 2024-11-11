@@ -26,17 +26,17 @@
     display: flex;
     flex-wrap: wrap; /* Permite que las cards bajen de línea si no caben en una sola fila */
     justify-content: center; /* Centra las cards horizontalmente */
-    gap: 60px; /* Espacio entre las cards */
+    gap: 20px; /* Espacio entre las cards */
     padding: 20px; /* Margen interno del contenedor */
 }
 
 /* Estilos de las cards */
 .card {
-    width: 18rem; /* Mantiene el tamaño estándar de la card */
+    width: 15rem; /* Mantiene el tamaño estándar de la card */
     border: none;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    transition: transform 0.4s;
 }
 
 .card:hover {
@@ -84,7 +84,7 @@
     color: rgb(0, 0, 0);
     border: none;
     border-radius: 50px;
-    width: 65%; /* Reduce el ancho al 80% */
+    width: 65%; /* Reduce el ancho al 65% */
     height: 35px;
     font-size: 16px;
     cursor: pointer;
