@@ -1,5 +1,4 @@
-.background
-{
+.background{
     position: fixed; /* Fijo para que cubra toda la pantalla */
     top: 0;
     left: 0;
@@ -11,62 +10,60 @@
     filter: opacity(10%); /*Desenfoca la imagen*/
     z-index: -1; /*Coloca el fondo detrás del contenido*/    
 }
-
-#leyenda{
+.contactanosSection{
+    margin-top: 80px;
+    padding: 30px 50px;
+}
+.contactanosTitle{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contactanosParagraph{
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    margin: 10px;
-}
-.container{
-    padding: 50px;  
-}
-.formulario {
-    margin: 0 auto 2rem; 
-    max-width: 850px; 
-    background-color: #DECA98;
-    filter: opacity(90%); 
-    text-align: left;
-    padding: 3rem;
-    border-radius: 25px;
-}
-
-
-h1 {
-    font-family: 'Playfair Display', serif; 
     text-align: center;
-    margin-bottom: 20px;
 }
-
-
-.formulario label, 
-.formulario input, 
-.formulario textarea {
-    font-family: 'Quicksand', sans-serif; 
+.contactoFormularioSection{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    padding: 0px 50px;
 }
-
-/* Botón */
-.formulario .btn {
-    display: block;
-    margin: 20px auto;
+.contactoFormulario {
+    background-color: #DECA98;
+    border-radius: 25px;
+    padding: 20px;
+}
+.contactoFormularioSection label,
+.contactoFormularioSection input, 
+.contactoFormularioSection textarea,
+.contactoFormularioSection button{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.contactoFormularioSection label{
+    font-weight: 500;
+}
+.contactoFormularioButton{
     background-color: #92B8CB;
-    color: black;
-    padding: 10px 45px;
     border: none;
     border-radius: 20px;
-    font-size: 1rem;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 45px;
     width: 180px;
-    text-align: center;
-    font-family: 'Quicksand', sans-serif; /* Aplica la fuente Quicksand al botón */
 }
 /* Hover del botón */
 .formulario .btn:hover {
     background-color: #92B8CB;
-}
-
-.titulo {
-    margin-top: 300px;
 }
 /* Media queries---------------------------------------------------------------------------------- */
 /* Tablet -----------------------------------------------------------------------------------------*/
@@ -74,11 +71,4 @@ h1 {
 }
 /* Mobil -------------------------------------------------------------------------------------------*/
 @media (max-width: 600px){
-    h1, 
-    #leyenda{
-        padding: 10px;
-    }
-    .divForm{
-        margin: 50px;
-    }
 }
