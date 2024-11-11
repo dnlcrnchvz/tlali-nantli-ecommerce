@@ -12,7 +12,7 @@
 }
 .contactanosSection{
     margin-top: 80px;
-    padding: 30px 50px;
+    padding: 40px 50px;
 }
 .contactanosTitle{
     font-family: "Playfair Display", serif;
@@ -21,13 +21,6 @@
     font-style: normal;
     text-align: center;
     margin-bottom: 20px;
-}
-.contactanosParagraph{
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    text-align: center;
 }
 .contactoFormularioSection{
     display: flex;
@@ -43,7 +36,8 @@
 .contactoFormularioSection label,
 .contactoFormularioSection input, 
 .contactoFormularioSection textarea,
-.contactoFormularioSection button{
+.contactoFormularioSection button,
+.contactanosParagraph{
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
@@ -60,10 +54,6 @@
     margin: 20px auto;
     padding: 10px 45px;
     width: 180px;
-}
-/* Hover del botón */
-.formulario .btn:hover {
-    background-color: #92B8CB;
 }
 /* Media queries---------------------------------------------------------------------------------- */
 /* Tablet -----------------------------------------------------------------------------------------*/
