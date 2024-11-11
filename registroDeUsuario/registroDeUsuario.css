@@ -1,5 +1,4 @@
-.background
-{
+.background{
     position: fixed; /* Fijo para que cubra toda la pantalla */
     top: 0;
     left: 0;
@@ -11,186 +10,67 @@
     filter: opacity(75%); /*Desenfoca la imagen*/
     z-index: -1; /*Coloca el fondo detrás del contenido*/    
 }
-.registro {
-    height: 750px;
-    display: flex;
-    flex-direction: column;
-  }
-
-
-/* Contenedor form */
-#contenedorFormulario{
-    align-content: center;
+.primarySection{
+    margin-top: 80px;
+    padding: 40px 50px;
 }
-
-
-#formulario{
-    align-content: center;
-}
-
-
-#leyenda{
-    font-family: "Quicksand", sans-serif;
-    margin-top: 90px;
-    margin-left: 200px;
-    margin-right: 200px;
+.primaryTitle{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
     text-align: center;
+    margin-bottom: 20px;
 }
-
-
-main{
-    padding: 20px;
-    width: 700px;
-    height: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
-    align-content:center;
+.primaryParagraph,
+.datosTitle,
+.mensajeForm{
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    text-align: justify;
-    font-size: 16 px;
-    display:inline-block;
-    border-radius:3%;
-    background-color:white;
-}
-
-
-/* Contenedor de label e input: ambos se comodan en una sola línea */
-.divForm{
-    display:flex;  
-}
-.divButton{
-    display: flex;
-    justify-content: center;
-}
-
-
-/* Titulo */
-h2{
-    font-size: 1.3em;
-    padding-bottom: 10px;
-}
-#titulo-formulario{
-    text-align: left;
-    font-size: 1 em;
-    padding-bottom: 10px;
-
-
-}
-/* Etiquetas */
-.form-label{
-    white-space: nowrap;
-    font-size: 17px;
-    margin-right: 5px;
-    width: 150px;
-}
-
-
-
-
-/* Inputs de texto */
-.form-control{
-    height: 40px;
-    border-style: none;
-    padding: 10px;
-}
-#nombre, #apellidoP, #apellidoM, #correo, #telefono, #contrasenia{
-    background-color: #e7e6e6;
-    font-size: 17px;
-    width: 450px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border-radius: 100px;
-}
-
-#confirContrasenia{
-    background-color: #e7e6e6;
-    font-size: 17px;
-    width: 450px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border-radius: 100px;
-}
-
-.form-control:focus {
-    border-style: none;
-    outline: none;
-    box-shadow: 0 0 5px rgb(228, 228, 228);
-}
-/* Boton de acción */
-#boton{
-    background-color: var(--azulBotones);
-    border-style: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: 150px;
-    border-radius: 20px;
-   
-   
-}
-/* contenedor de link de inicio de sesión */
-#div-inicia-sesion{
-    margin: auto;
-    display: flex;
-    justify-content: center;
-   
-}
-
-
-/* link de inicio de sesion */
-#link-inicia-sesion{
     color: black;
 }
-
-
-#mensajeContrasenia{
-    font-size: 12px;
-    text-align: center;
-    margin: 20px;
-
-
+.mensajeForm{
+    font-size: 10px;
 }
-
-
-/* Media queries -------------------------------------------------------------------------------*/
-/* Tablet */
-@media (min-width: 601px) and (max-width: 1024px) {
-    #contenedorFormulario, .divButton {
-        width: auto;
-        height: auto;
-    }
+.datosTitle{
+    font-size: 17px;
 }
-/* Telefono ----------------------------------------------------------------------------------*/
-@media (max-width: 600px) {
-    .main, #contenedorFormulario, .divButton {
-        width: auto;
-        height: auto;
-    }
-    .divForm, #div-contrasenias{
-        display:contents;  
-    }
-    .form-label{
-        font-size: 13px;
-        width: 150px;
-    }
-
-
-    .registro{
-        padding: 0px;
-        width: 350px;
-        height: 550px;
-    }
-    .crudFormTitle{
-        padding: 40px 20px 20px 20px;
-    }
-    .crudFormLabel,
-    .crudFormInput,
-    .crudFormInputFile{
-        font-size: 10px;
-    }
-   
+.registroSection{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    padding: 0px 50px;
+}
+.registroFormulario{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+.registroSection label,
+.registroSection input,
+.registroSection button,
+.inicioSesionParagraph{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.registroSection label,
+.inicioSesionParagraph{
+    font-weight: 500;
+}
+.registroButton{
+    background-color: #92B8CB;
+    border: none;
+    border-radius: 20px;
+    display: block;
+    margin: 20px auto;
+    margin-bottom: 0;
+    padding: 10px 45px;
+    width: 185px;
+}
+*{
+    margin: 0;
 }
