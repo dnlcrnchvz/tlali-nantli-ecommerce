@@ -1,3 +1,14 @@
+.carruselSection{
+    margin-top: 80px;
+}
+.indexTitle{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-align: center;
+    padding-top: 30px;
+}
 .carousel-inner,
 .carousel-item,
 .carousel-image{
@@ -9,20 +20,15 @@
     align-items:center;
     justify-content: center;
 }
-.indexTitle{
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    text-align: center;
-    padding-top: 30px;
-}
 .carruselTitle,
 .carruselParagraph{
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
+}
+.categoriasSection{
+    margin-bottom: 80px;
 }
 .categoriasContainer{
     padding-top: 30px;
@@ -65,32 +71,3 @@
         height: 20px;
     }
 }
-/* .index{
-    font-family: "Playfair Display", sans-serif;
-    margin-top: 90px;
-    margin-left: 200px;
-    margin-right: 200px;
-    text-align: center;
-    padding-bottom: 2%;
-}
-#imagenContainer{
-    height: 5%;
-    width:100%
-}
-
-.categorias {
-    display: flex;
-    justify-content: space-around;
-    gap: 8px;
-    font-family: "Quicksand";
-    text-align: center;
-
-}
-h5{
-    font-family: "Playfair Display", sans-serif;
-}
-.pCarrusel
-{
-    font-family: "quicksand", sans-serif;
-}
- */
