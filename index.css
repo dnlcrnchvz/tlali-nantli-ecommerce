@@ -27,8 +27,14 @@
     font-weight: weight;
     font-style: normal;
 }
+
+.categoria{
+    text-decoration: none;
+}
+
 .categoriasSection{
     margin-bottom: 80px;
+    
 }
 .categoriasContainer{
     padding-top: 30px;
