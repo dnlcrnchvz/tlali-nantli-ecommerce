@@ -17,6 +17,7 @@
 .InformacionSection a,
 .administradorSection a{
     color: black;
+    text-decoration: none;
 }
 .fa-instagram,
 .fa-x-twitter,
