@@ -26,91 +26,136 @@
 <body>
     <!-- Encabezado de la pagina-->
     <header>
-        <!-- Contenedor del Navbar -->
-        <!-- Aquí se cargará el Navbar desde el archivo navbar.js -->
-        <div id="navbarContainer"></div>
+        <div id="navbarContainer"></div><!-- Contenedor del Navbar -->
     </header>
-
-
-    <main style="margin-top: 80px;"> <!-- estilo provisional para que el main no se ponga detras del navbar -->
-       <!-- Contenedor del Banner con el Título -->
-     <div class="banner-container">
-        <img src="imagenes/fondo3.jpg" alt="Maquillaje" class="banner-img">
-        <h1 class="banner-title">Maquillaje</h1>
-     </div>
-        
-     
-     <div class="seccion-productos">
-     
-             <div class="card" style="width: 15rem;">
-                 <img src="imagenes/baseMaquillaje.png" class="card-img-top" alt="...">
-                 <div class="card-body">
-                     <h5 class="card-title">Base de Maquillaje</h5>
-                     <p class="card-text">Base de maquillaje ligera y de larga duración que proporciona una cobertura natural para un acabado impecable.</p>
-                     <p class="card-price">Precio: $360 MXN</p>
-                     <section class="d-grid">
-                         <button type="submit" class="btn btn-primary" id="boton">Comprar</button>
-                     </section>
-                 </div>
-             </div>
-     
-             <div class="card" style="width: 15rem;">
-                 <img src="imagenes/delineadorLiquido.png" class="card-img-top" alt="...">
-                 <div class="card-body">
-                     <h5 class="card-title">Delineador Liquido</h5>
-                     <p class="card-text">Delineador líquido, de color intenso disponible en varios colores de alta precisión que define tus ojos con un trazo intenso y duradero. </p>
-                     <p class="card-price">Precio: $359 MXN</p>
-                     <section class="d-grid">
-                         <button type="submit" class="btn btn-primary" id="boton">Comprar</button>
-                     </section>
-                 </div>
-             </div>
- 
-             <div class="card" style="width: 15rem;">
-                 <img src="imagenes/fijadorMaquillaje.png" class="card-img-top" alt="...">
-                 <div class="card-body">
-                     <h5 class="card-title">Fijador de Maquillaje</h5>
-                     <p class="card-text">Fijador de maquillaje en spray que prolonga la duración de tu look, manteniéndolo intacto por horas, aprueba de agua larga duración .</p>
-                     <p class="card-price">Precio: $300 MXN</p>
-                     <section class="d-grid">
-                         <button type="submit" class="btn btn-primary" id="boton">Comprar</button>
-                     </section>
-                 </div>
-             </div>
- 
-             <div class="card" style="width: 15rem;">
-                 <img src="imagenes/lapizLabial.png" class="card-img-top" alt="...">
-                 <div class="card-body">
-                     <h5 class="card-title">Lapiz Labial</h5>
-                     <p class="card-text">Lápiz labial cremoso efecto mate de larga duración con colores vibrantes que hidrata tus labios y les da un toque de elegancia</p>
-                     <p class="card-price">Precio: $319 MXN</p>
-                     <section class="d-grid">
-                         <button type="submit" class="btn btn-primary" id="boton">Comprar</button>
-                     </section>
-                 </div>
-             </div>
- 
-             <div class="card" style="width: 15rem;">
-                 <img src="imagenes/mascaraPestañas.png" class="card-img-top" alt="...">
-                 <div class="card-body">
-                     <h5 class="card-title">Máscara de Pestañas</h5>
-                     <p class="card-text">Máscara de pestañas que aporta volumen y alarga cada pestaña de larga duración, dándote una mirada impactante.</p>
-                     <p class="card-price">Precio: $250 MXN</p>
-                     <section class="d-grid">
-                         <button type="submit" class="btn btn-primary" id="boton">Comprar</button>
-                     </section>
-                 </div>
-             </div>
- 
-             
-     </div>      
-     </main>
-     <footer>
-        <div id="footerContainer"></div> <!-- Contenedor de Footer -->
-      </footer>
+    <!-- Contenido principal -->
+    <main>
+        <section class="bannerSection">
+            <div class="bannerContainer">
+                <img src="imagenes/fondo3.jpg" alt="Maquillaje" class="bannerImg">
+                <h1 class="bannerTitle text-center col-12">Maquillaje</h1>
+            </div>
+        </section>
+        <section class="productosSection">
+            <div class="productosContainer text-center">
+                <div class="card productoCard">
+                    <img src="imagenes/baseMaquillaje.png" class="card-img-top productoImagen" alt="...">
+                    <div class="card-body productoBody">
+                        <h5 class="productoTitle">Base de Maquillaje</h5>
+                        <p class="productoText">Base de maquillaje ligera y de larga duración que proporciona una cobertura natural para un acabado impecable.</p>
+                        <p class="productoPrice">Precio: $360 MXN</p>
+                        <button type="submit" class="productoButton" id="boton">Comprar</button>
+                    </div>
+                </div>
+                <div class="card productoCard">
+                    <img src="imagenes/delineadorLiquido.png" class="card-img-top productoImagen" alt="...">
+                    <div class="card-body productoBody">
+                        <h5 class="productoTitle">Delineador Liquido</h5>
+                        <p class="productoText">Delineador líquido, de color intenso disponible en varios colores de alta precisión que define tus ojos con un trazo intenso y duradero.</p>
+                        <p class="productoPrice">Precio: $359 MXN</p>
+                        <button type="submit" class="productoButton" id="boton">Comprar</button>
+                    </div>
+                </div>
+                <div class="card productoCard">
+                    <img src="imagenes/fijadorMaquillaje.png" class="card-img-top productoImagen" alt="...">
+                    <div class="card-body productoBody">
+                        <h5 class="productoTitle">Fijador de Maquillaje</h5>
+                        <p class="productoText">Fijador de maquillaje en spray que prolonga la duración de tu look, manteniéndolo intacto por horas, aprueba de agua larga duración.</p>
+                        <p class="productoPrice">Precio: $300 MXN</p>
+                        <button type="submit" class="productoButton" id="boton">Comprar</button>
+                    </div>
+                </div>
+                <div class="card productoCard">
+                    <img src="imagenes/lapizLabial.png" class="card-img-top productoImagen" alt="...">
+                    <div class="card-body productoBody">
+                        <h5 class="productoTitle">Lapiz Labial</h5>
+                        <p class="productoText">Lápiz labial cremoso efecto mate de larga duración con colores vibrantes que hidrata tus labios y les da un toque de elegancia.</p>
+                        <p class="productoPrice">Precio: $319 MXN</p>
+                        <button type="submit" class="productoButton" id="boton">Comprar</button>
+                    </div>
+                </div>
+                <div class="card productoCard">
+                    <img src="imagenes/mascaraPestañas.png" class="card-img-top productoImagen" alt="...">
+                    <div class="card-body productoBody">
+                        <h5 class="productoTitle">Máscara de Pestañas</h5>
+                        <p class="productoText">Máscara de pestañas que aporta volumen y alarga cada pestaña de larga duración, dándote una mirada impactante.</p>
+                        <p class="productoPrice">Precio: $250 MXN</p>
+                        <button type="submit" class="productoButton" id="boton">Comprar</button>
+                    </div>
+                </div>
+                <div class="card productoCard">
+                    <img src="imagenes/baseMaquillaje.png" class="card-img-top productoImagen" alt="...">
+                    <div class="card-body productoBody">
+                        <h5 class="productoTitle">Base de Maquillaje</h5>
+                        <p class="productoText">Base de maquillaje ligera y de larga duración que proporciona una cobertura natural para un acabado impecable.</p>
+                        <p class="productoPrice">Precio: $360 MXN</p>
+                        <button type="submit" class="productoButton" id="boton">Comprar</button>
+                    </div>
+                </div>
+                <div class="card productoCard">
+                    <img src="imagenes/delineadorLiquido.png" class="card-img-top productoImagen" alt="...">
+                    <div class="card-body productoBody">
+                        <h5 class="productoTitle">Delineador Liquido</h5>
+                        <p class="productoText">Delineador líquido, de color intenso disponible en varios colores de alta precisión que define tus ojos con un trazo intenso y duradero.</p>
+                        <p class="productoPrice">Precio: $359 MXN</p>
+                        <button type="submit" class="productoButton" id="boton">Comprar</button>
+                    </div>
+                </div>
+                <div class="card productoCard">
+                    <img src="imagenes/fijadorMaquillaje.png" class="card-img-top productoImagen" alt="...">
+                    <div class="card-body productoBody">
+                        <h5 class="productoTitle">Fijador de Maquillaje</h5>
+                        <p class="productoText">Fijador de maquillaje en spray que prolonga la duración de tu look, manteniéndolo intacto por horas, aprueba de agua larga duración.</p>
+                        <p class="productoPrice">Precio: $300 MXN</p>
+                        <button type="submit" class="productoButton" id="boton">Comprar</button>
+                    </div>
+                </div>
+                <div class="card productoCard">
+                    <img src="imagenes/lapizLabial.png" class="card-img-top productoImagen" alt="...">
+                    <div class="card-body productoBody">
+                        <h5 class="productoTitle">Lapiz Labial</h5>
+                        <p class="productoText">Lápiz labial cremoso efecto mate de larga duración con colores vibrantes que hidrata tus labios y les da un toque de elegancia.</p>
+                        <p class="productoPrice">Precio: $319 MXN</p>
+                        <button type="submit" class="productoButton" id="boton">Comprar</button>
+                    </div>
+                </div>
+                <div class="card productoCard">
+                    <img src="imagenes/mascaraPestañas.png" class="card-img-top productoImagen" alt="...">
+                    <div class="card-body productoBody">
+                        <h5 class="productoTitle">Máscara de Pestañas</h5>
+                        <p class="productoText">Máscara de pestañas que aporta volumen y alarga cada pestaña de larga duración, dándote una mirada impactante.</p>
+                        <p class="productoPrice">Precio: $250 MXN</p>
+                        <button type="submit" class="productoButton" id="boton">Comprar</button>
+                    </div>
+                </div>
+                <div class="card productoCard">
+                    <img src="imagenes/baseMaquillaje.png" class="card-img-top productoImagen" alt="...">
+                    <div class="card-body productoBody">
+                        <h5 class="productoTitle">Base de Maquillaje</h5>
+                        <p class="productoText">Base de maquillaje ligera y de larga duración que proporciona una cobertura natural para un acabado impecable.</p>
+                        <p class="productoPrice">Precio: $360 MXN</p>
+                        <button type="submit" class="productoButton" id="boton">Comprar</button>
+                    </div>
+                </div>
+                <div class="card productoCard">
+                    <img src="imagenes/delineadorLiquido.png" class="card-img-top productoImagen" alt="...">
+                    <div class="card-body productoBody">
+                        <h5 class="productoTitle">Delineador Liquido</h5>
+                        <p class="productoText">Delineador líquido, de color intenso disponible en varios colores de alta precisión que define tus ojos con un trazo intenso y duradero.</p>
+                        <p class="productoPrice">Precio: $359 MXN</p>
+                        <button type="submit" class="productoButton" id="boton">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div id="footerContainer"></div> <!-- Contenedor del footer -->
+    </footer>
     <!-- Scripts  de JavaScript-->
-    <script src="../navbar/navbar.js"></script> <!-- script del navbar.js -->
-    <script src="../footer/footer.js"></script> <!-- script del footer.js -->
+    <script src="../navbar/navbar.js"></script> <!-- Script del navbar.js -->
+    <script src="../footer/footer.js"></script> <!-- Script del footer.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
