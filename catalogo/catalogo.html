@@ -26,167 +26,140 @@
 <body>
     <!-- Encabezado de la pagina-->
     <header>
-        <!-- Contenedor del Navbar -->
-        <!-- Aquí se cargará el Navbar desde el archivo navbar.js -->
-        <div id="navbarContainer"></div>
+        <div id="navbarContainer"></div><!-- Contenedor del Navbar -->
     </header>
     <!-- Contenido principal -->
-    <main style="margin-top: 80px;"> <!-- estilo provisional para que el main no se ponga detras del navbar -->
-       
-       <img  class="fondoVerde"   src="imagenes/fondo3.jpg" alt="" srcset="">
-
-       <div class="seccion-categorias">
-        <div class="categorias">
-            <a href="./maquillaje.html" class="categoria"> <!-- Link a la sección de maquillaje -->
-                <img src="imagenes/maquillaje.jpeg" alt="Maquillaje">
+    <main>
+        <section class="bannerSection">
+            <div class="bannerContainer">
+                <img src="imagenes/fondo3.jpg" alt="Maquillaje" class="bannerImg">
+                <h1 class="bannerTitle text-center col-12">Catálogo</h1>
+            </div>
+        </section>
+        <section class="categoriasSection">
+            <div class="categoriasContainer text-center">
+                <a href="./maquillaje.html" class="categoriaAncor"> <!-- Link a la sección de maquillaje -->
+                    <img src="imagenes/maquillaje.jpeg" alt="Maquillaje">
+                    <!-- <span>Maquillaje</span> -->
+                </a>
+                <a href="./cuidadopersonal.html" class="categoriaAncor"> <!-- Link a la sección de cuidado personal -->
+                    <img src="imagenes/cuidadoPersonal.jpeg" alt="Cuidado Personal">
+                    <!-- <span>Cuidado Personal</span> -->
+                </a>
+                <a href="./masvendido.html" class="categoriaAncor"> <!-- Link a la sección de más vendidos -->
+                    <img src="imagenes/bestSellers.jpeg" alt="Más Vendido">
+                    <!--  -->
+                </a>
+            </div>
+            <div class="categoriasTitles"> <!-- div provisional -->
                 <span>Maquillaje</span>
-            </a>
-            <a href="./cuidadopersonal.html" class="categoria"> <!-- Link a la sección de cuidado personal -->
-                <img src="imagenes/cuidadoPersonal.jpeg" alt="Cuidado Personal">
                 <span>Cuidado Personal</span>
-            </a>
-            <a href="./masvendido.html" class="categoria"> <!-- Link a la sección de más vendidos -->
-                <img src="imagenes/bestSellers.jpeg" alt="Más Vendido">
                 <span>Más Vendido</span>
-            </a>
-        </div>
-    </div>
-    
-    <div class="seccion-productos">
-        <h3>Lo más reciente ✨</h3>
-        <div class="productos">
-            <div class="card" style="width: 18rem;">
-                <img src="imagenes/aceiteAlmendras.png" class="card-img-top" alt="Aceite de almendras">
-                <div class="card-body">
-                    <h5 class="card-title">Aceite de almendras</h5>
-                    <p class="card-text">Hidrata y nutre la piel, dejándola suave y suave al tacto. Ideal para masajes y cuidados diarios.</p>
-                    <p>Precio: $300.00 MXN</p> <!-- Cambié "Precio" aquí -->
-                    <section class="d-grid">
-                        <button type="submit" class="btn btn-primary" id="boton">Comprar</button>
-                    </section>
+            </div>
+        </section>
+        <section class="productosSection">
+            <h2 class="productosSectionTitle text-center">Lo más reciente ✨</h2>
+            <div class="productosContainer text-center">
+                <div class="card productoCard">
+                    <img src="imagenes/baseMaquillaje.png" class="card-img-top productoImagen" alt="...">
+                    <div class="card-body productoBody">
+                        <h5 class="productoTitle">Base de Maquillaje</h5>
+                        <p class="productoText">Base de maquillaje ligera y de larga duración que proporciona una cobertura natural para un acabado impecable.</p>
+                        <p class="productoPrice">Precio: $360 MXN</p>
+                        <button type="submit" class="productoButton" id="boton">Comprar</button>
+                    </div>
+                </div>
+                <div class="card productoCard">
+                    <img src="imagenes/delineadorLiquido.png" class="card-img-top productoImagen" alt="...">
+                    <div class="card-body productoBody">
+                        <h5 class="productoTitle">Delineador Liquido</h5>
+                        <p class="productoText">Delineador líquido, de color intenso disponible en varios colores de alta precisión que define tus ojos con un trazo intenso y duradero.</p>
+                        <p class="productoPrice">Precio: $359 MXN</p>
+                        <button type="submit" class="productoButton" id="boton">Comprar</button>
+                    </div>
+                </div>
+                <div class="card productoCard">
+                    <img src="imagenes/fijadorMaquillaje.png" class="card-img-top productoImagen" alt="...">
+                    <div class="card-body productoBody">
+                        <h5 class="productoTitle">Fijador de Maquillaje</h5>
+                        <p class="productoText">Fijador de maquillaje en spray que prolonga la duración de tu look, manteniéndolo intacto por horas, aprueba de agua larga duración.</p>
+                        <p class="productoPrice">Precio: $300 MXN</p>
+                        <button type="submit" class="productoButton" id="boton">Comprar</button>
+                    </div>
+                </div>
+                <div class="card productoCard">
+                    <img src="imagenes/lapizLabial.png" class="card-img-top productoImagen" alt="...">
+                    <div class="card-body productoBody">
+                        <h5 class="productoTitle">Lapiz Labial</h5>
+                        <p class="productoText">Lápiz labial cremoso efecto mate de larga duración con colores vibrantes que hidrata tus labios y les da un toque de elegancia.</p>
+                        <p class="productoPrice">Precio: $319 MXN</p>
+                        <button type="submit" class="productoButton" id="boton">Comprar</button>
+                    </div>
+                </div>
+                <div class="card productoCard">
+                    <img src="imagenes/mascaraPestañas.png" class="card-img-top productoImagen" alt="...">
+                    <div class="card-body productoBody">
+                        <h5 class="productoTitle">Máscara de Pestañas</h5>
+                        <p class="productoText">Máscara de pestañas que aporta volumen y alarga cada pestaña de larga duración, dándote una mirada impactante.</p>
+                        <p class="productoPrice">Precio: $250 MXN</p>
+                        <button type="submit" class="productoButton" id="boton">Comprar</button>
+                    </div>
+                </div>
+                <div class="card productoCard">
+                    <img src="imagenes/baseMaquillaje.png" class="card-img-top productoImagen" alt="...">
+                    <div class="card-body productoBody">
+                        <h5 class="productoTitle">Base de Maquillaje</h5>
+                        <p class="productoText">Base de maquillaje ligera y de larga duración que proporciona una cobertura natural para un acabado impecable.</p>
+                        <p class="productoPrice">Precio: $360 MXN</p>
+                        <button type="submit" class="productoButton" id="boton">Comprar</button>
+                    </div>
+                </div>
+                <div class="card productoCard">
+                    <img src="imagenes/aceiteLavanda1.png" class="card-img-top productoImagen" alt="...">
+                    <div class="card-body productoBody">
+                        <h5 class="productoTitle">Aceite Lavanda</h5>
+                        <p class="productoText"> Perfecto para relajar la mente y el cuerpo. También ayuda a calmar la piel irritada y es excelente para masajes.</p>
+                        <p class="productoPrice">Precio: $100 MXN</p>
+                        <button type="submit" class="productoButton" id="boton">Comprar</button>
+                    </div>
+                </div>
+                <div class="card productoCard">
+                    <img src="imagenes/aceiteAlmendras.png" class="card-img-top productoImagen" alt="...">
+                    <div class="card-body productoBody">
+                        <h5 class="productoTitle">Aceite de almendras</h5>
+                        <p class="productoText">Hidrata y nutre la piel, dejándola suave y suave al tacto. Ideal para masajes y cuidados diarios.</p>
+                        <p class="productoPrice">Precio: $300 MXN</p>
+                        <button type="submit" class="productoButton" id="boton">Comprar</button>
+                    </div>
+                </div>
+                <div class="card productoCard">
+                    <img src="imagenes/sueroAcido.png" class="card-img-top productoImagen" alt="...">
+                    <div class="card-body productoBody">
+                        <h5 class="productoTitle">Suero ácido</h5>
+                        <p class="productoText">Revitaliza y rejuvenece tu piel con este suero hidratante y nutritivo para una apariencia radiante.</p>
+                        <p class="productoPrice">Precio: $350 MXN</p>
+                        <button type="submit" class="productoButton" id="boton">Comprar</button>
+                    </div>
+                </div>
+                <div class="card productoCard">
+                    <img src="imagenes/padsdesmaquillantes.png" class="card-img-top productoImagen" alt="...">
+                    <div class="card-body productoBody">
+                        <h5 class="productoTitle">Pads desmaquillantes</h5>
+                        <p class="productoText">Eliminan el maquillaje de manera suave y eficaz, dejando tu piel limpia y fresca.</p>
+                        <p class="productoPrice">Precio: $200 MXN</p>
+                        <button type="submit" class="productoButton" id="boton">Comprar</button>
+                    </div>
                 </div>
             </div>
-    
-            <div class="card" style="width: 18rem;">
-                <img src="imagenes/aceiteLavanda1.png" class="card-img-top" alt="Aceite de lavanda">
-                <div class="card-body">
-                    <h5 class="card-title">Aceite de lavanda</h5>
-                    <p class="card-text">Perfecto para relajar la mente y el cuerpo. También ayuda a calmar la piel irritada y es excelente para masajes.</p>
-                    <p>Precio: $100.00 MXN</p> <!-- Cambié "Precio" aquí -->
-                    <section class="d-grid">
-                        <button type="submit" class="btn btn-primary" id="boton">Comprar</button>
-                    </section>
-                </div>
-            </div>
-    
-            <div class="card" style="width: 18rem;">
-                <img src="imagenes/balsamoLabial.png" class="card-img-top" alt="Bálsamo labial">
-                <div class="card-body">
-                    <h5 class="card-title">Bálsamo labial</h5>
-                    <p class="card-text">Mantén tus labios hidratados y protegidos. Perfecto para el cuidado diario de tus labios.</p>
-                    <p>Precio: $100.00 MXN</p> <!-- Cambié "Precio" aquí -->
-                    <section class="d-grid">
-                        <button type="submit" class="btn btn-primary" id="boton">Comprar</button>
-                    </section>
-                </div>
-            </div>
-    
-            <div class="card" style="width: 18rem;">
-                <img src="imagenes/baseMaquillaje.png" class="card-img-top" alt="Base de maquillaje">
-                <div class="card-body">
-                    <h5 class="card-title">Base de maquillaje</h5>
-                    <p class="card-text">Consigue una cobertura impecable con nuestra base de maquillaje de larga duración.</p>
-                    <p>Precio: $360.00 MXN</p> <!-- Cambié "Precio" aquí -->
-                    <section class="d-grid">
-                        <button type="submit" class="btn btn-primary" id="boton">Comprar</button>
-                    </section>
-                </div>
-            </div>
-    
-            <div class="card" style="width: 18rem;">
-                <img src="imagenes/delineadorLiquido.png" class="card-img-top" alt="Delineador líquido">
-                <div class="card-body">
-                    <h5 class="card-title">Delineador líquido</h5>
-                    <p class="card-text">Delinea tus ojos con precisión. Ideal para un acabado duradero y perfecto.</p>
-                    <p>Precio: $359.00 MXN</p> <!-- Cambié "Precio" aquí -->
-                    <section class="d-grid">
-                        <button type="submit" class="btn btn-primary" id="boton">Comprar</button>
-                    </section>
-                </div>
-            </div>
-    
-            <div class="card" style="width: 18rem;">
-                <img src="imagenes/fijadorMaquillaje.png" class="card-img-top" alt="Fijador de maquillaje">
-                <div class="card-body">
-                    <h5 class="card-title">Fijador de maquillaje</h5>
-                    <p class="card-text">Mantén tu maquillaje intacto todo el día con nuestro fijador de maquillaje de alta fijación.</p>
-                    <p>Precio: $300.00 MXN</p> <!-- Cambié "Precio" aquí -->
-                    <section class="d-grid">
-                        <button type="submit" class="btn btn-primary" id="boton">Comprar</button>
-                    </section>
-                </div>
-            </div>
-    
-            <div class="card" style="width: 18rem;">
-                <img src="imagenes/lapizLabial.png" class="card-img-top" alt="Lápiz labial">
-                <div class="card-body">
-                    <h5 class="card-title">Lápiz labial</h5>
-                    <p class="card-text">El toque perfecto para tus labios, con una variedad de tonos vibrantes y duraderos.</p>
-                    <p>Precio: $319.00 MXN</p> <!-- Cambié "Precio" aquí -->
-                    <section class="d-grid">
-                        <button type="submit" class="btn btn-primary" id="boton">Comprar</button>
-                    </section>
-                </div>
-            </div>
-    
-            <div class="card" style="width: 18rem;">
-                <img src="imagenes/mascaraPestañas.png" class="card-img-top" alt="Máscara de pestañas">
-                <div class="card-body">
-                    <h5 class="card-title">Máscara de pestañas</h5>
-                    <p class="card-text">Consigue unas pestañas largas y voluminosas con nuestra fórmula de larga duración.</p>
-                    <p>Precio: $250.00 MXN</p> <!-- Cambié "Precio" aquí -->
-                    <section class="d-grid">
-                        <button type="submit" class="btn btn-primary" id="boton">Comprar</button>
-                    </section>
-                </div>
-            </div>
-    
-            <div class="card" style="width: 18rem;">
-                <img src="imagenes/padsdesmaquillantes.png" class="card-img-top" alt="Pads desmaquillantes">
-                <div class="card-body">
-                    <h5 class="card-title">Pads desmaquillantes</h5>
-                    <p class="card-text">Eliminan el maquillaje de manera suave y eficaz, dejando tu piel limpia y fresca.</p>
-                    <p>Precio: $200.00 MXN</p> <!-- Cambié "Precio" aquí -->
-                    <section class="d-grid">
-                        <button type="submit" class="btn btn-primary" id="boton">Comprar</button>
-                    </section>
-                </div>
-            </div>
-    
-            <div class="card" style="width: 18rem;">
-                <img src="imagenes/sueroAcido.png" class="card-img-top" alt="Suero ácido">
-                <div class="card-body">
-                    <h5 class="card-title">Suero ácido</h5>
-                    <p class="card-text">Revitaliza y rejuvenece tu piel con este suero hidratante y nutritivo para una apariencia radiante.</p>
-                    <p>Precio: $350.00 MXN</p> <!-- Cambié "Precio" aquí -->
-                    <section class="d-grid">
-                        <button type="submit" class="btn btn-primary" id="boton">Comprar</button>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </div>
+        </section>
     </main>
-
     <!-- Footer -->
-    <footer style="margin-top: 500px;"> <!-- estilo provisional mientras esta vacia la pag, para que el footer este más abajo -->
-        <!-- Contenedor del Footer -->
-        <!-- Aquí se cargará el Footer desde el archivo footer.js -->
-        <div id="footerContainer"></div>
+    <footer>
+        <div id="footerContainer"></div><!-- Contenedor del Footer -->
     </footer>
     <!-- Scripts  de JavaScript-->
-    <script src="../navbar/navbar.js"></script> <!-- script del navbar.js -->
-    <script src="../footer/footer.js"></script> <!-- script del footer.js -->
+    <script src="../navbar/navbar.js"></script> <!-- Script del navbar.js -->
+    <script src="../footer/footer.js"></script> <!-- Script del footer.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
