@@ -61,6 +61,13 @@
 .inicioSesionParagraph{
     font-weight: 500;
 }
+.contraseñaInput{
+    outline-style: none;
+    border: none;
+    outline: none;
+    width: 95%;
+}
+
 .registroButton{
     background-color: #92B8CB;
     border: none;
