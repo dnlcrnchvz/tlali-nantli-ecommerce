@@ -109,10 +109,16 @@
     .bannerTitle{
         top: 160px;
     }
+    .categoriaAncor img{
+        width: 190px;
+    }
 }
 /* Telefono ----------------------------------------------------------------------------------*/
 @media (max-width: 600px) {
     .bannerTitle{
         top: 170px;
+    }
+    .categoriaAncor img{
+        width: 100px;
     }
 }
