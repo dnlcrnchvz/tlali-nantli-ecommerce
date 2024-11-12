@@ -48,6 +48,6 @@ function registrarUsuario() {
     }
 
     // Mensaje de éxito
-            //alert("Su registro se realizó con éxito. Inicie sesión con su usuario y contraseña.");
+    alert("Su registro se realizó con éxito. Inicie sesión con su usuario y contraseña.");
 }
 //tlaliNantli1.
