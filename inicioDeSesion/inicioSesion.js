@@ -9,7 +9,7 @@ document.getElementById("inicioSesion").addEventListener("submit", (event) =>
             
             //Leer inputs
             const correoInput = document.getElementById("correo").value;
-            const contraseniaInput = document.getElementById("password").value;
+            const contraseniaInput = document.getElementById("contrasenia").value;
             const mensaje = document.getElementById("mensaje");
 
             // Recuperar datos del localStorage
@@ -35,6 +35,13 @@ document.getElementById("inicioSesion").addEventListener("submit", (event) =>
                     // Se redirige a página de inicio
                     /* mensaje.textContent = "Inicio de sesión correcto";
                     mensaje.style.color = "green"; */
+                    // Cambiar el enlace "Iniciar sesión" por "Cerrar sesión"
+                    const navLink = document.querySelector('a[href="../inicioDeSesion/inicioDeSesion.html"]');
+                    if (navLink) {
+                        navLink.textContent = "Cerrar sesión";
+                        navLink.href = "#"; // Aquí podemos agregar el comportamiento de cerrar sesión más tarde
+                    }
+
                     redirigirPaginaInicio();
                 } 
                 else

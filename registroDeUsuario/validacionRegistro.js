@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () =>
     const telefono=document.getElementById("telefono");
     const correo=document.getElementById("correo");
     const contrasenia=document.getElementById("contrasenia");
-    const confirContrasenia=document.getElementById("confirContrasenia");
+    const confirContrasenia=document.getElementById("password");
     
     let value;
     let mensaje;
