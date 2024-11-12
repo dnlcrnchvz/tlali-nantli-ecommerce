@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <a class="nav-link" href="../contacto/contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-disabled="true" href="../inicioDeSesion/inicioDeSesion.html">Iniciar sesión</a>
+                        <a id="iniciarSecion" class="nav-link" aria-disabled="true" href="../inicioDeSesion/inicioDeSesion.html">Iniciar sesión</a>
                     </li>
                 </ul>
             </div>

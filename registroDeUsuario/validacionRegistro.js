@@ -146,6 +146,8 @@ document.addEventListener('DOMContentLoaded', () =>
             confirContrasenia.classList.remove('is-invalid');//Borrar la clase in-invalid al input nombre
             confirContrasenia.classList.add('is-valid');//Agregar clase is-valid al input del nombre
             mensaje.textContent="";
+            // Mensaje de éxito
+            //alert("Su registro se realizó con éxito. Inicie sesión con su usuario y contraseña.");
         }
     });
 });
