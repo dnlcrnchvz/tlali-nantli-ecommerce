@@ -1,107 +1,90 @@
-/* Estilo del Banner */
-.banner-container {
-    position: relative;
+.bannerSection{
+    margin-top: 80px;
 }
-
-.banner-img {
+.bannerImg{
     width: 100%;
-    height: auto;
-    max-height: 200px;
+    height: 200px;
     object-fit: cover;
-    
 }
-
-.banner-title {
+.bannerTitle{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    align-items: center;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #000;
-    font-size: 3rem;
-    font-family: 'Playfair Display', serif;
+    top: 150px;
 }
-
-/* Contenedor de las cards */
-.seccion-productos {
+.productosContainer{
     display: flex;
     flex-wrap: wrap; /* Permite que las cards bajen de línea si no caben en una sola fila */
     justify-content: center; /* Centra las cards horizontalmente */
     gap: 20px; /* Espacio entre las cards */
-    padding: 20px; /* Margen interno del contenedor */
+    padding: 20px;
 }
-
-/* Estilos de las cards */
-.card {
-    width: 15rem; /* Mantiene el tamaño estándar de la card */
+.productosSection{
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+.productoCard{
+    width: 16rem;
     border: none;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.4s;
+    display: block;
+    align-content: space-between;
+    padding: 5px;
 }
-
-.card:hover {
+.productoCard:hover{
     transform: scale(1.05); /* Aumenta el tamaño en hover */
 }
-
-.card img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    height: 180px;
-    object-fit: contain;
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+.productoImagen{
+    width: 10rem;
+    height: 14rem;
+    padding: 15px 10px;
+    object-fit: cover;
 }
-
-.card-body {
-    padding: 15px;
+.productoTitle,
+.productoText,
+.productoPrice{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
-
-.card-title {
-    font-size: 18px;
-    color: #333;
-    font-weight: bold;
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-
+.productoText,
+.productoPrice{
+    font-size: small;
 }
-
-.card-text {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 10px;
-    text-align: center;
+.productoText{
+    min-height: 90px;
+    max-height: 150px;
 }
-
-.card-price {
-    text-align: center;
-    font-size: 1.em;  /* Ajusta el tamaño del texto si es necesario */
-    margin-top: 10px;  /* Agrega un margen superior si quieres separar el precio del texto anterior */
+.productoBody{
+    min-height: 200px;
 }
-
-/* Estilo del botón */
-#boton {
-    background-color: #A8CA7E;
-    color: rgb(0, 0, 0);
+.productoButton{
+    background-color: #30646F;
+    width: 100%;
+    height: 30px;
+    color: white;
     border: none;
-    border-radius: 50px;
-    width: 65%; /* Reduce el ancho al 65% */
-    height: 35px;
-    font-size: 16px;
+    border-radius: 35px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+    text-decoration: none;
 }
-
-#boton:hover {
-    background-color: #6fa06f; /* Color ligeramente más oscuro al pasar el cursor */
-    transform: scale(1.05); /* Agranda el botón ligeramente */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltarlo */
+/* Media queries -------------------------------------------------------------------------------*/
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .bannerTitle{
+        top: 160px;
+    }
 }
-
-#boton:active {
-    transform: scale(0.95); /* Reduce el tamaño al hacer clic */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Cambia la sombra cuando el botón está activo */
+/* Telefono ----------------------------------------------------------------------------------*/
+@media (max-width: 600px) {
+    .bannerTitle{
+        top: 170px;
+    }
 }
