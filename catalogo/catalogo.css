@@ -1,136 +1,124 @@
-/* Estilo del fondo */
-.fondoVerde {
+.bannerSection{
+    margin-top: 80px;
+}
+.bannerImg{
     width: 100%;
     height: 200px;
+    object-fit: cover;
 }
-
-/* Estilo de seccion categoria*/
-.seccion-categorias {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    
-}
-
-/* Espacio de categorias */
-.categorias {
-    display: flex;
-    gap: 200px;
-}
-
-
-/*categoría estilos */
-.categoria {
-    position: relative;
-    width: 300px; 
-    height: 120px; 
-    background-color: white;
-    border-radius: 100px;
-    overflow: hidden;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-
-}
-
-/* Estilo de la imagen */
-.categoria img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-    position: absolute; 
-}
-
-/* Estilo del texto */
-.categoria span {
-    position: relative;
-    z-index: 1; 
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: "Quicksand", sans-serif;
-    text-align: center; 
-    padding: 10px;
-    border-radius: 5px;
-    
-}
-
-
-
-
-/* Estilo de la sección de productos */
-.seccion-productos {
-    padding: 20px;
-    background-color: #ffffff;
-}
-
-.seccion-productos h3 {
-    font-size: 32px;
+.bannerTitle{
     font-family: "Playfair Display", serif;
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    align-items: center;
+    position: absolute;
+    top: 150px;
 }
-
-.productos {
+.categoriasSection{
+    margin-top: 20px;
+}
+.categoriasContainer{
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    justify-content: space-evenly;
 }
-
-/* Estilos de las tarjetas de productos */
-.card {
-    width: 500px;
-    min-height: 262px;
+.categoriaAncor img{
+    width: 300px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 60px;
+}
+.categoriaAncor {
+    text-decoration: none;
+    color: inherit;
+}
+.categoriaAncor span{
+    color: black;
+    font-size: large;
+    font-weight: 500;
+}
+.categoriasTitles{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.productosContainer{
+    display: flex;
+    flex-wrap: wrap; /* Permite que las cards bajen de línea si no caben en una sola fila */
+    justify-content: center; /* Centra las cards horizontalmente */
+    gap: 20px; /* Espacio entre las cards */
+    padding: 20px;
+}
+.productosSection{
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+.productoCard{
+    width: 16rem;
     border: none;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    margin: 10px;
+    transition: transform 0.4s;
+    display: block;
+    align-content: space-between;
+    padding: 5px;
 }
-
-.card img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    height: 180px;
+.productoCard:hover{
+    transform: scale(1.05); /* Aumenta el tamaño en hover */
+}
+.productoImagen{
+    width: 10rem;
+    height: 14rem;
+    padding: 15px 10px;
     object-fit: cover;
 }
-
-.card-body {
-    padding: 15px;
-}
-
-.card-title {
-    font-size: 20px;
-    color: #333;
-    font-weight: bold;
+.productoTitle,
+.productoText,
+.productoPrice,
+.categoriaAncor span{
     font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
-
-.card-text {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 10px;
-    font-family: "Quicksand", sans-serif;
+.productoText,
+.productoPrice{
+    font-size: small;
 }
-
-/* Estilo de los botones*/
-#boton {
-    background-color: #A8CA7E;
-    color: rgb(0, 0, 0);
+.productoText{
+    min-height: 90px;
+    max-height: 150px;
+}
+.productoBody{
+    min-height: 200px;
+}
+.productoButton{
+    background-color: #30646F;
+    width: 100%;
+    height: 30px;
+    color: white;
     border: none;
-    border-radius: 50px;
-    width: 120px;
-    height: 35px;
-    font-size: 18px;
-    margin-top: 15px;
+    border-radius: 35px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: "Quicksand", sans-serif;
-  }
-  
+    text-decoration: none;
+}
+/* Media queries -------------------------------------------------------------------------------*/
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .bannerTitle{
+        top: 160px;
+    }
+    .categoriaAncor img{
+        width: 190px;
+    }
+}
+/* Telefono ----------------------------------------------------------------------------------*/
+@media (max-width: 600px) {
+    .bannerTitle{
+        top: 170px;
+    }
+    .categoriaAncor img{
+        width: 100px;
+    }
+}
