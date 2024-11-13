@@ -40,8 +40,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     </ul>
                 </div>
                 <div class="carritoDiv">
-                    <button type="" class="carritoIcon">
-                        <a class="nav-link-carrito" href="#">
+                    <button type="submit" class="carritoIcon">
+                        <a class="nav-link-carrito" href="../carritoCompras/carrito.html">
                             <i class="fa-solid fa-cart-shopping carritoI"></i>
                         </a>
                     </button>
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
             </div>
         </nav>`;
     }
-    else //Si no está autnticado
+    else //Si no está autenticado
     {
         navbar= `
         <nav class="navbar navbar-expand-lg fixed-top">
