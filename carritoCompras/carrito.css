@@ -1,7 +1,19 @@
-carritoTitulo{
 
+.carritoTitulo{
+margin-top: 90px;
+font-family: "Playfair Display", serif;
+text-align: center;
+padding-bottom: 10px;
 }
-
-productosTitulo{
-
+#carrito{
+    text-align: center;
+    font-family: "Quicksand", serif;
+    
+}
+/* Media queries---------------------------------------------------------------------------------- */
+/* Tablet -----------------------------------------------------------------------------------------*/
+@media (min-width: 601px) and (max-width: 1024px) {
+}
+/* Mobil -------------------------------------------------------------------------------------------*/
+@media (max-width: 600px) {
 }
