@@ -1,3 +1,19 @@
+/* Asegura que el footer siempre esté al final de la página */
+html, body {
+    height: 100%; /* Hace que el cuerpo de la página ocupe toda la altura */
+    margin: 0; /* Elimina márgenes por defecto */
+}
+
+body {
+    display: flex; /* Usamos flexbox para distribuir el contenido */
+    flex-direction: column; /* Distribuye los elementos en una columna */
+}
+
+main {
+    flex-grow: 1; /* Esto permite que el contenido principal crezca y ocupe el espacio disponible */
+}
+
+
 .footer {
     background-color: #A8CA7E;
     font-family: "Quicksand", sans-serif;
