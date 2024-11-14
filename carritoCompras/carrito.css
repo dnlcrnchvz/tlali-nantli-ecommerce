@@ -8,7 +8,7 @@ productosTitulo{
 
 .carritoButton{
     background-color: #30646F;
-    width: 100%;
+    width: 500px;
     height: 30px;
     color: white;
     border: none;
@@ -16,4 +16,11 @@ productosTitulo{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     text-decoration: none;
+}
+
+.formularioCarrito{
+    width: 500px;
+    font-size: medium;
+
+
 }
