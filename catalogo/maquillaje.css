@@ -1,32 +1,37 @@
-.bannerSection{
+.bannerSection {
     margin-top: 80px;
 }
-.bannerImg{
+
+.bannerImg {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
-.bannerTitle{
+
+.bannerTitle {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight: 500; /* Cambié a 700 como ejemplo */
     font-style: normal;
     align-items: center;
     position: absolute;
     top: 150px;
 }
-.productosContainer{
+
+.productosContainer {
     display: flex;
-    flex-wrap: wrap; /* Permite que las cards bajen de línea si no caben en una sola fila */
-    justify-content: center; /* Centra las cards horizontalmente */
-    gap: 20px; /* Espacio entre las cards */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     padding: 20px;
 }
-.productosSection{
+
+.productosSection {
     margin-bottom: 80px;
     margin-top: 80px;
 }
-.productoCard{
+
+.productoCard {
     width: 16rem;
     border: none;
     border-radius: 10px;
@@ -36,36 +41,43 @@
     align-content: space-between;
     padding: 5px;
 }
-.productoCard:hover{
-    transform: scale(1.05); /* Aumenta el tamaño en hover */
+
+.productoCard:hover {
+    transform: scale(1.05);
 }
-.productoImagen{
+
+.productoImagen {
     width: 10rem;
     height: 14rem;
     padding: 15px 10px;
     object-fit: cover;
 }
+
 .productoTitle,
 .productoText,
-.productoPrice{
+.productoPrice {
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight: 400; /* Cambié a 400 como ejemplo */
     font-style: normal;
 }
+
 .productoText,
-.productoPrice{
+.productoPrice {
     font-size: small;
 }
-.productoText{
+
+.productoText {
     min-height: 90px;
     max-height: 150px;
 }
-.productoBody{
+
+.productoBody {
     min-height: 200px;
 }
-.productoButton{
-    background-color: #30646F;
+
+.productoButton {
+    background-color: #A8CA7E;
     width: 100%;
     height: 30px;
     color: white;
@@ -74,17 +86,22 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
-/* Media queries -------------------------------------------------------------------------------*/
+
+
+/* Media queries */
+
 /* Tablet */
 @media (min-width: 601px) and (max-width: 1024px) {
-    .bannerTitle{
+    .bannerTitle {
         top: 160px;
     }
 }
-/* Telefono ----------------------------------------------------------------------------------*/
+
+/* Teléfono */
 @media (max-width: 600px) {
-    .bannerTitle{
+    .bannerTitle {
         top: 170px;
     }
 }
