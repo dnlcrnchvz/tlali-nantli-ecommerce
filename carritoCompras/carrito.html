@@ -45,11 +45,42 @@
 
     <!-- Contenido principal -->
     <h1 class="carritoTitulo">Mi carrito</h1>
+
+    <!-- Carrito de compras -->
+    <section id="carrito">
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./imagenes/fijadorMaquillaje.png" class="img-fluid rounded-start" alt="fijador de maquillaje">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="nombreProducto">Fijador de maquillaje</h5>
+                  <p class="precioProducto"> $300 MXN</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./imagenes/lapizLabial.png" class="img-fluid rounded-start" alt="fijador de maquillaje">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="nombreProducto">Lapiz labial</h5>
+                  <p class="precioProducto"> $319 MXN</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
     <h2 class="productosTitulo">Productos</h2>
     <h3 class="nombreProducto">Rimel</h3>
 
     <div class="formularioCarrito">
-    <h2>Información de compra</h2>
+      <h2 class="info">Información de compra</h2>
     <form>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Nombre completo</label>
@@ -66,7 +97,7 @@
         <button type="submit" class="carritoButton" id="Carrito">Comprar</button>
       </form>
 
-      <h2>Información de envío</h2>
+      <h2 class="info">Información de envío</h2>
       <form>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Calle</label>
@@ -90,9 +121,9 @@
         </div>
         <button type="submit" class="carritoButton" id="Carrito">Comprar</button>
       </form>
-    </div>
-
-
+      <div>
+  
+  
     <!-- Footer -->
     <footer>
       <div id="footerContainer"></div>
@@ -103,6 +134,7 @@
   <!-- Script del carrito.js -->
   <script src="../navbar/navbar.js"></script>
   <!-- Script del navbar.js -->
+    <script type="module" src="../inicioDeSesion/inicioSesion.js"></script><!--Script inicioSesion-->
   <script src="../footer/footer.js"></script>
   <!-- Script del footer.js -->
   <script

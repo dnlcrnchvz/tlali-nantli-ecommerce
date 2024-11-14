@@ -15,33 +15,52 @@
     position: absolute;
     top: 150px;
 }
-.categoriasSection{
-    margin-top: 20px;
+.categoriasSection {
+    padding: 20px 0;
 }
-.categoriasContainer{
+
+.categoriasContainer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 20px;
 }
-.categoriaAncor img{
-    width: 300px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 60px;
-}
+
 .categoriaAncor {
     text-decoration: none;
-    color: inherit;
 }
-.categoriaAncor span{
-    color: black;
-    font-size: large;
-    font-weight: 500;
-}
-.categoriasTitles{
-    display: flex;
-    justify-content: space-around;
+
+.categoriaItem {
+    position: relative;
+    display: inline-block;
+    border-radius: 60px; /* Mantiene la forma ovalada */
+    overflow: hidden;
+    width: 264px; /* Ajusta el ancho para el efecto ovalado */
+    height: 130px; /* Ajusta la altura según la proporción deseada */
     text-align: center;
+    margin: 0 80px; /* Añade espacio entre las categorías */
 }
+
+.categoriaImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+}
+
+.categoriaTitle {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Ajusta la posición para centrar el texto */
+    color: rgb(7, 0, 0);
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif; /* Aplica la fuente Quicksand */
+}
+
 .productosContainer{
     display: flex;
     flex-wrap: wrap; /* Permite que las cards bajen de línea si no caben en una sola fila */
@@ -93,7 +112,7 @@
     min-height: 200px;
 }
 .productoButton{
-    background-color: #30646F;
+    background-color: #A8CA7E;
     width: 100%;
     height: 30px;
     color: white;
@@ -102,7 +121,15 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
+.productoButton:hover {
+    background-color: #146b3a; /* Cambia el color de fondo en hover */
+    transform: scale(1.05); /* Aumenta el tamaño en hover */
+}
+
+
 /* Media queries -------------------------------------------------------------------------------*/
 /* Tablet */
 @media (min-width: 601px) and (max-width: 1024px) {
