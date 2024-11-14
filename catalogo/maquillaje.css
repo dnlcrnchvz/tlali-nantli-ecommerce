@@ -89,6 +89,11 @@
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+.productoButton:hover {
+    background-color: #146b3a; /* Cambia el color de fondo en hover */
+    transform: scale(1.05); /* Aumenta el tamaño en hover */
+}
+
 
 /* Media queries */
 
