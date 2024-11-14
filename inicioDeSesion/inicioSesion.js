@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Si está autenticado, cambiar el texto del enlace a "Cerrar sesión"
         const navLink = document.getElementById("iniciarSesion");
         if (navLink) {
-            navLink.textContent = "Cerrar sesión";
+            navLink.textContent = "Iniciar sesión";
             navLink.href = "/inicioDeSesion/inicioDeSesion.html";
             // Evento para cerrar sesión
             navLink.addEventListener("click", function() {
@@ -54,7 +54,7 @@ document.getElementById("inicioSesion").addEventListener("submit", (event) => {
             // Cambiar el enlace "Iniciar sesión" por "Cerrar sesión"
             const navLink = document.getElementById("iniciarSesion");
             if (navLink) {
-                navLink.textContent = "Cerrar sesión";
+                //navLink.textContent = "Cerrar sesión";
                 navLink.href = "/inicioDeSesion/inicioDeSesion.html"; 
                 // Agregar un evento para cerrar sesión
                 navLink.addEventListener("click", function() {

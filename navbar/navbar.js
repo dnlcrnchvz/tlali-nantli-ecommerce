@@ -97,6 +97,5 @@ document.addEventListener("DOMContentLoaded", function() {
         </nav>`;
     }
     
-    
     document.getElementById('navbarContainer').innerHTML = navbar; 
 });
