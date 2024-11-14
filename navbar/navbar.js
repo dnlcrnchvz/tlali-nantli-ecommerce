@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             <a class="nav-link" href="../contacto/contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a id="iniciarSesion" class="nav-link" aria-disabled="true" href="../inicioDeSesion/inicioDeSesion.html">Cerrar sesión</a>
+                            <a id="iniciarSesion" class="nav-link" aria-disabled="true" href="../inicioDeSesion/inicioDeSesion.html" onclick="cerrarSesion()">Cerrar sesión</a>
                         </li>
                     </ul>
                 </div>
