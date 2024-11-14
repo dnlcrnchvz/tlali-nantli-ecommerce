@@ -6,15 +6,11 @@ document.addEventListener("DOMContentLoaded", function() {
     if (localStorage.getItem('isAuthenticated') === 'true') {
         // Si está autenticado, cambiar el texto del enlace a "Cerrar sesión"
         const navLink = document.getElementById("iniciarSesion");
-        if (navLink) {
-            navLink.textContent = "Cerrar sesión";
-            navLink.href = "/inicioDeSesion/inicioDeSesion.html";
-            // Evento para cerrar sesión
-            navLink.addEventListener("click", function() {
-                localStorage.removeItem('isAuthenticated'); // Eliminar autenticación
-                window.location.href = "/inicioDeSesion/inicioDeSesion.html"; // Redirigir al inicio de sesión
-            });
-        }
+        // Evento para cerrar sesión
+        navLink.addEventListener("click", function() {
+            localStorage.setItem('isAuthenticated', 'false');// Eliminar autenticación
+            window.location.href = "/inicioDeSesion/inicioDeSesion.html"; // Redirigir al inicio de sesión
+        });
     }
 });
 
@@ -50,24 +46,20 @@ document.getElementById("inicioSesion").addEventListener("submit", (event) => {
             
             // Redirigir a la página principal
             redirigirPaginaInicio();
-
-            // Cambiar el enlace "Iniciar sesión" por "Cerrar sesión"
-            const navLink = document.getElementById("iniciarSesion");
-            if (navLink) {
-                navLink.textContent = "Cerrar sesión";
-                navLink.href = "/inicioDeSesion/inicioDeSesion.html"; 
-                // Agregar un evento para cerrar sesión
-                navLink.addEventListener("click", function() {
-                    // Al hacer clic en "Cerrar sesión", eliminamos la autenticación
-                    localStorage.removeItem('isAuthenticated');
-                    // Redirigir al inicio de sesión
-                    window.location.href = "/inicioDeSesion/inicioDeSesion.html";
-                });
-            }            
         } else {
             // Si la contraseña o el correo no coinciden
             mensaje.textContent = "Usuario o contraseña incorrectos. Por favor verifique sus datos y vuelva a intentarlo.";
             mensaje.style.color = "red";
+        }
+
+        if (localStorage.getItem('isAuthenticated') === 'true') {
+            // Si está autenticado, cambiar el texto del enlace a "Cerrar sesión"
+            const navLink = document.getElementById("iniciarSesion");
+            // Evento para cerrar sesión
+            navLink.addEventListener("click", function() {
+                localStorage.setItem('isAuthenticated', 'false');// Eliminar autenticación
+                window.location.href = "/inicioDeSesion/inicioDeSesion.html"; // Redirigir al inicio de sesión
+            });
         }
     }
 });
