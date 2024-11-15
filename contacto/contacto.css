@@ -55,6 +55,34 @@
     padding: 10px 45px;
     width: 180px;
 }
+
+/*Estilo para imagen y spiner (cargando)*/
+.cargando-container {
+    position: fixed; /* El contenedor se mantendrá fijo en la pantalla */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Ancho al 100% del viewport */
+    height: 100vh; /* Alto al 100% del viewport */
+    display: flex; /* Usamos flexbox para centrar el contenido */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    z-index: 9999; /* Asegura que esté por encima de otros elementos */
+    overflow: hidden; /* Evita que la imagen se desborde */
+}
+
+.imagen-fondo {
+    position: absolute; /* Colocamos la imagen detrás de los otros elementos */
+    object-fit: cover; /* Asegura que la imagen cubra el área del contenedor sin deformarse */
+    z-index: -1; /* Coloca la imagen detrás de otros elementos */
+}
+
+.spinner-border {
+    position: relative; /* Asegura que el spinner se coloque por encima de la imagen */
+    z-index: 1; /* Coloca el spinner por encima de la imagen */
+}
+
+
+
 /* Media queries---------------------------------------------------------------------------------- */
 /* Tablet -----------------------------------------------------------------------------------------*/
 @media (min-width: 601px) and (max-width: 1024px) {

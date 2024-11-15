@@ -63,6 +63,44 @@ const siguienteMensaje=async (nuevoMensaje)=>
         const respuesta=await fetch(url,options);
         const registroMensaje=await respuesta.json();
         console.table(registroMensaje);
+
+        alert("Tu mensaje ha sido enviado. Pronto nos pondremos en contacto.");
+
+        document.getElementById("contacto").innerHTML=`<h1 class="contactanosTitle">¡Contáctanos!</h1>
+        <p class="contactanosParagraph text-center">En Tlali Nantli, estamos aquí para ayudarte. Si tienes alguna pregunta sobre nuestros productos, tu pedido o simplemente quieres saber más sobre nuestro compromiso con el cuidado orgánico, no dudes en ponerte en contacto con nosotros. Puedes enviarnos un mensaje a través del formulario de contacto o escribirnos directamente a nuestro correo electrónico. ¡Estaremos encantadas de atenderte y resolver cualquier duda que tengas!</p>
+  
+        <!-- Sección formulario -->
+        <section class="contactoFormularioSection">
+          <form id="formulario" class="contactoFormulario col-lg-4 col-md-7">
+            <!-- Apartado nombre -->
+            <div class="form-group mt-2 col-md-12">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre"/>
+            </div>
+            <!-- Apartado apellido -->
+            <div class="form-group mt-2 col-md-12">
+              <label for="apellido" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="apellido" placeholder="Escribe tu apellido"/>
+            </div>
+            <!-- Apartado teléfono -->
+            <div class="form-group mt-2 col-md-12">
+              <label for="telefono" class="form-label">Teléfono</label>
+              <input type="tel" class="form-control" id="telefono" placeholder="Escribe tu número telefonico a 10 dígitos"/>
+            </div>
+            <!-- Apartado email -->
+            <div class="form-group mt-2 col-md-12">
+              <label for="correoElectronico" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="correoElectronico" placeholder="ejemplo@correo.com"/>
+            </div>
+            <!-- Apartado mensaje -->
+            <div class="form-group mt-2 col-md-12">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="6" placeholder="¿Cómo podemos ayudarte?"></textarea>
+            </div>
+            <!-- Botón -->
+            <button type="submit" class="contactoFormularioButton" id="boton" >Enviar</button>
+          </form>
+        </section>`
     }
     catch(error)
     {
@@ -70,8 +108,19 @@ const siguienteMensaje=async (nuevoMensaje)=>
     }
 }
 
+const cargandoEnviarMensaje=()=>//Se crea la función para mostrar el spinner de cargando en lo que se muestra la información al dar click en el boton 2
+{
+    document.getElementById("contacto").innerHTML=`<div class="cargando-container col-12">
+            <img src="../navbar/imagenes/logoSinFondoTlaliNantli.png" class="imagen-fondo" alt="Imagen de fondo" />
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>`
+};
+
 mensaje.addEventListener("submit",(event)=>
 {
+    
     event.preventDefault();
     console.log(event);
     console.log("Dentro del formulario");
@@ -86,6 +135,8 @@ mensaje.addEventListener("submit",(event)=>
     }
 
     console.log(nuevoMensaje);
+
+    cargandoEnviarMensaje();
 
     if(validador(nuevoMensaje))
     {

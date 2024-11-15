@@ -1,10 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
     let navbar;
     
-    if (localStorage.getItem('isAuthenticated') === 'true')
-    {
+    if (localStorage.getItem('isAuthenticated') === 'true') {
         // Si está autenticado
-        navbar= `
+        navbar = `
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/index.html">
@@ -35,23 +34,19 @@ document.addEventListener("DOMContentLoaded", function() {
                             <a class="nav-link" href="../contacto/contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a id="iniciarSesion" class="nav-link" aria-disabled="true" href="../inicioDeSesion/inicioDeSesion.html">Cerrar sesión</a>
+                            <a id="iniciarSesion" class="nav-link" aria-disabled="true" href="../inicioDeSesion/inicioDeSesion.html" onclick="cerrarSesion()">Cerrar sesión</a>
                         </li>
                     </ul>
                 </div>
                 <div class="carritoDiv">
-                    <button type="submit" class="carritoIcon">
-                        <a class="nav-link-carrito" href="../carritoCompras/carrito.html">
-                            <i class="fa-solid fa-cart-shopping carritoI"></i>
-                        </a>
-                    </button>
+                    <a class="nav-link-carrito" href="../carritoCompras/carrito.html">
+                        <i class="fa-solid fa-cart-shopping carritoI"></i>
+                    </a>
                 </div>
             </div>
         </nav>`;
-    }
-    else //Si no está autenticado
-    {
-        navbar= `
+    } else { // Si no está autenticado
+        navbar = `
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/index.html">
@@ -87,16 +82,13 @@ document.addEventListener("DOMContentLoaded", function() {
                     </ul>
                 </div>
                 <div class="carritoDiv">
-                    <button type="" class="carritoIcon">
-                        <a class="nav-link-carrito" href="#">
-                            <i class="fa-solid fa-cart-shopping carritoI"></i>
-                        </a>
-                    </button>
+                    <a class="nav-link-carrito" href="../carritoCompras/carrito.html">
+                        <i class="fa-solid fa-cart-shopping carritoI"></i>
+                    </a>
                 </div>
             </div>
         </nav>`;
     }
-    
-    
+
     document.getElementById('navbarContainer').innerHTML = navbar; 
 });
