@@ -95,6 +95,12 @@ body {
     text-decoration: none;
     text-align: center;
 }
+.envioFormularioButton {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 .info{
     margin-top: 90px;
@@ -115,4 +121,10 @@ padding-bottom: 10px;
   width: 200px;
   cursor: pointer;
   text-decoration: none;
+  text-align: center;
+}
+.iniciarSesionButton {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
