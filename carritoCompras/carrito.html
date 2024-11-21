@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="../footer/footer.css" />
     <!-- Fonts -->
     <!-- Playfair Display -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
@@ -47,68 +45,51 @@
     <h1 class="carritoTitulo">Mi carrito</h1>
 
     <!-- Carrito de compras -->
-    <section id="carrito">
-        <div class="card mb-3" style="max-width: 540px;">
+    <section id="carrito" class="d-flex flex-column">
+        <div class="producto card mb-3" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-4">
-                <img src="./imagenes/fijadorMaquillaje.png" class="img-fluid rounded-start" alt="fijador de maquillaje">
+                <img src="./imagenes/fijadorMaquillaje.png" class="img-fluid rounded-start" alt="fijador de maquillaje en spray">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="nombreProducto">Fijador de maquillaje</h5>
                   <p class="precioProducto"> $300 MXN</p>
+                  <p>Cantidad:</p>
+                  <input type="number" min="1" step="1" value="1">
                 </div>
               </div>
             </div>
           </div>
-        <div class="card mb-3" style="max-width: 540px;">
+        <div class="producto card mb-3" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-4">
-                <img src="./imagenes/lapizLabial.png" class="img-fluid rounded-start" alt="fijador de maquillaje">
+                <img src="./imagenes/lapizLabial.png" class="img-fluid rounded-start" alt="Labial rosa/nude en barra">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="nombreProducto">Lapiz labial</h5>
                   <p class="precioProducto"> $319 MXN</p>
+                  <p>Cantidad:</p>
+                  <input type="number" min="1" step="1" value="1">
                 </div>
               </div>
             </div>
           </div>
+          <div id="totalContainer" class="d-flex justify-content-center mt-3">
+            <h4 id="total">Total: $0.00 MXN</h4>
+          </div>
     </section>
 
-    <section id="compra" class="compraSection">
-      <h1 class="compraTitle">Información de compra</h1>
-      <p class="compraParagraph text-center">
-        Por favor, completa tus datos para finalizar tu compra. Nos aseguraremos de que tu información esté segura y de que el pedido llegue correctamente.
-      </p>
-    
-      <!-- Sección formulario -->
-      <section class="compraFormularioSection">
-        <form id="formularioCompra" class="compraFormulario col-lg-6 col-md-8">
-          <!-- Apartado nombre completo -->
-          <div class="form-group mt-2 col-md-12">
-            <label for="nombreCompleto" class="form-label">Nombre completo</label>
-            <input type="text" class="form-control" id="nombreCompleto" placeholder="Escribe tu nombre completo" />
-          </div>
-          <!-- Apartado correo electrónico -->
-          <div class="form-group mt-2 col-md-12">
-            <label for="correoCompra" class="form-label">Correo electrónico</label>
-            <input type="email" class="form-control" id="correoCompra" placeholder="ejemplo@correo.com" />
-          </div>
-          <!-- Checkbox -->
-          <div class="form-group mt-3 col-md-12">
-            <input type="checkbox" class="form-check-input" id="checkCompra" />
-            <label for="checkCompra" class="form-check-label">Acepto los términos y condiciones</label>
-          </div>
-        </form>
-      </section>
-    </section>
+   <h4>¿Ya tienes una cuenta?</h4>
+   <a href="../inicioDeSesion/inicioDeSesion.html" class="iniciarSesionButton">Iniciar sesión</a>
     
     <section id="envio" class="envioSection">
       <h1 class="envioTitle">Información de envío</h1>
       <p class="envioParagraph text-center">
         Completa la información de envío para procesar tu pedido correctamente.
       </p>
+      <p class="envioParagraph text-center">Hacemos envios a toda la República Mexicana</p>
     
       <!-- Sección formulario -->
       <section class="envioFormularioSection">
@@ -127,6 +108,11 @@
           <div class="form-group mt-2 col-md-12">
             <label for="colonia" class="form-label">Colonia</label>
             <input type="text" class="form-control" id="colonia" placeholder="Escribe la colonia" />
+          </div>
+           <!-- Apartado municipio -->
+           <div class="form-group mt-2 col-md-12">
+            <label for="municipio" class="form-label">Municipio</label>
+            <input type="text" class="form-control" id="municipio" placeholder="Escribe el municipio" />
           </div>
           <!-- Apartado código postal -->
           <div class="form-group mt-2 col-md-12">
