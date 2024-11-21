@@ -1,4 +1,4 @@
-import {nombreDominio} from "./nombreDominio";
+import {nombreDominio} from "./nombreDominio.js";
 
 const postLogin = async ( formularioRegistro ) => {
   const url = `${nombreDominio()}/api/v1/inicioSesion`;
@@ -19,7 +19,7 @@ const postLogin = async ( formularioRegistro ) => {
   const resultadoInicioSesion = await response.json();
   console.log(resultadoInicioSesion);
 
-  return loginResult;
+  return resultadoInicioSesion;
 };
 
 export { postLogin };

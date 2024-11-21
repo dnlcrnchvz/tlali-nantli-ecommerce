@@ -1,4 +1,4 @@
-const validacionIninioSesion=(infoForm)=>
+const validacionInicioSesion=(infoForm)=>
 {
     const results=
     {
@@ -8,4 +8,4 @@ const validacionIninioSesion=(infoForm)=>
     return results;
 }
 
-export{validacionIninioSesion};
+export{validacionInicioSesion};
