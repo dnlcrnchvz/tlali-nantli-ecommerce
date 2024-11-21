@@ -83,70 +83,13 @@
 
    <h4>¿Ya tienes una cuenta?</h4>
    <a href="../inicioDeSesion/inicioDeSesion.html" class="iniciarSesionButton">Iniciar sesión</a>
-
-      <h2>Información de envío</h2>
-      <form class="formulario mt-4">
-        <div class="mb-3">
-          <label for="calle" class="form-label">Calle</label>
-          <input type="text" class="form-control" id="calle" placeholder="Ingresa la calle" required>
-        </div>
-        <div class="mb-3">
-          <label for="numeroDeCasa" class="form-label">Número</label>
-          <input type="text" class="form-control" id="numeroDeCasa" placeholder="Ingresa el número de casa" required> 
-        </div>
-        <div class="mb-3">
-          <label for="colonia" class="form-label">Colonia</label>
-          <input type="text" class="form-control" id="colonia" placeholder="Ingresa la colonia" required>
-        </div>
-        <div class="mb-3">
-          <label for="codigoPostal" class="form-label">Código postal</label>
-          <input type="text" class="form-control" id="codigoPostal" placeholder="Ingresa el código postal" required>
-        </div>
-        <div class="mb-3">
-          <label for="municipio" class="form-label">Municipio</label>
-          <input type="text" class="form-control" id="municipio" placeholder="Ingresa el municipio" required>
-        </div>
-        <div class="mb-3">
-          <label for="estado" class="form-label">Estado</label>
-          <input type="text" class="form-control" id="estado" placeholder="Ingresa el estado" required>
-        </div>
-        <p>Hacemos envíos a toda la República Mexicana</p>
-        <button type="submit" class="carritoButton" id="Carrito" aria-label="Confirmar compra">Comprar</button>
-      </form>
-  
-    <section id="compra" class="compraSection">
-      <h1 class="compraTitle">Información de compra</h1>
-      <p class="compraParagraph text-center">
-        Por favor, completa tus datos para finalizar tu compra. Nos aseguraremos de que tu información esté segura y de que el pedido llegue correctamente.
-      </p>
-    
-      <!-- Sección formulario -->
-      <section class="compraFormularioSection">
-        <form id="formularioCompra" class="compraFormulario col-lg-6 col-md-8">
-          <!-- Apartado nombre completo -->
-          <div class="form-group mt-2 col-md-12">
-            <label for="nombreCompleto" class="form-label">Nombre completo</label>
-            <input type="text" class="form-control" id="nombreCompleto" placeholder="Escribe tu nombre completo" />
-          </div>
-          <!-- Apartado correo electrónico -->
-          <div class="form-group mt-2 col-md-12">
-            <label for="correoCompra" class="form-label">Correo electrónico</label>
-            <input type="email" class="form-control" id="correoCompra" placeholder="ejemplo@correo.com" />
-          </div>
-          <!-- Checkbox -->
-          <div class="form-group mt-3 col-md-12">
-            <input type="checkbox" class="form-check-input" id="checkCompra" />
-            <label for="checkCompra" class="form-check-label">Acepto los términos y condiciones</label>
-          </div>
-        </form>
-      </section>
-    </section>
     
     <section id="envio" class="envioSection">
       <h1 class="envioTitle">Información de envío</h1>
       <p class="envioParagraph text-center">
         Completa la información de envío para procesar tu pedido correctamente.
       </p>
+      <p class="envioParagraph text-center">Hacemos envios a toda la República Mexicana</p>
     
       <!-- Sección formulario -->
       <section class="envioFormularioSection">
@@ -165,6 +108,11 @@
           <div class="form-group mt-2 col-md-12">
             <label for="colonia" class="form-label">Colonia</label>
             <input type="text" class="form-control" id="colonia" placeholder="Escribe la colonia" />
+          </div>
+           <!-- Apartado municipio -->
+           <div class="form-group mt-2 col-md-12">
+            <label for="municipio" class="form-label">Municipio</label>
+            <input type="text" class="form-control" id="municipio" placeholder="Escribe el municipio" />
           </div>
           <!-- Apartado código postal -->
           <div class="form-group mt-2 col-md-12">
