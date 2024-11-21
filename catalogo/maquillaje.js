@@ -68,8 +68,9 @@ const productos = [
     actualizarCarrito();
   }
   
-  // Función para actualizar el carrito (puedes personalizarla para que muestre un resumen en la página)
+  // Función para actualizar el carrito 
   function actualizarCarrito() {
     console.log("Carrito actualizado:", carrito);
-    alert("Has agregado ${carrito[carrito.length - 1].nombre} al carrito. Total de productos: ${carrito.length}");
+    alert(`Has agregado '${carrito[carrito.length - 1].nombre}' al carrito. Total de productos: ${carrito.length}`);
+
   }
