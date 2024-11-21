@@ -24,72 +24,140 @@ padding-bottom: 10px;
 }
 /* Mobil -------------------------------------------------------------------------------------------*/
 @media (max-width: 600px) {
-    .carritoButton, .iniciarSesionButton{
-        width: 80%;
-        min-height: 50px;
-        font-size: 1.2rem;
-    }
-    .formulario{
-        padding: 10px;
-    }
-    #tarjetasCarrito{
-        padding: 5%;
-    }
-}
-#tarjetasCarrito{
-    padding: 15px;
-    align-items: center;
-    justify-content: space-evenly;
-    
 }
 
-.carritoButton, .iniciarSesionButton{
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Sección principal de compra */
+  .compraSection {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-bottom: 30px;
+  }
+  
+  .compraTitle {
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .compraParagraph {
+    font-family: "Quicksand", serif;
+    text-align: center;
+    color: #555;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+  }
+  
+  /* Formulario de compra */
+  .compraFormulario {
+    background-color:  #CBDDB5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .compraFormulario .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .compraFormulario .form-label {
+    font-size: 1.1em;
+  }
+  
+  .compraFormulario .form-control {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+  }
+  
+  .compraFormulario .form-check-input {
+    margin-top: 10px;
+  }
+  
+  .compraFormulario .form-check-label {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  /* Sección de envío */
+  .envioSection {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-bottom: 30px;
+  }
+  
+  .envioTitle {
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+
+
+  }
+  
+  .envioParagraph {
+    font-family: "Quicksand", serif;
+    text-align: center;
+    color: #555;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+  }
+
+  /* Formulario de envío */
+  .envioFormulario {
+    background-color: #CBDDB5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .envioFormulario .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .envioFormulario .form-label {
+    font-size: 1.1em;
+  }
+  
+  .envioFormulario .form-control {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+  }
+  
+  .envioFormularioButton {
     background-color: #30646F;
-    width: 20%;
-    min-height: 40px;
+    width: 100%;
+    height: 30px;
     color: white;
+    padding: 15px;
     border: none;
-    border-radius: 35px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    font-size: 1.2em;
+    width: 200px;
     cursor: pointer;
     text-decoration: none;
-    padding: 10px;
-    text-align: center;
-    margin-bottom: 10px;
-    margin: 0 auto;
-    display: block;
 }
 
 .info{
     margin-top: 90px;
-font-family: "Playfair Display", sans-serif;
+font-family: "Playfair Display", serif;
 text-align: center;
 padding-bottom: 10px;
 }
-.formulario{
-    padding: 15px;
-}
-.quantity-number {
-    display: inline-flex;
-    border: 1px solid grey;
-    padding: 4px 0px;
-    align-items: center;
-  }
-  .quantity-number input {
-    border: none;
-    padding: 5px 10px;
-    text-align: center;
-  }
-  .quantity-number button {
-    background-color: grey;
-    border: none;
-    padding: 6px 10px;
-    color: white;
-    cursor: pointer;
-  }
-   p{
-    font-family: "Quicksand", sans-serif;
-    text-align: center;
-    margin-top: 10px;
-    line-height: 1.5;
-   }
+
