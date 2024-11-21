@@ -1,4 +1,6 @@
 import { redirigirPaginaInicio } from "./redireccionamientoPagInicio.js";
+import { validacionIninioSesion } from "./validacionIninioSesion.js";
+import { postLogin } from "../API/postLogin.js";
 
 // Función que se ejecuta cuando el documento está listo
 document.addEventListener("DOMContentLoaded", function() {
@@ -17,13 +19,53 @@ document.addEventListener("DOMContentLoaded", function() {
 // Obtener referencia al formulario
 const registro = document.forms["formulario"];
 
-document.getElementById("inicioSesion").addEventListener("submit", (event) => {
+registro.addEventListener("submit",async(event)=>
+{
+    event.preventDefault();
+    const correoRef=registro.getElementById("correo");
+    const contraseniaRef=registro.getElementById("contrasenia");
+    correoRef.value=correoRef.value.trim().toLowerCase();
+
+    const infoForm=
+    {
+        correo:correoRef.value,
+        contrasenia:contraseniaRef.value,
+    };
+
+    const respuestas=validacionIninioSesion(infoForm);
+
+    if(respuestas.isValid)
+    {
+        try
+        {
+            const usuario=await postLogin(infoForm);
+            const usuarioSesion=
+            {
+                usuario,
+                isAdmin:usuario.usurios.some((administracion)=>administracion===true),
+                expiration:0,
+            };
+            localStorage.setItem("userSesion",JSON.stringify(usuarioSesion));
+            redirigirPaginaInicio();
+        }
+        catch(error)
+        {
+            const errorMessage=document.getElementById("mensaje");
+            errorMessage.textContent = "Error: El correo electrónico y la contraseña son obligatorios.";
+            mensaje.style.color = "red";
+        }
+    }
+});
+
+/* document.getElementById("inicioSesion").addEventListener("submit", (event) => {
     event.preventDefault(); // Evita el envío del formulario
 
     // Leer los valores de los inputs
     const correoInput = document.getElementById("correo").value;
     const contraseniaInput = document.getElementById("contrasenia").value;
     const mensaje = document.getElementById("mensaje");
+
+
 
     // Recuperar datos del localStorage
     const usuariosAlmacenados = JSON.parse(localStorage.getItem('correo')) || [];
@@ -61,6 +103,6 @@ document.getElementById("inicioSesion").addEventListener("submit", (event) => {
                 window.location.href = "/inicioDeSesion/inicioDeSesion.html"; // Redirigir al inicio de sesión
             });
         }
-    }
-});
+    } 
+});*/
 
